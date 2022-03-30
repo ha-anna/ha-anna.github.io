@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'Adder';
-    src: url('/Adder.otf') format('opentype');
+    src: url('/Adder.otf') format('opentype'),
+        url('res/font/Adder.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
