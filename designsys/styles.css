@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Adder';
-    src: url('/res/font/Adder.otf') format('opentype');
-    font-weight: 400;
+    src: url('') format('opentype');
+    font-weight: normal;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap');
