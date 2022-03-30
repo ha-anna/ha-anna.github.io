@@ -2,6 +2,7 @@
     font-family: 'Adder';
     src: url('/Adder.woff2') format('woff2');
     font-weight: normal;
+    font-style: normal;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap');
@@ -34,6 +35,7 @@ body {
 h1 {
     font-family: 'Adder';
     font-weight: normal; /* font-weight must be always included with this font!! */
+    font-style: normal;
     font-size: 90px;
 }
 
