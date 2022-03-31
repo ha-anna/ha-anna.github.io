@@ -21,8 +21,8 @@ body {
 
 .pattern {
     position: fixed;
-    width: 300vw;
-    height: 300vw;
+    min-width: 100%;
+    min-height: 100%;
     background-color: #f2f2f2;
     opacity: 0.2;
     background-image:  linear-gradient(#232323 1.2000000000000002px, transparent 1.2000000000000002px), linear-gradient(to right, #232323 1.2000000000000002px, #f2f2f2 1.2000000000000002px);
