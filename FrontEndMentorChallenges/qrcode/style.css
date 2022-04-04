@@ -42,6 +42,9 @@ img {
   padding-bottom: 20px;
   text-align: center;
   min-height: 450px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
 }
 
 .qr {
