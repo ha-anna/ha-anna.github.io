@@ -35,7 +35,7 @@ img {
 
 .wrapper {
   max-width: 300px;
-  height: 100%;
+  min-height: 400px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
