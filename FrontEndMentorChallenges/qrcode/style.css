@@ -33,7 +33,7 @@ img {
   max-height: 100%;
 }
 
-main {
+.wrapper {
   max-width: 300px;
   height: 100%;
   display: flex;
