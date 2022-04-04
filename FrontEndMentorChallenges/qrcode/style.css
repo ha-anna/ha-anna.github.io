@@ -25,11 +25,12 @@ img {
 
 .wrapper {
   max-width: 300px;
-  min-height: 400px;
+  height: 100%;
   display: flex;
-  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  flex-flow: column nowrap;
+  margin: auto;
 }
 
 .card {
@@ -40,6 +41,7 @@ img {
   padding: 15px;
   padding-bottom: 20px;
   text-align: center;
+  min-height: 400px;
 }
 
 .qr {
