@@ -44,7 +44,7 @@ img {
   min-height: 450px;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .qr {
