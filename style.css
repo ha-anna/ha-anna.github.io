@@ -1,386 +1,382 @@
 :root {
     --black: #232323;
     --black-trans25: #23232325;
-    --white: #F2F2F2;
-    --blue: #55A4A7;
-    --blue-trans50: #55A4A750;
-    --pink: #FEA29F;
-    --pink-trans50: #FEA29F50;
-    --green: #9CA840;
-    --yellow: #FFC438;
-}
-
-/* font settings */
-
-@font-face {
-    font-family: 'Adder';
+    --white: #f2f2f2;
+    --blue: #55a4a7;
+    --blue-trans50: #55a4a750;
+    --pink: #fea29f;
+    --pink-trans50: #fea29f50;
+    --green: #9ca840;
+    --yellow: #ffc438;
+  }
+  
+  /* font settings */
+  
+  @font-face {
+    font-family: "Adder";
     src: url("/res/font/adder.otf") format("opentype");
     font-weight: 400;
     font-style: normal;
-    
-}
-
-h1, h2, h3, button, .btn {
-    font-family: 'Adder', monospace;
+  }
+  
+  h1,
+  h2,
+  h3,
+  button,
+  .btn {
     color: var(--black);
-}
-
-/* main divs */
-
-body {
-    color: var(--black);
+    font-family: "Adder", monospace;
+  }
+  
+  /* main divs */
+  
+  body {
     background: var(--white);
+    color: var(--black);
     overflow-x: hidden;
-}
-
-#hero {
-    min-height: 100vh;
+  }
+  
+  #hero {
     background-image: url(https://images.unsplash.com/photo-1637167473291-9f8caf792ded?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2428&q=80);
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-}
-
-footer {
+    min-height: 100vh;
+  }
+  
+  footer {
     background-color: var(--black-trans25);
-}
-
-/* hashtag settings */
-
-.hashtag {
-    border: 2px solid var(--black);
+  }
+  
+  /* hashtag settings */
+  
+  .hashtag {
     border-radius: 24px;
-    padding: 10px 20px;
-    line-height: 2.8;
-    text-transform: uppercase; 
-    font-family: 'Adder', monospace;
+    border: 2px solid var(--black);
     cursor: default;
-}
-
-.hashtag:hover {
-    color: var(--white);
+    font-family: "Adder", monospace;
+    line-height: 2.8;
+    padding: 10px 20px;
+    text-transform: uppercase;
+  }
+  
+  .hashtag:hover {
     background: var(--black);
-}
-
-
-.card-img-top {
-    width: 100%;
+    color: var(--white);
+  }
+  
+  .card-img-top {
     height: 20vh;
     object-fit: cover;
-}
-
-
-/* navbar and nav link settings */
-
-.navbar {
+    width: 100%;
+  }
+  
+  /* navbar and nav link settings */
+  
+  .navbar {
     background-color: var(--white);
-}
-
-.navbar-toggler{
+  }
+  
+  .navbar-toggler {
     border: 2px solid var(--black);
-}
-
-.navbar-toggler:focus, .navbar-toggler:active {
-    box-shadow: none;
-}
-
-.custom-toggler .navbar-toggler-icon {
-    background-image: url(
-"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(35, 35, 35, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
-.nav-link {
-    color: var(--black);
-}
-
-.nav-link:hover {
-    color: var(--white);
-    background-color: var(--black);
-}
-
-.nav-link:active {
-    color: var(--white);
-    background: var(--pink);
-    border-radius: 5px;
-}
-
-/* sns link and img settings */
-
-.sns-link:hover {
-    background: var(--pink);
-    padding-top: 6px;
-    padding-bottom: 11px;
-    border-radius: 50%;
-}
-
-.sns-link:active {
-    background: var(--pink);
-    border-radius: 50%;
-}
-
-.sns-img {
-    width: 80%;
-    height: auto;
-}
-
-/* custom color classes */
-
-.bg-black-custom {
-    background-color: var(--black);
-    color: var(--white);
-}
-
-.bg-black-custom:hover {
-    background-color: var(--black);
-    color: var(--pink);
-}
-
-.bg-pink-custom {
-    background-color: var(--pink);
-}
-
-.bg-blue-trans50-custom {
-    background-color: var(--blue-trans50);
-}
-
-.card {
-    transition: transform 250ms;
-}
-
-.card:hover{
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
-    transition: transform 300ms ease-in-out;
-}
-
-button:hover, .cv-btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
-    transition: transform 300ms ease-in-out;
-}
-
-button:active, .cv-btn:active, .btn:active {
-    background-color: var(--pink);
-    color: var(--black);
-}
-
-.btn:focus {
+  }
+  
+  .navbar-toggler:focus,
+  .navbar-toggler:active {
     box-shadow: none;
   }
-
-/* sticker settings */
-
-#keep-sticker {
+  
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(35, 35, 35, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  
+  .nav-link {
+    color: var(--black);
+  }
+  
+  .nav-link:hover {
+    background-color: var(--black);
+    color: var(--white);
+  }
+  
+  .nav-link:active {
+    background: var(--pink);
+    border-radius: 5px;
+    color: var(--white);
+  }
+  
+  /* sns link and img settings */
+  
+  .sns-link:hover {
+    background: var(--pink);
+    border-radius: 50%;
+    padding-bottom: 11px;
+    padding-top: 6px;
+  }
+  
+  .sns-link:active {
+    background: var(--pink);
+    border-radius: 50%;
+  }
+  
+  .sns-img {
+    height: auto;
+    width: 80%;
+  }
+  
+  /* custom color classes */
+  
+  .bg-black-custom {
+    background-color: var(--black);
+    color: var(--white);
+  }
+  
+  .bg-black-custom:hover {
+    background-color: var(--black);
+    color: var(--pink);
+  }
+  
+  .bg-pink-custom {
+    background-color: var(--pink);
+  }
+  
+  .bg-blue-trans50-custom {
+    background-color: var(--blue-trans50);
+  }
+  
+  .card {
+    transition: transform 250ms;
+  }
+  
+  .card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+    transform: scale(1.05);
+    transition: transform 300ms ease-in-out;
+  }
+  
+  button:hover,
+  .cv-btn:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+    transform: scale(1.05);
+    transition: transform 300ms ease-in-out;
+  }
+  
+  button:active,
+  .cv-btn:active,
+  .btn:active {
+    background-color: var(--pink);
+    color: var(--black);
+  }
+  
+  .btn:focus {
+    box-shadow: none;
+  }
+  
+  /* sticker settings */
+  
+  #keep-sticker {
     transform: translate(270px, 350px);
-}
-
-#zillenial-sticker {
+  }
+  
+  #zillenial-sticker {
     transform: translate(450px, 270px) rotate(5deg);
-}
-
-#problemsolver-sticker {
+  }
+  
+  #problemsolver-sticker {
     transform: translate(200px, -350px) rotate(15deg);
-}
-
-#repeat-sticker{
+  }
+  
+  #repeat-sticker {
     transform: translate(-500px, -350px) rotate(-50deg);
-}
-
-#infj-sticker {
+  }
+  
+  #infj-sticker {
     transform: translate(-450px, 200px) rotate(15deg);
-}
-
-#infjdesc-sticker {
+  }
+  
+  #infjdesc-sticker {
     transform: translate(-450px, 300px) rotate(-5deg);
-}
-
-#creative-sticker {
+  }
+  
+  #creative-sticker {
     transform: translate(80px, 250px) rotate(15deg);
-}
-
-#communication-sticker {
+  }
+  
+  #communication-sticker {
     transform: translate(-150px, -150px) rotate(10deg);
-}
-
-
-@media only screen and (max-width: 1200px) {
-
+  }
+  
+  @media only screen and (max-width: 1200px) {
     #keep-sticker {
-        transform: translate(200px, 350px);
+      transform: translate(200px, 350px);
     }
-    
+  
     #zillenial-sticker {
-        transform: translate(-300px, -350px) rotate(5deg);
+      transform: translate(-300px, -350px) rotate(5deg);
     }
-    
+  
     #problemsolver-sticker {
-        transform: translate(50px, -200px) rotate(15deg);
+      transform: translate(50px, -200px) rotate(15deg);
     }
-    
-    #repeat-sticker{
-        transform: translate(-50px, -380px) rotate(-50deg);
+  
+    #repeat-sticker {
+      transform: translate(-50px, -380px) rotate(-50deg);
     }
-    
+  
     #infj-sticker {
-        transform: translate(-350px, 180px) rotate(15deg);
+      transform: translate(-350px, 180px) rotate(15deg);
     }
-    
+  
     #infjdesc-sticker {
-        transform: translate(-350px, 280px) rotate(-5deg);
+      transform: translate(-350px, 280px) rotate(-5deg);
     }
-    
+  
     #creative-sticker {
-        transform: translate(170px, 150px) rotate(15deg);
+      transform: translate(170px, 150px) rotate(15deg);
     }
-    
+  
     #communication-sticker {
-        transform: translate(-250px, -150px) rotate(10deg);
+      transform: translate(-250px, -150px) rotate(10deg);
     }
-}
-
-
-@media only screen and (max-width: 900px) {
-
+  }
+  
+  @media only screen and (max-width: 900px) {
     #keep-sticker {
-        transform: translate(200px, 350px);
+      transform: translate(200px, 350px);
     }
-    
+  
     #zillenial-sticker {
-        transform: translate(-300px, -350px) rotate(5deg);
+      transform: translate(-300px, -350px) rotate(5deg);
     }
-    
+  
     #problemsolver-sticker {
-        transform: translate(50px, -200px) rotate(15deg);
+      transform: translate(50px, -200px) rotate(15deg);
     }
-    
-    #repeat-sticker{
-        transform: translate(-50px, -380px) rotate(-50deg);
+  
+    #repeat-sticker {
+      transform: translate(-50px, -380px) rotate(-50deg);
     }
-    
+  
     #infj-sticker {
-        transform: translate(-350px, 180px) rotate(15deg);
+      transform: translate(-350px, 180px) rotate(15deg);
     }
-    
+  
     #infjdesc-sticker {
-        transform: translate(-350px, 280px) rotate(-5deg);
+      transform: translate(-350px, 280px) rotate(-5deg);
     }
-    
+  
     #creative-sticker {
-        transform: translate(170px, 150px) rotate(15deg);
+      transform: translate(170px, 150px) rotate(15deg);
     }
-    
+  
     #communication-sticker {
-        transform: translate(-250px, -150px) rotate(10deg);
+      transform: translate(-250px, -150px) rotate(10deg);
     }
-}
-
-
-@media only screen and (max-width: 810px) {
-
+  }
+  
+  @media only screen and (max-width: 810px) {
     #keep-sticker {
-        transform: translate(130px, 370px) scale(0.9);
+      transform: translate(130px, 370px) scale(0.9);
     }
-    
+  
     #zillenial-sticker {
-        transform: translate(-300px, -350px) rotate(5deg);
+      transform: translate(-300px, -350px) rotate(5deg);
     }
-    
+  
     #problemsolver-sticker {
-        transform: translate(50px, -200px) rotate(15deg);
+      transform: translate(50px, -200px) rotate(15deg);
     }
-    
-    #repeat-sticker{
-        transform: translate(-50px, -380px) rotate(-50deg);
+  
+    #repeat-sticker {
+      transform: translate(-50px, -380px) rotate(-50deg);
     }
-    
+  
     #infj-sticker {
-        transform: translate(-350px, 230px) rotate(15deg);
+      transform: translate(-350px, 230px) rotate(15deg);
     }
-    
+  
     #infjdesc-sticker {
-        transform: translate(-350px, 320px) rotate(-5deg);
+      transform: translate(-350px, 320px) rotate(-5deg);
     }
-    
+  
     #creative-sticker {
-        transform: translate(70px, 250px) rotate(15deg);
+      transform: translate(70px, 250px) rotate(15deg);
     }
-    
+  
     #communication-sticker {
-        transform: translate(-250px, -150px) rotate(10deg);
+      transform: translate(-250px, -150px) rotate(10deg);
     }
-}
-
-
-@media only screen and (max-width: 600px) {
-
+  }
+  
+  @media only screen and (max-width: 600px) {
     #keep-sticker {
-        transform: translate(100px, 400px) scale(0.8);
+      transform: translate(100px, 400px) scale(0.8);
     }
-    
+  
     #zillenial-sticker {
-        transform: translate(-180px, -340px) rotate(5deg) scale(0.8);
+      transform: translate(-180px, -340px) rotate(5deg) scale(0.8);
     }
-    
+  
     #problemsolver-sticker {
-        transform: translate(50px, -150px) rotate(15deg) scale(0.8);
+      transform: translate(50px, -150px) rotate(15deg) scale(0.8);
     }
-    
-    #repeat-sticker{
-        transform: translate(-30px, -300px) rotate(-50deg) scale(0.8);
+  
+    #repeat-sticker {
+      transform: translate(-30px, -300px) rotate(-50deg) scale(0.8);
     }
-    
+  
     #infj-sticker {
-        transform: translate(-250px, 230px) rotate(15deg) scale(0.8);
+      transform: translate(-250px, 230px) rotate(15deg) scale(0.8);
     }
-    
+  
     #infjdesc-sticker {
-        transform: translate(-300px, 300px) rotate(-5deg) scale(0.8);
+      transform: translate(-300px, 300px) rotate(-5deg) scale(0.8);
     }
-    
+  
     #creative-sticker {
-        transform: translate(100px, 220px) rotate(15deg) scale(0.8);
+      transform: translate(100px, 220px) rotate(15deg) scale(0.8);
     }
-    
+  
     #communication-sticker {
-        transform: translate(-250px, -130px) rotate(10deg) scale(0.8);
+      transform: translate(-250px, -130px) rotate(10deg) scale(0.8);
     }
-}
-
-@media only screen and (max-width: 400px) {
-
+  }
+  
+  @media only screen and (max-width: 400px) {
     .about-img {
-        transform: scale(0.8);
+      transform: scale(0.8);
     }
-
+  
     #keep-sticker {
-        transform: translate(30px, 350px) scale(0.6);
+      transform: translate(30px, 350px) scale(0.6);
     }
-    
+  
     #zillenial-sticker {
-        transform: translate(-150px, -250px) rotate(5deg) scale(0.6);
+      transform: translate(-150px, -250px) rotate(5deg) scale(0.6);
     }
-    
+  
     #problemsolver-sticker {
-        transform: translate(-20px, -150px) rotate(15deg) scale(0.6);
+      transform: translate(-20px, -150px) rotate(15deg) scale(0.6);
     }
-    
-    #repeat-sticker{
-        transform: translate(-30px, -300px) rotate(-50deg) scale(0.6);
+  
+    #repeat-sticker {
+      transform: translate(-30px, -300px) rotate(-50deg) scale(0.6);
     }
-    
+  
     #infj-sticker {
-        transform: translate(-180px, 230px) rotate(15deg) scale(0.6);
+      transform: translate(-180px, 230px) rotate(15deg) scale(0.6);
     }
-    
+  
     #infjdesc-sticker {
-        transform: translate(-260px, 260px) rotate(-5deg) scale(0.6);
+      transform: translate(-260px, 260px) rotate(-5deg) scale(0.6);
     }
-    
+  
     #creative-sticker {
-        transform: translate(80px, 180px) rotate(15deg) scale(0.6);
+      transform: translate(80px, 180px) rotate(15deg) scale(0.6);
     }
-    
+  
     #communication-sticker {
-        transform: translate(-200px, -100px) rotate(10deg) scale(0.6);
+      transform: translate(-200px, -100px) rotate(10deg) scale(0.6);
     }
-}
+  }
+  
