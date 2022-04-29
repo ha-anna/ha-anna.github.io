@@ -348,7 +348,7 @@
     }
   
     #keep-sticker {
-      transform: translate(30px, 350px) scale(0.6);
+      transform: translate(30px, 320px) scale(0.6);
     }
   
     #zillenial-sticker {
@@ -364,15 +364,15 @@
     }
   
     #infj-sticker {
-      transform: translate(-180px, 230px) rotate(15deg) scale(0.6);
+      transform: translate(-180px, 200px) rotate(15deg) scale(0.6);
     }
   
     #infjdesc-sticker {
-      transform: translate(-260px, 260px) rotate(-5deg) scale(0.6);
+      transform: translate(-260px, 230px) rotate(-5deg) scale(0.6);
     }
   
     #creative-sticker {
-      transform: translate(80px, 180px) rotate(15deg) scale(0.6);
+      transform: translate(80px, 150px) rotate(15deg) scale(0.6);
     }
   
     #communication-sticker {
