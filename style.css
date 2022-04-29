@@ -162,7 +162,7 @@ button:active, .cv-btn:active, .btn:active {
 /* sticker settings */
 
 #keep-sticker {
-    transform: translate(270px, 450px);
+    transform: translate(270px, 350px);
 }
 
 #zillenial-sticker {
@@ -174,33 +174,34 @@ button:active, .cv-btn:active, .btn:active {
 }
 
 #repeat-sticker{
-    transform: translate(-500px, -400px) rotate(-50deg);
+    transform: translate(-500px, -350px) rotate(-50deg);
 }
 
 #infj-sticker {
-    transform: translate(-450px, 300px) rotate(15deg);
+    transform: translate(-450px, 200px) rotate(15deg);
 }
 
 #infjdesc-sticker {
-    transform: translate(-450px, 400px) rotate(-5deg);
+    transform: translate(-450px, 300px) rotate(-5deg);
 }
 
 #creative-sticker {
-    transform: translate(80px, 300px) rotate(15deg);
+    transform: translate(80px, 250px) rotate(15deg);
 }
 
 #communication-sticker {
-    transform: translate(-180px, -200px) rotate(10deg);
+    transform: translate(-150px, -150px) rotate(10deg);
 }
 
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 1200px) {
 
     #keep-sticker {
-        transform: translate(100px, 500px);
+        transform: translate(200px, 350px);
     }
     
     #zillenial-sticker {
-        transform: translate(-220px, -450px) rotate(5deg);
+        transform: translate(-300px, -350px) rotate(5deg);
     }
     
     #problemsolver-sticker {
@@ -212,18 +213,165 @@ button:active, .cv-btn:active, .btn:active {
     }
     
     #infj-sticker {
-        transform: translate(-250px, 200px) rotate(15deg);
+        transform: translate(-350px, 180px) rotate(15deg);
     }
     
     #infjdesc-sticker {
-        transform: translate(-250px, 300px) rotate(-5deg);
+        transform: translate(-350px, 280px) rotate(-5deg);
     }
     
     #creative-sticker {
-        transform: translate(170px, 220px) rotate(15deg);
+        transform: translate(170px, 150px) rotate(15deg);
     }
     
     #communication-sticker {
-        transform: translate(-250px, -200px) rotate(10deg);
+        transform: translate(-250px, -150px) rotate(10deg);
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    #keep-sticker {
+        transform: translate(200px, 350px);
+    }
+    
+    #zillenial-sticker {
+        transform: translate(-300px, -350px) rotate(5deg);
+    }
+    
+    #problemsolver-sticker {
+        transform: translate(50px, -200px) rotate(15deg);
+    }
+    
+    #repeat-sticker{
+        transform: translate(-50px, -380px) rotate(-50deg);
+    }
+    
+    #infj-sticker {
+        transform: translate(-350px, 180px) rotate(15deg);
+    }
+    
+    #infjdesc-sticker {
+        transform: translate(-350px, 280px) rotate(-5deg);
+    }
+    
+    #creative-sticker {
+        transform: translate(170px, 150px) rotate(15deg);
+    }
+    
+    #communication-sticker {
+        transform: translate(-250px, -150px) rotate(10deg);
+    }
+}
+
+
+@media only screen and (max-width: 810px) {
+
+    #keep-sticker {
+        transform: translate(130px, 370px) scale(0.9);
+    }
+    
+    #zillenial-sticker {
+        transform: translate(-300px, -350px) rotate(5deg);
+    }
+    
+    #problemsolver-sticker {
+        transform: translate(50px, -200px) rotate(15deg);
+    }
+    
+    #repeat-sticker{
+        transform: translate(-50px, -380px) rotate(-50deg);
+    }
+    
+    #infj-sticker {
+        transform: translate(-350px, 230px) rotate(15deg);
+    }
+    
+    #infjdesc-sticker {
+        transform: translate(-350px, 320px) rotate(-5deg);
+    }
+    
+    #creative-sticker {
+        transform: translate(70px, 250px) rotate(15deg);
+    }
+    
+    #communication-sticker {
+        transform: translate(-250px, -150px) rotate(10deg);
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    #keep-sticker {
+        transform: translate(100px, 400px) scale(0.8);
+    }
+    
+    #zillenial-sticker {
+        transform: translate(-180px, -340px) rotate(5deg) scale(0.8);
+    }
+    
+    #problemsolver-sticker {
+        transform: translate(50px, -150px) rotate(15deg) scale(0.8);
+    }
+    
+    #repeat-sticker{
+        transform: translate(-30px, -300px) rotate(-50deg) scale(0.8);
+    }
+    
+    #infj-sticker {
+        transform: translate(-250px, 230px) rotate(15deg) scale(0.8);
+    }
+    
+    #infjdesc-sticker {
+        transform: translate(-300px, 300px) rotate(-5deg) scale(0.8);
+    }
+    
+    #creative-sticker {
+        transform: translate(100px, 220px) rotate(15deg) scale(0.8);
+    }
+    
+    #communication-sticker {
+        transform: translate(-250px, -130px) rotate(10deg) scale(0.8);
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .about-img {
+        transform: scale(0.8);
+    }
+
+    #keep-sticker {
+        transform: translate(30px, 350px) scale(0.6);
+    }
+    
+    #zillenial-sticker {
+        transform: translate(-150px, -250px) rotate(5deg) scale(0.6);
+    }
+    
+    #problemsolver-sticker {
+        transform: translate(-20px, -150px) rotate(15deg) scale(0.6);
+    }
+    
+    #repeat-sticker{
+        transform: translate(-30px, -300px) rotate(-50deg) scale(0.6);
+    }
+    
+    #infj-sticker {
+        transform: translate(-180px, 230px) rotate(15deg) scale(0.6);
+    }
+    
+    #infjdesc-sticker {
+        transform: translate(-260px, 260px) rotate(-5deg) scale(0.6);
+    }
+    
+    #creative-sticker {
+        transform: translate(80px, 180px) rotate(15deg) scale(0.6);
+    }
+    
+    #communication-sticker {
+        transform: translate(-200px, -100px) rotate(10deg) scale(0.6);
     }
 }
