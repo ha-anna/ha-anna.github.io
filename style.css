@@ -27,6 +27,11 @@
     color: var(--black);
     font-family: "Adder", monospace;
   }
+
+  .txt-sm {
+    display: block;
+    font-size: 18px;
+  }
   
   /* main divs */
   
@@ -60,10 +65,12 @@
     padding: 10px 20px;
     text-transform: uppercase;
   }
-  
-  .hashtag:hover {
-    background: var(--black);
-    color: var(--white);
+
+  /* about text settings */
+
+  .about-desc {
+    font-size: 21px;
+
   }
   
   .card-img-top {
