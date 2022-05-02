@@ -175,6 +175,10 @@
     color: var(--black);
   }
   
+  .btn {
+    align-self: center;
+  }
+
   .btn:focus {
     box-shadow: none;
   }
