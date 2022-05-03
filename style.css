@@ -18,14 +18,14 @@
     font-weight: 400;
     font-style: normal;
   }
-  
+
   h1,
   h2,
   h3,
   button,
   .btn {
     color: var(--black);
-    font-family: "Adder", monospace;
+    font-family: 'Adder', monospace;
   }
 
   .txt-sm {
