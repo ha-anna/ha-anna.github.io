@@ -1,4 +1,2 @@
 # Invoice Creator
-
-A Pen created on CodePen.io. Original URL: [https://codepen.io/its-haanna/pen/oNEgMPo](https://codepen.io/its-haanna/pen/oNEgMPo).
-
+[See page here](https://its-haanna.github.io/Scrimba_Projects/Invoice_creator/index.html)
