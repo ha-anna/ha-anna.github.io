@@ -16,11 +16,11 @@ Hello! Here you can see all of the projects I completed while completing [Scrimb
 
 ### Links
 
-[Unit Converter](https://its-haanna.github.io/Scrimba_Projects/Unit_converter/index.html)
-[Blackjack](https://its-haanna.github.io/Scrimba_Projects/Blackjack/index.html)
-[Password Generator](https://its-haanna.github.io/Scrimba_Projects/Password_generator/index.html)
-[Invoice Creator](https://its-haanna.github.io/Scrimba_Projects/Invoice_creator/index.html)
-[Emoji Tool](https://its-haanna.github.io/Scrimba_Projects/Emoji_tool/index.html)
+[Unit Converter](https://its-haanna.github.io/Scrimba_Projects/Unit_converter/index.html) <br>
+[Blackjack](https://its-haanna.github.io/Scrimba_Projects/Blackjack/index.html) <br>
+[Password Generator](https://its-haanna.github.io/Scrimba_Projects/Password_generator/index.html) <br>
+[Invoice Creator](https://its-haanna.github.io/Scrimba_Projects/Invoice_creator/index.html) <br>
+[Emoji Tool](https://its-haanna.github.io/Scrimba_Projects/Emoji_tool/index.html) <br>
 
 
 ## My process
