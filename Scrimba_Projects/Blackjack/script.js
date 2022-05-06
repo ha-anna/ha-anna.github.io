@@ -1,5 +1,7 @@
+let person = prompt("Please enter your name");
+
 let player = {
-  name: 'Anna',
+  name: person,
   chips: 145
 }
 

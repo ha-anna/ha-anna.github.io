@@ -4,7 +4,7 @@ html, body {
 
 body {
   font-family: 'Lato', sans-serif;
-  background-image: url('https://images.unsplash.com/photo-1614850523296-d8c1af93d400?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80');
+  background-image: linear-gradient(0deg, rgba(105,113,132,1) 0%, rgba(242,241,239,1) 100%);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -14,8 +14,7 @@ body {
 h1 {
   font-family: 'Playfair Display', serif;
   font-size: 70px;
-  text-shadow: 0 0 3px #FE1D63ff;
-  color: #FE1D63ff;
+  color: #697184;
   margin: 20px 40px;
 }
 
@@ -31,35 +30,36 @@ p {
 }
 
 .blackjack {
-    background-color: #f2f2f2;
+    background-color: #d8cfd0;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     border-radius: 15px;
-    box-shadow: 0 0 10px #f2f2f2;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   padding: 30px;
 }
 
 button {
-  color: white;
-  background-color: #5798F6ff;
-  border: 1px solid #5798F6ff;
-  border-radius: 30px;
+  color: #f2f1ef;
+  background-color: #413f3d;
+  border: 1px solid #697184;
+  border-radius: 1em;
   padding: 15px 20px;
   align-self: center;
   margin: 5px;
+  min-width: 180px;
 }
 
 button:hover {
-  color: white;
-  background-color: #B751DBff;
-   border: 1px solid #B751DBff;
+  color: #f2f1ef;
+  background-color: #697184;
 }
 
 button:active {
-  color: #B751DBff;
-  background-color: #FDFAB7ff;
-   border: 1px solid #FDFAB7ff;
+  color: #413f3d;
+  background-color: ;
+  outline: 3px solid #b1a6a4;
 }
 
 .text {
