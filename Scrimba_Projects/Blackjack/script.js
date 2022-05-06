@@ -1,4 +1,6 @@
-let person = prompt("Please enter your name");
+// 1. uncomment to be asked for your name
+//let person = prompt("Please enter your name");
+let person = "User" // 2. and delete this
 
 let player = {
   name: person,
