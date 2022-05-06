@@ -1,6 +1,6 @@
-# Scrimba Projects [completed by Ha Anna]
+# Scrimba Projects
 
-Hello! Here you can see all of the projects I completed while completing [Scrimba's Frontend Developer Career Path](https://scrimba.com/learn/frontend).
+Hello! Here you can see all of the projects I coded while completing [Scrimba's Frontend Developer Career Path](https://scrimba.com/learn/frontend).
 
 ## Table of contents
 - [Overview](#overview)
