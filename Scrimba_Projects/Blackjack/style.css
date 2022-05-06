@@ -1,4 +1,5 @@
-html {
+html
+{
   min-height: 100%;
   display: flex;
   justify-content: center;
@@ -11,14 +12,19 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  color: #232323;
+  color: #f2f1ef;
 }
 
 h1 {
   font-family: 'Playfair Display', serif;
   font-size: 70px;
-  color: #697184;
+  color: #ccc5c4;
   margin: 20px 40px;
+}
+
+span {
+  line-height: 2;
+  text-decoration: underline #697184 7px;
 }
 
 p {
@@ -33,7 +39,7 @@ p {
 }
 
 .blackjack {
-    background-color: #d8cfd0;
+    background-color: #413f3d;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -44,8 +50,8 @@ p {
 }
 
 button {
-  color: #f2f1ef;
-  background-color: #413f3d;
+  color: #413f3d;
+  background-color: #ccc5c4;
   border: 1px solid #697184;
   border-radius: 1em;
   padding: 15px 20px;
