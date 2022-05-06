@@ -3,7 +3,8 @@
 Hello! Here you can see all of the projects I completed while completing [Scrimba's Frontend Developer Career Path](https://scrimba.com/learn/frontend).
 
 ## Table of contents
-
+- [Overview](#overview)
+  - [Links](#links)  
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -11,6 +12,13 @@ Hello! Here you can see all of the projects I completed while completing [Scrimb
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
+## Overview
+
+### Links
+
+[Blackjack](https://its-haanna.github.io/Scrimba_Projects/Blackjack/index.html)
+[Invoice Creator](https://its-haanna.github.io/Scrimba_Projects/Invoice_creator/index.html)
+[Password Generator](https://its-haanna.github.io/Scrimba_Projects/Password_generator/index.html)
 
 ## My process
 
