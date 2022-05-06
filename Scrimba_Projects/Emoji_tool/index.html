@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Emoji tool: express yourself in emoji</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Emoji&family=Noto+Sans+Mono:wght@200;400;600;800&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <div class="svg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="400 0 740 320">
+          <path fill="#e99f4c" fill-opacity="1" d="M0,96L34.3,128C68.6,160,137,224,206,256C274.3,288,343,288,411,261.3C480,235,549,181,617,186.7C685.7,192,754,256,823,288C891.4,320,960,320,1029,314.7C1097.1,309,1166,299,1234,256C1302.9,213,1371,139,1406,101.3L1440,64L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path>
+        </svg>
+      </div>
+      <h1>Anna's <br class="br">Emoji</h1>
+      <div id="emoji-container"></div>
+      <input type="text" id="emoji-input" placeholder="Type an emoji 🎉">
+      <div class="buttons-all">
+        <div class="buttons-wrapper">
+          <button id="unshift-btn">Add to beginning</button>
+          <button id="push-btn">Add to end</button>
+        </div>
+        <div class="buttons-wrapper">
+          <button id="shift-btn">Remove from beginning</button>
+          <button id="pop-btn">Remove from end</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Unit Converter</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="card">
+                <div class="converter-input">
+                    <h2 class="title-el">Metric/Imperial Unit Conversion</h2>
+                    <input type="number" class="input-el" id="input-el" min=0 value=0 oninput="unitConverter()"">
+                </div>
+                <div class="converter-result">
+                    <div class="length">
+                        <h3>Length (Meter/Feet)</h3>
+                        <p><span id="meter-el">0</span> meters = <span id="foot-dec-el">0.000</span> feet | 
+                            <span id="foot-el">0</span> feet = <span id="meter-dec-el">0.000</span> meters</p>
+                    </div>
+
+                    <div class="volume">
+                        <h3>Volume (Liters/Gallons)</h3>
+                        <p><span id="liter-el">0</span> liters = <span id="gallon-dec-el">0.000</span> gallons | 
+                            <span id="gallon-el">0</span> gallons = <span id="liter-dec-el">0.000</span> liters</p>
+                    </div>
+
+                    <div class="mass">
+                        <h3>Mass (Kilograms/Pounds)</h3>
+                        <p><span id="kilo-el">0</span> kilos = <span id="pound-dec-el">0.000</span> pounds | 
+                            <span id="pound-el">0</span> pounds = <span id="kilo-dec-el">0.000</span> kilos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>

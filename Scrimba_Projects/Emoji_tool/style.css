@@ -1,0 +1,96 @@
+html,
+body {
+  min-height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  background: rgb(242, 235, 233);
+  background: linear-gradient(
+    149deg,
+    rgba(242, 235, 233, 1) 0%,
+    rgba(237, 220, 217, 1) 100%
+  );
+  font-family: "Noto Sans Mono", "Noto Emoji", monospace;
+}
+.container {
+  background-color: #264143;
+  min-width: 490px;
+  display: flex;
+  flex-flow: column nowrap;
+  border-radius: 14px;
+  color: #f2ebe9;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.4) 0px 2px 4px -1px;
+  overflow: hidden;
+}
+
+#emoji-container {
+  margin: 50px;
+  text-align: center;
+  max-width: 500px;
+}
+#emoji-container span {
+  margin: 20px;
+  font-size: 70px;
+}
+h1 {
+  text-align: right;
+  font-family: "Permanent Marker", serif;
+  font-weight: 900;
+  color: #de5499;
+  font-size: 4em;
+  line-height: 1;
+  margin: 0px 40px 0px 40px;
+  position: absolute;
+  transform: translate(175px, 5px);
+  text-shadow: 2px 2px 1px #264143;
+}
+input {
+  margin: 0px auto;
+  display: block;
+  border: none;
+  min-height: 70px;
+  background: #f2ebe9;
+  border-radius: 6px;
+  text-align: center;
+  transition: outline 200ms ease-in-out;
+}
+input:hover {
+  outline: 3px solid #de5499;
+}
+input:focus {
+  outline: 3px solid #e99f4c;
+}
+button {
+  border: none;
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin: 10px;
+  max-width: 200px;
+  min-height: 60px;
+  background-color: #e99f4c;
+  color: #f2ebe9;
+  text-transform: uppercase;
+  transition: background-color 300ms ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px -1px;
+  flex-grow: 1;
+}
+button:hover {
+  background-color: #de5499;
+  outline: 2px solid #f2ebe9;
+}
+button:focus {
+  background-color: #f2ebe9;
+  color: #264143;
+}
+.buttons-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.buttons-all {
+  margin: 30px 10px;
+}

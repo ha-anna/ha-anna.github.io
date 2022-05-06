@@ -1,0 +1,108 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #1c1c1c;
+  color: #4e4e4e;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+
+input {
+  color: #ffffff;
+  background: transparent;
+  border: 0;
+  font-size: 98px;
+  font-weight: 800;
+  line-height: 25px;
+  text-align: center;
+  outline: 0;
+}
+
+input:focus {
+  outline:none!important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 38px;
+}
+
+h3 {
+  color: #1a1921;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.wrapper {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fbf7ee;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 550px;
+  overflow: hidden;
+  width: 550px;
+}
+
+.converter-input {
+  background: linear-gradient(135deg, #7eaeff 2.88%, #fca6e9 100%);
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.converter-result {
+  padding-bottom: 35px;
+  padding-top: 35px;
+}
+
+.length,
+.volume {
+  margin-bottom: 25px;
+}
+
+.title-el {
+  margin-top: 50px;
+}
+
+.input-el {
+  margin-bottom: 50px;
+}
+
+
+@media only screen and (max-width: 400px), (max-height: 650px) {
+  body {
+    font-size: 10px;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  h3 {
+  font-size: 12px;
+  }
+
+  input {
+    font-size: 70px;
+  }
+
+}
