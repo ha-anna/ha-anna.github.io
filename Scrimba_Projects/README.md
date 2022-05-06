@@ -31,7 +31,7 @@ My goal is to be able to write clean and readable code and to gain a high profic
 ## Author
 
 - Website - [Ha Anna](https://haanna.com)
-- Codepen.io- [@its-haanna](https://codepen.io/its-haanna)
+- Codepen.io - [@its-haanna](https://codepen.io/its-haanna)
 
 
 ## Acknowledgments
