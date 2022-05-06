@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Password Generator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&family=Karla:wght@400;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <header>
+        <h1>Generate a <span class="accent">random password</span></h1>
+        <h2>Never use an insecure password again.</h2>
+        <input type="button" value="-" class="minus" id="minus">
+        <input type="number" step="1" min="5" max="12" name="quantity" value="5" title="Qty" class="input-number" id="password-length-el">
+        <input type="button" value="+" class="plus" id="plus">
+        <button type="button" id="password-button" onclick="generatePasswords()">
+          <i class="bi bi-lightning-charge-fill"></i>
+          Generate passwords
+        </button>
+      </header>
+      <hr>
+      <div id="password-container">
+        <input type="text" placeholder="•••" id="password-el-1">
+        <input type="text" placeholder="•••" id="password-el-2">
+        <br>
+        <input type="text" placeholder="•••" id="password-el-3">
+        <input type="text" placeholder="•••" id="password-el-4">
+        <p id="message-copy">Password copied</p>
+      </div>
+    </div>
+  </main>
+  <script src="./script.js"></script>
+</body>
+
+</html>
