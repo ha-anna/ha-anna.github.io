@@ -1,0 +1,222 @@
+:root {
+  --bg: #f5f1ed;
+  --bg-90: rgba(245, 241, 237, 0.9);
+  --color: #252323;
+  --card-bg: #dad2bc;
+  --card-bg-90: rgba(218, 210, 188, 0.9);
+  --secondary-color: #70798c;
+  --secondary-color-light: #b9c2d6;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--color);
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2 {
+  background-color: var(--card-bg-90);
+  padding: 10px;
+  border-radius: 15px;
+}
+
+h2 {
+  max-width: 50ch;
+  text-align: center;
+  font-weight: 400;
+  margin: 0 40px;
+  font-size: 25px;
+}
+
+.header {
+  background-image: url("https://images.unsplash.com/photo-1517154421773-0529f29ea451?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.activities {
+  text-align: center;
+  min-height: 80vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color-light);
+}
+
+.activity-card {
+  box-sizing: border-box;
+  max-width: 600px;
+  width: 100%;
+  max-height: 500px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  margin: 15px;
+  background: var(--card-bg);
+  border-radius: 24px;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px -1px;
+}
+
+.thumbnail {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px -1px;
+}
+
+.thumbnail img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.images {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+.guide {
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.desc {
+  margin: 30px;
+}
+
+.card {
+  background: var(--secondary-color-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 24px;
+  box-shadow: 0px 7px var(--card-bg), rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px -1px;
+  margin: 30px;
+  padding: 30px;
+}
+
+.img-div {
+  max-width: 200px;
+  margin: 30px;
+}
+
+.guide-img {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px -1px;
+}
+
+/* first divider */
+
+.custom-shape-divider-bottom-1651888955 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1651888955 svg {
+  position: relative;
+  display: block;
+  width: calc(139% + 1.3px);
+  height: 107px;
+}
+
+.custom-shape-divider-bottom-1651888955 .shape-fill {
+  fill: #b9c2d6;
+}
+
+/* second divider */
+
+.custom-shape-divider-bottom-1651889171 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1651889171 svg {
+  position: relative;
+  display: block;
+  width: calc(139% + 1.3px);
+  height: 107px;
+}
+
+.custom-shape-divider-bottom-1651889171 .shape-fill {
+  fill: #b9c2d6;
+}
+
+/* media querries */
+
+@media only screen and (max-width: 900px) {
+  .images {
+    flex-flow: column nowrap;
+  }
+
+  .activity-card {
+    max-width: 500px;
+    width: 100%;
+    max-height: 450px;
+    height: 100%;
+  }
+
+  .card {
+    flex-flow: column nowrap;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .desc {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .img-div {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .activity-card {
+    max-width: 370px;
+    width: 100%;
+  }
+}
