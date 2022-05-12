@@ -8,7 +8,6 @@ const minus = document.getElementById('minus')
 const plus = document.getElementById('plus')
 const passwordLengthEl = document.getElementById('password-length-el')
 const message = document.getElementById('message-copy')
-const button = document.getElementById('password-button')
 
 // setting primary password length
 let passwordLength = 5
@@ -57,7 +56,7 @@ function generateString () {
 }
 
 // function to generate and display all passwords
-button.addEventListener('click', () => {
+function generatePasswords () {
   const passwords = []
   passwordEl1.value = ''
   passwordEl2.value = ''
@@ -72,7 +71,7 @@ button.addEventListener('click', () => {
   for (let k = 0; k < passwords.length; k++) {
     passwordElAll[k].value += passwords[k]
   }
-})
+}
 
 // function for to copy password on click
 function copy () {
