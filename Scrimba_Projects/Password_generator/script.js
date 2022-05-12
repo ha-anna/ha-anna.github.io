@@ -8,6 +8,7 @@ const minus = document.getElementById('minus')
 const plus = document.getElementById('plus')
 const passwordLengthEl = document.getElementById('password-length-el')
 const message = document.getElementById('message-copy')
+const button = document.getElementById('password-button')
 
 // setting primary password length
 let passwordLength = 5
