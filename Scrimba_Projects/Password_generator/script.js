@@ -57,7 +57,7 @@ function generateString () {
 }
 
 // function to generate and display all passwords
-document.getElementById('password-button').addEventListener('click', function generatePasswords () {
+button.addEventListener('click', function generatePasswords () {
   const passwords = []
   passwordEl1.value = ''
   passwordEl2.value = ''
