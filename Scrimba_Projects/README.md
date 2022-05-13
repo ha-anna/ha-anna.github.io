@@ -21,8 +21,8 @@ Hello! Here you can see all of the projects I coded while completing [Scrimba's 
 3. [Password Generator](https://its-haanna.github.io/Scrimba_Projects/Password_generator/) <br>
 4. [Invoice Creator](https://its-haanna.github.io/Scrimba_Projects/Invoice_creator/) <br>
 5. [Emoji Tool](https://its-haanna.github.io/Scrimba_Projects/Emoji_tool/) <br>
-6. [Romantic Grammar Corrector](its-haanna.github.io/Scrimba_Projects/Romantic_Grammar_Corrector/) <br>
-7. [Duplicate Emoji Filter](its-haanna.github.io/Scrimba_Projects/Duplicate_emoji_filter/) <br>
+6. [Romantic Grammar Corrector](https://its-haanna.github.io/Scrimba_Projects/Romantic_Grammar_Corrector/) <br>
+7. [Duplicate Emoji Filter](https://its-haanna.github.io/Scrimba_Projects/Duplicate_emoji_filter/) <br>
 
 
 ## My process
