@@ -1,0 +1,35 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Duplicate Emoji Filter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@500;700&family=Noto+Emoji&family=Shrikhand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="flex">
+  <div class="container flex-col">
+    <div class="header">
+      <h1>Duplicate<span class="color"> 💜</span> <br>
+        <span class="color">💗 </span>Emoji<br>
+        Filter<span class="color"> 💕</span>
+      </h1>
+    </div>
+    <div class="box flex">
+      <p class="all-emojis-p" id="all-emojis-p"></p>
+    </div>
+    <div class="box flex">
+      <p class="unique-emojis-p" id="unique-emojis-p">...</p>
+    </div>
+    <div class="buttons flex">
+      <button id="btn-filter" class="btn" type="button">Filter duplicates</button>
+      <button id="btn-sort" class="btn" type="button">Sort emoji</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

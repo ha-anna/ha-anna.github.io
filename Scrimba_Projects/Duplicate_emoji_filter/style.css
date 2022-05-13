@@ -1,0 +1,143 @@
+:root {
+  --light-pink: #fbc2eb;
+  --lavender: #a18cd1;
+  --deep-pink: #f04c86;
+  --raisin: #2b283a;
+  --white: #f8f8ff;
+  --white-50: rgb(255, 255, 255, 0.5);
+}
+
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #a18cd1;
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-x;
+  color: var(--raisin);
+  font-family: "Karla", "Noto Emoji", sans-serif;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-col {
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+}
+
+.container {
+  max-width: 600px;
+  background: var(--light-pink);
+  box-shadow: -2px 3px 43px -5px rgba(0, 0, 0, 0.17);
+  border-radius: 0.5rem;
+}
+
+.header {
+  align-self: end;
+  width: 100%;
+  display: block;
+  background: rgb(251, 194, 235);
+  background: linear-gradient(
+    0deg,
+    rgba(251, 194, 235, 1) 0%,
+    rgba(161, 140, 209, 0.6432948179271709) 44%,
+    rgba(163, 141, 209, 1) 88%
+  );
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+h1 {
+  text-align: right;
+  letter-spacing: 5px;
+  color: var(--raisin);
+  font-family: "Shrikhand", "Noto Emoji", serif;
+  font-size: 2.5rem;
+  margin: 1.5rem 1.5rem 1rem 1.5rem;
+}
+
+.color {
+  color: var(--white);
+}
+
+.box {
+  margin: 2rem 2rem 0rem 2rem;
+  padding: 1em;
+  background: var(--white-50);
+  border-radius: 0.5rem;
+  min-height: 140px;
+}
+
+p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+
+.btn {
+  min-width: 200px;
+  min-height: 70px;
+  background: var(--lavender);
+  transition: background 400ms ease-in-out;
+  font-family: "Karla", sans-serif;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  color: var(--white);
+  font-weight: 700;
+  margin: 2rem 0.5rem;
+}
+
+.btn:hover {
+  color: var(--lavender);
+  background-color: var(--raisin);
+}
+
+.btn:active {
+  color: var(--deep-pink);
+  background: var(--raisin);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.13) 0px 2px 4px -1px;
+}
+
+
+@media screen and (max-width: 400px) {
+    h1 {
+    font-size: 1.5rem;
+    margin-top: 5rem;
+    padding: 1rem;
+    }
+
+    br {
+      content: ' '
+    }
+
+    br:after {
+      content: ' '
+    }
+
+    .buttons {
+      flex-flow: row wrap;
+      margin: 1rem;
+    }
+
+    .btn {
+      margin: 0.5rem;
+    }
+}

@@ -1,0 +1,125 @@
+:root {
+  --yellow: #fbf3ab;
+  --light-pink: #f0b9dd;
+  --lavender: #c7b9ff;
+  --deep-pink: #f04c86;
+  --raisin: #2b283a;
+  --white: #fff;
+  --blue: #a9c9ff;
+}
+
+html, body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+body {
+  background-color: #fbda61;
+  background-image: linear-gradient(0deg, #fbda61 0%, #ff5acd 100%);
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: cover;
+  color: var(--raisin);
+  font-family: "Karla", "Noto Emoji", sans-serif;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-col {
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.container {
+  max-width: 500px;
+  background: var(--blue);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  padding: 3rem;
+  border-radius: 0.5rem;
+}
+
+h1 {
+  text-align: right;
+  color: var(--deep-pink);
+  font-family: "Shrikhand", "Noto Emoji", serif;
+  font-size: 2.5rem;
+  margin: 0 0 2rem 0;
+}
+
+.color {
+  color: var(--yellow);
+}
+
+#paragraph {
+  margin: 0 0 2rem 0;
+  padding: 1em;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: var(--yellow);
+  font-family: "Karla", sans-serif;
+  border-radius: 0.5rem;
+  min-width: 250px;
+}
+
+#btn {
+  min-width: 200px;
+  min-height: 70px;
+  background-color: var(--deep-pink);
+  transition: background 400ms ease-in-out;
+  font-family: "Karla", sans-serif;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  color: var(--white);
+  font-weight: 700;
+  margin: 0.5rem;
+}
+
+#btn:hover {
+  color: var(--deep-pink);
+  background-color: var(--yellow);
+}
+
+#btn:active {
+  color: var(--white);
+  background: var(--lavender);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.13) 0px 2px 4px -1px;
+}
+
+
+@media screen and (max-width: 480px) {
+  br {
+    content: '';
+  }
+
+  h1{
+    font-size: 2rem;
+  }
+
+  .br {
+    padding-left: 1rem;
+  }
+
+  button {
+    min-width: 100px;
+  }
+
+  #paragraph {
+    min-width: 50px;
+}
+
+@media screen and (max-width: 425px) {
+  .color {
+    display: none;
+  }
+}
