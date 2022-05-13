@@ -1,0 +1,44 @@
+<html lang="en">
+
+<head>
+  <title>Valentine's Challenge Week 💘</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Emoji&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="card" id="card">
+      <p id="greeting-display">Greeting will go here</p>
+    </div>
+
+    <form id="form">
+      <label for="recipient-input">To:</label>
+      <input type="text" id="recipient-input" name="recipient-input">
+      <br>
+      <label for="greeting-select">Select greeting:</label>
+      <select id="greeting-select">
+        <option value="" class="greeting">--Select greeting--</option>
+        <option value="I choo choo choose you! 🚂" class="greeting">"I choo choo choose you! 🚂"</option>
+        <option value="You are my sunshine! 🌞" class="greeting">"You are my sunshine! 🌞"</option>
+        <option value="Happy Valentine's! 💘" class="greeting">"Happy Valentine's! 💘",</option>
+      </select>
+      <br>
+      <label for="recipient-input">Add custom greeting:</label>
+      <input type="text" id="custom-input" name="custom-input">
+      <br>
+      <label for="sender-input" id="sender-field">From:</label>
+      <input type="text" id="sender-input" name="sender-input">
+      <p id="alert-txt">Please fill out all fields first</p>
+      <button id="send-btn" type="button"">Send</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

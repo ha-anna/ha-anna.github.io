@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dice Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 id="message">Dice Game</h1>
+    <div class="players">
+      <div id="player1">
+        <h2>Player 1</h2>
+        <h3>Score:
+          <span id="player1Scoreboard">0</span>
+        </h3>
+        <div id="player1Dice" class="dice">-</div>
+      </div>
+      <div id="player2">
+        <h2>Player 2</h2>
+        <h3>Score:
+          <span id="player2Scoreboard">0</span>
+        </h3>
+        <div id="player2Dice" class="dice">-</div>
+      </div>
+    </div>
+    <p id="log">Click the button to start!</p>
+    <div class="buttons">
+      <button id="rollBtn">Roll Dice 🎲</button>
+      <button id="resetBtn">Reset Game 🔁</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

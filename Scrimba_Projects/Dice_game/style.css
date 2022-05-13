@@ -1,0 +1,124 @@
+:root {
+  --container: #f2f2f2;
+  --btn-roll: #ff3cac;
+  --btn-reset: #2b86c5;
+  --dice: #784ba0;
+  --color: #232323;
+  --secondary-color: #c8a3e7;
+}
+
+html,
+body {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--color);
+  background-color: #ff3cac;
+  background-image: linear-gradient(
+    225deg,
+    #ff3cac 0%,
+    #784ba0 50%,
+    #2b86c5 100%
+  );
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.container {
+  min-width: 450px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  background-color: var(--container);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.4) 0px 2px 4px -1px;
+  padding: 50px;
+  border-radius: 0.3em;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.players {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.dice {
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: var(--dice);
+  margin: 0 auto;
+  font-size: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--container);
+}
+
+.roll {
+  animation: turnTheDice 400ms;
+}
+
+button {
+  color: #fff;
+  padding: 20px 30px;
+  font-size: 20px;
+  margin: 10px 10px 0px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  min-width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.2) 0px 2px 4px -1px;
+}
+
+#log {
+  padding: 10px;
+  line-height: 1.5;
+  margin: 0;
+  margin-top: 30px;
+}
+
+#rollBtn {
+  background-color: var(--btn-roll);
+}
+
+#resetBtn {
+  background-color: var(--btn-reset);
+}
+
+button:hover {
+  outline: 5px solid var(--dice);
+}
+
+button:focus {
+  outline: 5px solid var(--secondary-color);
+}
+
+#resetBtn {
+  display: none;
+}
+
+.active {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.4) 0px 2px 4px -1px;
+}
+
+@keyframes turnTheDice {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

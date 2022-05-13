@@ -1,0 +1,123 @@
+:root {
+  --light-pink: #f0b9dd;
+  --lavender: #c7b9ff;
+  --deep-pink: #f04c86;
+  --raisin: #2b283a;
+  --white: #fff;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  align-items: center;
+  background: linear-gradient(
+    149deg,
+    rgba(195, 224, 229, 1) 0%,
+    rgba(165, 199, 231, 1) 100%
+  );
+  background: rgb(195, 224, 229);
+  color: var(--raisin);
+  display: flex;
+  font-family: "Karla", "Noto Emoji", sans-serif;
+  justify-content: center;
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-flow: column nowrap;
+  min-width: 450px;
+}
+form * {
+  font-family: inherit;
+  font-size: 1.3rem;
+  padding: 0.5em;
+}
+form label,
+form button {
+  font-weight: 700;
+}
+form *:not(label):not(div):not(p),
+.result {
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+select {
+  background: var(--white);
+  color: var(--raisin);
+}
+.result {
+  background: linear-gradient(
+    149deg,
+    rgba(195, 224, 229, 1) 0%,
+    rgba(165, 199, 231, 1) 100%
+  );
+  background: rgb(195, 224, 229);
+  color: var(--raisin);
+  font-size: 1.5rem;
+  max-width: 5ch;
+  min-width: 270px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 1em;
+  text-align: start;
+}
+.result span {
+  color: var(--deep-pink);
+  font-weight: 700;
+}
+.wrapper {
+  align-items: center;
+  background: linear-gradient(
+    149deg,
+    rgba(240, 185, 221, 1) 0%,
+    rgba(199, 185, 255, 1) 100%
+  );
+  background: rgb(240, 185, 221);
+  border-radius: 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  padding: 50px;
+}
+button {
+  align-self: center;
+  background: var(--deep-pink);
+  color: var(--white);
+  min-height: 70px;
+  min-width: 200px;
+}
+button:hover,
+button:focus {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+.message-selection {
+  min-height: 200px;
+}
+h1 {
+  line-height: 1.7;
+  margin: 5px;
+  padding: 5px;
+}
+.message-section p {
+  border: 1px solid var(--raisin);
+  border-radius: 0.5em;
+  color: black;
+  display: none;
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+#balloon-checkbox {
+  background-color: var(--lavender);
+  border: 1em solid pink;
+  border-radius: 0.15em;
+  height: 0.9em;
+  width: 0.9em;
+}

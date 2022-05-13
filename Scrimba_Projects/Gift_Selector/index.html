@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+  <title>Valentine's Challenge Week 💘</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Emoji&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1>Gift Selector 💝</h1>
+    <p class="result" id="result">Total gift cost: <span id="cost-el"> . . . </span></p>
+    <form>
+      <label for="food-select">Select food:</label>
+      <select id="food-select">
+        <option value="" class="food">--Please select an option--</option>
+        <option value="5" class="food">🍓 strawberries - $5</option>
+        <option value="10" class="food">🍫 chocolate - $10</option>
+        <option value="20" class="food">🧁 cupcakes - $20</option>
+      </select>
+      <br>
+      <label for="transport-select">Select transport:</label>
+      <select id="transport-select">
+        <option value="" class="transport">--Please select an option--</option>
+        <option value="5" class="transport">🛼 rollerskates - $5</option>
+        <option value="50" class="transport">🚘 limo - $50</option>
+        <option value="500" class="transport">🚁 helicopter - $500</option>
+      </select>
+      <br>
+      <div>
+        <label for="balloon-checkbox">Add balloons? 🎈</label>
+        <input type="checkbox" id="balloon-checkbox" name="balloon-checkbox" unchecked>
+      </div>
+      <div class="message-section">
+        <p id="message-balloon">.</p>
+        <p id="message">.</p>
+      </div>
+      <button id="btn" type="button">Calculate</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

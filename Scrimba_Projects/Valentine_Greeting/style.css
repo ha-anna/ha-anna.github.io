@@ -1,0 +1,128 @@
+:root {
+  --yellow: #fbf3ab;
+  --light-pink: #f0b9dd;
+  --lavender: #c7b9ff;
+  --deep-pink: #f04c86;
+  --raisin: #2b283a;
+  --white: #fff;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  align-items: center;
+  background: linear-gradient(
+    149deg,
+    rgba(195, 224, 229, 1) 0%,
+    rgba(165, 199, 231, 1) 100%
+  );
+  background: rgb(195, 224, 229);
+  color: var(--raisin);
+  display: flex;
+  font-family: "Karla", "Noto Emoji", sans-serif;
+  justify-content: center;
+}
+
+.wrapper {
+  align-items: center;
+  background: linear-gradient(
+    149deg,
+    rgba(240, 185, 221, 1) 0%,
+    rgba(199, 185, 255, 1) 100%
+  );
+  background: rgb(240, 185, 221);
+  border-radius: 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 30px;
+  min-width: 450px;
+}
+
+.card {
+  min-width: 350px;
+  display: flex;
+  border-radius: 5px;
+  background: var(--yellow);
+  font-size: 24px;
+  padding: 1em;
+  margin: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.card p {
+  font-weight: 700;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form * {
+  padding: 0.5em;
+  font-size: 1.3rem;
+  font-family: inherit;
+}
+
+input,
+select {
+  min-width: 400px;
+}
+
+form label {
+  font-weight: 700;
+}
+
+form *:not(label):not(p) {
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  border-radius: 5px;
+  border: none;
+}
+
+label {
+  margin: 10px 0;
+  padding: 0;
+  align-self: start;
+}
+
+#send-btn {
+  min-width: 200px;
+  min-height: 70px;
+  background-color: var(--yellow);
+  transition: background 400ms ease-in-out;
+}
+
+#send-btn:hover {
+  color: var(--yellow);
+  background-color: var(--deep-pink);
+}
+
+#send-btn:active {
+  color: var(--risin);
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.13) 0px 2px 4px -1px;
+}
+
+#alert-txt {
+  text-transform: uppercase;
+  font-size: 18px;
+  text-align: center;
+  margin: 15px;
+  opacity: 0;
+  transition: opacity 150ms ease-in;
+}
+
+#sender-field,
+#sender-input {
+  display: none;
+}
