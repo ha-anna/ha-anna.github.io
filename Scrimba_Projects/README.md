@@ -19,8 +19,11 @@ Hello! Here you can see all of the projects I coded while completing [Scrimba's 
 1. [Unit Converter](https://its-haanna.github.io/Scrimba_Projects/Unit_converter/)<br>
 2. [Blackjack](https://its-haanna.github.io/Scrimba_Projects/Blackjack/) <br>
 3. [Password Generator](https://its-haanna.github.io/Scrimba_Projects/Password_generator/) <br>
+4. [Gift Selector](https://its-haanna.github.io/Scrimba_Projects/Gift_Selector/) <br>
+5. [Valentine's Greeting](https://its-haanna.github.io/Scrimba_Projects/Valentine_Greeting/) <br>
 4. [Invoice Creator](https://its-haanna.github.io/Scrimba_Projects/Invoice_creator/) <br>
 5. [Emoji Tool](https://its-haanna.github.io/Scrimba_Projects/Emoji_tool/) <br>
+7. [Dice Game](https://its-haanna.github.io/Scrimba_Projects/Dice_game/) <br>
 6. [Romantic Grammar Corrector](https://its-haanna.github.io/Scrimba_Projects/Romantic_Grammar_Corrector/) <br>
 7. [Duplicate Emoji Filter](https://its-haanna.github.io/Scrimba_Projects/Duplicate_emoji_filter/) <br>
 
