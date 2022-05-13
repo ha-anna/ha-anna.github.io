@@ -1,36 +1,38 @@
+/* eslint-disable comma-dangle */
+/* eslint-disable require-jsdoc */
 // variables
-const washBtn = document.getElementById("wash-btn");
-const mowBtn = document.getElementById("mow-btn");
-const weedBtn = document.getElementById("weed-btn");
-const sendBtn = document.getElementById("send-btn");
-const taskEl = document.getElementById("task-el");
-const totalEl = document.getElementById("total-el");
-const notesEl = document.getElementById("notes-txt");
-const amountText = document.getElementById("amount-text");
+const washBtn = document.getElementById('wash-btn');
+const mowBtn = document.getElementById('mow-btn');
+const weedBtn = document.getElementById('weed-btn');
+const sendBtn = document.getElementById('send-btn');
+const taskEl = document.getElementById('task-el');
+const totalEl = document.getElementById('total-el');
+const notesEl = document.getElementById('notes-txt');
+const amountText = document.getElementById('amount-text');
 let sum = 0;
 
 // array of objects holding service names and prices
 const services = [
   {
-    name: "Wash Car",
-    price: 10
+    name: 'Wash Car',
+    price: 10,
   },
   {
-    name: "Mow Lawn",
-    price: 20
+    name: 'Mow Lawn',
+    price: 20,
   },
   {
-    name: "Pull Weeds",
-    price: 30
+    name: 'Pull Weeds',
+    price: 30,
   }
 ];
 
 // .addEventListeners
 
-washBtn.addEventListener("click", addWash);
-mowBtn.addEventListener("click", addMow);
-weedBtn.addEventListener("click", addWeed);
-sendBtn.addEventListener("click", reset);
+washBtn.addEventListener('click', addWash);
+mowBtn.addEventListener('click', addMow);
+weedBtn.addEventListener('click', addWeed);
+sendBtn.addEventListener('click', reset);
 
 // functions
 function addWash() {
@@ -51,18 +53,18 @@ function addWash() {
     `;
   sum += services[0].price;
   amountText.textContent = `$${sum}`;
-  notesEl.style.opacity = "1";
-  //this stops charging > once for the same service
-  washBtn.removeEventListener("click", addWash);
+  notesEl.style.opacity = '1';
+  // this stops charging > once for the same service
+  washBtn.removeEventListener('click', addWash);
 }
 
 // remove wash car element
 function removeWash() {
-  document.getElementById("washEl").remove();
-  document.getElementById("washPriceEl").remove();
+  document.getElementById('washEl').remove();
+  document.getElementById('washPriceEl').remove();
   sum += -10;
   amountText.textContent = `$${sum}`;
-  washBtn.addEventListener("click", addWash);
+  washBtn.addEventListener('click', addWash);
 }
 
 function addMow() {
@@ -83,18 +85,18 @@ function addMow() {
     `;
   sum += services[1].price;
   amountText.textContent = `$${sum}`;
-  notesEl.style.opacity = "1";
-  //this stops charging > once for the same service
-  mowBtn.removeEventListener("click", addMow);
+  notesEl.style.opacity = '1';
+  // this stops charging > once for the same service
+  mowBtn.removeEventListener('click', addMow);
 }
 
 // remove mow lawn element
 function removeMow() {
-  document.getElementById("mowEl").remove();
-  document.getElementById("mowPriceEl").remove();
+  document.getElementById('mowEl').remove();
+  document.getElementById('mowPriceEl').remove();
   sum += -20;
   amountText.textContent = `$${sum}`;
-  mowBtn.addEventListener("click", addMow);
+  mowBtn.addEventListener('click', addMow);
 }
 
 function addWeed() {
@@ -115,18 +117,18 @@ function addWeed() {
     `;
   sum += services[2].price;
   amountText.textContent = `$${sum}`;
-  notesEl.style.opacity = "1";
-  //this stops charging > once for the same service
-  weedBtn.removeEventListener("click", addWeed);
+  notesEl.style.opacity = '1';
+  // this stops charging > once for the same service
+  weedBtn.removeEventListener('click', addWeed);
 }
 
 // remove pull weeds element
 function removeWeed() {
-  document.getElementById("weedEl").remove();
-  document.getElementById("weedPriceEl").remove();
+  document.getElementById('weedEl').remove();
+  document.getElementById('weedPriceEl').remove();
   sum += -30;
   amountText.textContent = `$${sum}`;
-  weedBtn.addEventListener("click", addWeed);
+  weedBtn.addEventListener('click', addWeed);
 }
 
 // "sending" the invoice
@@ -137,8 +139,8 @@ function reset() {
   <p>Total</p>
   `;
   amountText.textContent = `$${sum}`;
-  notesEl.style.opacity = "";
-  washBtn.addEventListener("click", addWash);
-  mowBtn.addEventListener("click", addMow);
-  weedBtn.addEventListener("click", addWeed);
+  notesEl.style.opacity = '';
+  washBtn.addEventListener('click', addWash);
+  mowBtn.addEventListener('click', addMow);
+  weedBtn.addEventListener('click', addWeed);
 }
