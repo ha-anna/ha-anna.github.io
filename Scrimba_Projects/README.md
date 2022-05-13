@@ -21,11 +21,11 @@ Hello! Here you can see all of the projects I coded while completing [Scrimba's 
 3. [Password Generator](https://its-haanna.github.io/Scrimba_Projects/Password_generator/) <br>
 4. [Gift Selector](https://its-haanna.github.io/Scrimba_Projects/Gift_Selector/) <br>
 5. [Valentine's Greeting](https://its-haanna.github.io/Scrimba_Projects/Valentine_Greeting/) <br>
-4. [Invoice Creator](https://its-haanna.github.io/Scrimba_Projects/Invoice_creator/) <br>
-5. [Emoji Tool](https://its-haanna.github.io/Scrimba_Projects/Emoji_tool/) <br>
-7. [Dice Game](https://its-haanna.github.io/Scrimba_Projects/Dice_game/) <br>
-6. [Romantic Grammar Corrector](https://its-haanna.github.io/Scrimba_Projects/Romantic_Grammar_Corrector/) <br>
-7. [Duplicate Emoji Filter](https://its-haanna.github.io/Scrimba_Projects/Duplicate_emoji_filter/) <br>
+6. [Invoice Creator](https://its-haanna.github.io/Scrimba_Projects/Invoice_creator/) <br>
+7. [Emoji Tool](https://its-haanna.github.io/Scrimba_Projects/Emoji_tool/) <br>
+8. [Dice Game](https://its-haanna.github.io/Scrimba_Projects/Dice_game/) <br>
+9. [Romantic Grammar Corrector](https://its-haanna.github.io/Scrimba_Projects/Romantic_Grammar_Corrector/) <br>
+10. [Duplicate Emoji Filter](https://its-haanna.github.io/Scrimba_Projects/Duplicate_emoji_filter/) <br>
 
 
 ## My process
@@ -35,6 +35,8 @@ Hello! Here you can see all of the projects I coded while completing [Scrimba's 
 - Semantic HTML5 markup
 - CSS
 - Vanilla JavaScript
+- Google Fonts
+- [Shape Divider App](https://www.shapedivider.app/)
 
 ### What I learned
 
@@ -47,7 +49,7 @@ My goal is to be able to write clean and readable code and to gain a high profic
 ## Author
 
 - Website - [Ha Anna](https://haanna.com)
-- Codepen.io - [@its-haanna](https://codepen.io/its-haanna)
+- Codepen.io - [@haanna](https://codepen.io/haanna)
 
 
 ## Acknowledgments
