@@ -95,6 +95,7 @@ h2{
 
 .small {
     font-size: 0.625rem;
+    letter-spacing: 1px;
 }
 
 .bold {
@@ -141,7 +142,6 @@ h2{
 }
 
 .disclaimer {
-    letter-spacing: 1px;
     max-width: 40ch;
     align-self: center;
 }
