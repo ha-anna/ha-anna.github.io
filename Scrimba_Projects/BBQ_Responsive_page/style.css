@@ -33,7 +33,7 @@ body {
 /* layout */
 
 header {
-    background-image: url('././ribs.jpg');
+    background-image: url("./ribs.jpg");
     background-color: var(--black);
     background-blend-mode: multiply;
     background-size: cover;
