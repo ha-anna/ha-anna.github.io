@@ -3,8 +3,9 @@
 Hello! Here you can see all of the projects I coded while completing [Scrimba's Frontend Developer Career Path](https://scrimba.com/learn/frontend).
 
 ## Table of contents
+
 - [Overview](#overview)
-  - [Links](#links)  
+  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -23,10 +24,11 @@ Hello! Here you can see all of the projects I coded while completing [Scrimba's 
 5. [Valentine's Greeting](https://its-haanna.github.io/Scrimba_Projects/Valentine_Greeting/) <br>
 6. [Invoice Creator](https://its-haanna.github.io/Scrimba_Projects/Invoice_creator/) <br>
 7. [Emoji Tool](https://its-haanna.github.io/Scrimba_Projects/Emoji_tool/) <br>
-8. [Dice Game](https://its-haanna.github.io/Scrimba_Projects/Dice_game/) <br>
-9. [Romantic Grammar Corrector](https://its-haanna.github.io/Scrimba_Projects/Romantic_Grammar_Corrector/) <br>
-10. [Duplicate Emoji Filter](https://its-haanna.github.io/Scrimba_Projects/Duplicate_emoji_filter/) <br>
-
+8. [City Homepage: Seoul](https://its-haanna.github.io/Scrimba_Projects/City_homepage/) <br>
+9. [Dice Game](https://its-haanna.github.io/Scrimba_Projects/Dice_game/) <br>
+10. [Romantic Grammar Corrector](https://its-haanna.github.io/Scrimba_Projects/Romantic_Grammar_Corrector/) <br>
+11. [Duplicate Emoji Filter](https://its-haanna.github.io/Scrimba_Projects/Duplicate_emoji_filter/) <br>
+12. [BBQ Webinar Signup](https://its-haanna.github.io/Scrimba_Projects/BBQ_Responsive_page/) <br>
 
 ## My process
 
@@ -40,7 +42,7 @@ Hello! Here you can see all of the projects I coded while completing [Scrimba's 
 
 ### What I learned
 
-I have learned basics of JavaScript (loops, functions, DOM manipulation, JSON, conditional statements etc) and practiced my CSS and HTML skills. 
+I have learned basics of JavaScript (loops, functions, DOM manipulation, JSON, conditional statements etc) and practiced my CSS and HTML skills.
 
 ### Continued development
 
@@ -50,7 +52,6 @@ My goal is to be able to write clean and readable code and to gain a high profic
 
 - Website - [Ha Anna](https://haanna.com)
 - Codepen.io - [@haanna](https://codepen.io/haanna)
-
 
 ## Acknowledgments
 
