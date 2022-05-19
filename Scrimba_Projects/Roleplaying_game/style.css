@@ -19,12 +19,6 @@ body {
   box-sizing: border-box;
 }
 
-main {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-}
-
 body {
   font-family: 'Alegreya Sans SC', 'Noto Emoji', sans-serif;
   text-transform: lowercase;
