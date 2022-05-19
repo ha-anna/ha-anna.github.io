@@ -19,10 +19,16 @@ body {
   box-sizing: border-box;
 }
 
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
 body {
   font-family: 'Alegreya Sans SC', 'Noto Emoji', sans-serif;
   text-transform: lowercase;
-  background: var(--light-gray)
+  background: var(--light-gray);
 }
 
 
@@ -45,7 +51,7 @@ a:hover {
 
 .copy-text {
   font-size: 0.87rem;
-  margin: 2rem;
+  margin: 1rem;
 }
 
 
@@ -210,4 +216,10 @@ button:hover {
 
 .health-bar-outer .health-bar-inner.danger {
   background: var(--red);
+}
+
+
+footer {
+  position: absolute;
+  bottom: 0;
 }
