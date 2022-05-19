@@ -12,16 +12,17 @@
 html,
 body {
   min-height: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
 }
 
 body {
   font-family: 'Alegreya Sans SC', 'Noto Emoji', sans-serif;
   text-transform: lowercase;
   background: var(--light-gray);
+  margin: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
@@ -213,10 +214,4 @@ button:hover {
 
 .health-bar-outer .health-bar-inner.danger {
   background: var(--red);
-}
-
-
-footer {
-  position: relative;
-  bottom: 0;
 }
