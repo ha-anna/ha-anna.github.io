@@ -80,7 +80,7 @@ a:hover {
 
 #hero .character-card {
   background-color: var(--white);
-  background-image: url("/img/old-wall.png"); /* Credits: Old Wall by Bartosz Kaszubowski */
+  background-image: url("./img/old-wall.png"); /* Credits: Old Wall by Bartosz Kaszubowski */
 }
 
 .name-div {
@@ -96,7 +96,7 @@ a:hover {
 
 #monster .character-card {
   background-color: var(--gray);
-  background-image: url("/img/old-wall.png"); /* Credits: Old Wall by Bartosz Kaszubowski */
+  background-image: url("./img/old-wall.png"); /* Credits: Old Wall by Bartosz Kaszubowski */
 }
 
 button {
@@ -188,7 +188,7 @@ button:hover {
   flex-flow: column nowrap;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.7);
-  background-image: url("/img/old-wall.png"); /* Credits: Old Wall by Bartosz Kaszubowski */
+  background-image: url("./img/old-wall.png"); /* Credits: Old Wall by Bartosz Kaszubowski */
 }
 
 .end-emoji {
