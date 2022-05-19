@@ -46,8 +46,8 @@ function endGame() {
       <h2>Game Over</h2>
       <h3>${endMessage}</h3>
       <p class="end-emoji">${endEmoji}</p>
+      <button id="restart-button" typ="button" onclick="javascript:window.location.href=window.location.href">Play again</button>
     </div>
-    <button id="restart-button" typ="button" onclick="javascript:window.location.href=window.location.href">Play again</button>
     <footer>
       <p class="copy-text">Made with ♥️ by <a href="https://haanna.com">Ha Anna</a></p>
     </footer>
