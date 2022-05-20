@@ -1,6 +1,6 @@
 # Role-playing Game - The Game of Cats
 
-This is a role-playing game in which you, Wizard of Cats is up against great villains: Captain Cat, Wild West Catboy, and Cleopawtra. Each roll of the dice equals the damage received and given. Try your best to be victorious.
+This is a role-playing game in which you, Wizard of Cats, are up against great villains: Captain Cat, Wild West Catboy, and Cleopawtra. Each roll of the dice equals the damage received and given. Try your best to be victorious.
 
 ## Table of contents
 
