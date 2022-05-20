@@ -36,7 +36,7 @@ This is a role-playing game in which you, Wizard of Cats is up against great vil
 
 ### What I learned
 
-Through this project, I gained a better understanding of `.map()`, `Class`, `setTimeout()`, and `.fill()`. I could also use my design skills and CSS skills to make the hero and monster cards resemble trading cards from my childhood.
+Through this project, I gained a better understanding of `.map()`, `Class`, `setTimeout()`, and `.fill()`. I was also able to use my design skills and CSS skills to make the hero and monster cards resemble trading cards from my childhood.
 
 ### Continued development
 
