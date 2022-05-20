@@ -18,7 +18,7 @@ const characterData = {
   cowboy: {
     name: 'Wild West Catboy',
     avatar: 'img/catcowboy1.jpg',
-    health: 20,
+    health: 25,
     diceCount: 2,
     currentDiceScore: [],
   },
