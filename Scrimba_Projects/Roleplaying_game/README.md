@@ -19,7 +19,7 @@ This is a role-playing game in which you, Wizard of Cats is up against great vil
 
 ### Screenshot
 
-![alt text](/Roleplaying_game/img/screenshot.png)
+![alt text](./img/screenshot.png)
 
 ### Links
 
