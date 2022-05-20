@@ -11,7 +11,7 @@ const characterData = {
     name: 'Captain Cat',
     avatar:
       'img/catpirate1.jpg',
-    health: 10,
+    health: 15,
     diceCount: 1,
     currentDiceScore: [],
   },
