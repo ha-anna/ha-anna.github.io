@@ -18,14 +18,14 @@ const characterData = {
   cowboy: {
     name: 'Wild West Catboy',
     avatar: 'img/catcowboy1.jpg',
-    health: 25,
+    health: 20,
     diceCount: 2,
     currentDiceScore: [],
   },
   queen: {
     name: 'Cleopawtra',
     avatar: 'img/catcleopatra1.jpg',
-    health: 20,
+    health: 30,
     diceCount: 3,
     currentDiceScore: [],
   },
