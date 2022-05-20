@@ -2,7 +2,7 @@ const characterData = {
   hero: {
     name: 'Wizard of Cats',
     avatar:
-      'img/catwizard.jpeg',
+      'img/catwizard1.jpg',
     health: 60,
     diceCount: 3,
     currentDiceScore: [],
@@ -10,21 +10,21 @@ const characterData = {
   pirate: {
     name: 'Captain Cat',
     avatar:
-      'img/catpirate.png',
+      'img/catpirate1.jpg',
     health: 10,
     diceCount: 1,
     currentDiceScore: [],
   },
   cowboy: {
     name: 'Wild West Catboy',
-    avatar: 'img/catcowboy.png',
+    avatar: 'img/catcowboy1.jpg',
     health: 25,
     diceCount: 2,
     currentDiceScore: [],
   },
   queen: {
     name: 'Cleopawtra',
-    avatar: 'img/catcleopatra.png',
+    avatar: 'img/catcleopatra1.jpg',
     health: 20,
     diceCount: 3,
     currentDiceScore: [],

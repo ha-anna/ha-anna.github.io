@@ -30,7 +30,24 @@ function Character(data) {
 
   this.setDiceHtml = function () {
     this.currentDiceScore = getDiceRollArray(this.diceCount);
-    this.diceArrayHtml = this.currentDiceScore.map((num) => `<div class="dice">${num}</div>`).join('');
+    this.diceArrayHtml = this.currentDiceScore.map((num) => {
+      let dice = '';
+      if (num === 1) {
+        dice = '<i class="fa-solid fa-dice-one"></i>';
+      } else if (num === 2) {
+        dice = '<i class="fa-solid fa-dice-two"></i>';
+      } else if (num === 3) {
+        dice = '<i class="fa-solid fa-dice-three"></i>';
+      } else if (num === 4) {
+        dice = '<i class="fa-solid fa-dice-four"></i>';
+      } else if (num === 5) {
+        dice = '<i class="fa-solid fa-dice-five"></i>';
+      } else {
+        dice = '<i class="fa-solid fa-dice-six"></i>';
+      }
+
+      return `<div class="dice">${dice}</div>`;
+    }).join('');
   };
 
   this.takeDamage = function (attackScoreArray) {

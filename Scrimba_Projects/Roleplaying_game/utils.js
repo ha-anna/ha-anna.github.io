@@ -7,6 +7,7 @@ function getDiceRollArray(diceCount) {
 }
 
 function getDicePlaceholderHtml(diceCount) {
+
   return new Array(diceCount).fill('<div class="placeholder-dice"></div>').join('');
 }
 

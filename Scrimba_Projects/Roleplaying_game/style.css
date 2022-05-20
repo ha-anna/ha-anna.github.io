@@ -5,34 +5,39 @@
   --light-gray: #f0f0f0;
   --medium-gray: #7D7F80;
   --accent: #FEA29F;
-  --green: #019875;
-  --red: #88293D;
+  --green: #76b852;
+  --red: #cb2d3e;
 }
 
 html,
 body {
-  min-height: 100%;
+  max-width: 100%;
 }
 
 body {
   font-family: 'Alegreya Sans SC', 'Noto Emoji', sans-serif;
   text-transform: lowercase;
-  background: var(--light-gray);
+background-image: radial-gradient(circle farthest-corner at 18.7% 37.8%, rgba(250, 250, 250, 1) 0%, rgba(225, 234, 238, 1) 90%);
   margin: 0;
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-main {
+#hero,
+#monster {
+  max-width: 100%;
   display: flex;
-  flex-flow: column nowrap;
+  justify-content: center;
   align-items: center;
 }
 
 #game {
+  max-width: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 a {
@@ -60,18 +65,21 @@ a:hover {
   border-radius: 0.3em;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-  border: 4px solid black;
+  border: 4px solid var(--black);
   z-index: 0;
 }
 
 .character-card {
-  border: 4px solid black;
+  box-sizing: border-box;
+  border: 4px solid var(--black);
+  max-width: 100%;
   min-width: 350px;
   min-height: 530px;
   border-radius: 0.5rem;
   margin: 2rem;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  margin-bottom: 0;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.2) 0px 2px 4px -1px;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -79,7 +87,7 @@ a:hover {
 
 #hero .character-card {
   background-color: var(--white);
-  background-image: url("./img/old-wall.png"); /* Credits: Old Wall by Bartosz Kaszubowski */
+  background-image: url("./img/merely-cubed.png"); /* Credits: Merely Cubed Made by Etienne Rallion */
 }
 
 .name-div {
@@ -87,7 +95,7 @@ a:hover {
   background: var(--white);
   padding: 0.5rem 1rem;
   border-radius: 1rem;
-  border: 4px solid black;
+  border: 4px solid var(--black);
   margin: 0.5rem 0.5rem -6px 0.5rem;
   min-width: 250px;
   z-index: 2;
@@ -95,7 +103,11 @@ a:hover {
 
 #monster .character-card {
   background-color: var(--gray);
-  background-image: url("./img/old-wall.png"); /* Credits: Old Wall by Bartosz Kaszubowski */
+  background-image: url("./img/merely-cubed.png"); /* Credits: Merely Cubed Made by Etienne Rallion */
+}
+
+#actions {
+  margin-top: 1rem;
 }
 
 button {
@@ -107,11 +119,12 @@ button {
   border-radius: 0.3rem;
   font-size: 1.2rem;
   color: var(--white);
-  background: var(--green);
+  background: var(--red);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   transition: all 200ms ease-in;
 }
+
 
 button a {
   font-family: 'Alegreya Sans SC', 'Noto Emoji', sans-serif;
@@ -134,6 +147,7 @@ button:hover {
   font-size: 1.2rem;
   font-family: 'Turret Road', cursive;
   margin: 0;
+  font-weight: 800;
 }
 
 .stats {
@@ -141,30 +155,34 @@ button:hover {
   height: 150px;
   margin: auto;
   border-radius: 0.3rem;
-  border: 4px solid black;
+  border: 4px solid var(--black);
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  justify-content: center
 }
 
 #monster .stats {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.85);
 }
 
 #hero .stats {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.85);
   color: var(--white);
 }
 
 .dice {
   text-align: center;
-  background-color: var(--light-gray);
-  padding: 0.2rem 0.6rem;
   margin: 0.2rem;
   border-radius: 0.3rem;
   color: var(--black);
-  border: 4px solid black;
+}
+
+i {
+  font-size: 2rem;
+}
+
+#hero .dice {
+  color: var(--white);
 }
 
 .dice-container {
@@ -175,7 +193,7 @@ button:hover {
 }
 
 .end-game {
-  color: var(--white);
+  color: black;
   border: 4px solid black;
   padding: 1.5rem;
   border-radius: 0.5rem;
@@ -186,16 +204,22 @@ button:hover {
   flex-flow: column nowrap;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.7);
-  background-image: url("./img/old-wall.png"); /* Credits: Old Wall by Bartosz Kaszubowski */
+  background-image: url("./img/merely-cubed.png"); /* Credits: Merely Cubed Made by Etienne Rallion */
 }
+
+.end-game h2 {
+  font-size: 3rem;
+}
+
 
 .end-emoji {
   font-size: 5rem;
   margin: 1rem;
+  color: var(--white);
 }
 
 .health {
-  margin: 0.2rem 1rem 0.5rem 1rem;
+  margin: 1rem 1rem 0.5rem 1rem;
 }
 
 .health-bar-outer {
@@ -214,4 +238,24 @@ button:hover {
 
 .health-bar-outer .health-bar-inner.danger {
   background: var(--red);
+}
+
+.end-message {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 1rem;
+  border: 4px solid black;
+  border-radius: 0.5rem;
+  color: var(--white);
+}
+
+@media screen and (min-width: 800px) {
+
+  body {
+    min-height: 100%;
+  }
+
+  #game {
+    flex-direction: row;
+  }
+
 }
