@@ -19,7 +19,7 @@ This is a role-playing game in which you, Wizard of Cats, are up against great v
 
 ### Screenshot
 
-![alt text](./img/screenshot.png)
+![alt text](./img/gif_gameofcats.gif)
 
 ### Links
 
@@ -40,7 +40,7 @@ Through this project, I gained a better understanding of `.map()`, `Class`, `set
 
 ### Continued development
 
-I want to become more comfortable using JS Classes and modules.
+I want to become more comfortable using JS Classes and modules. Moreover, I want to work further on the animation when a new character appears so that the transition is smooth and seamless.
 
 ### Useful resources
 
