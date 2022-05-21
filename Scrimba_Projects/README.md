@@ -1,5 +1,3 @@
-# Scrimba Projects
-
 <br>
 
 <div align="center">
