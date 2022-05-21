@@ -53,4 +53,4 @@ I want to become more comfortable using JS Classes and modules.
 
 ## Acknowledgments
 
-Thank you Scrimba's #scrimba-pets channel for the inspiration, as well as other Scrimba's students for their reviews and opinions.
+Thank you, Scrimba #scrimba-pets channel for the inspiration, as well as other Scrimba's students for their reviews and opinions.
