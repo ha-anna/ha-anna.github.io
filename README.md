@@ -2,7 +2,7 @@
 
 <br>
 <div align="center">
-<img src="/README_header.png">
+<img src="/README_header.png" alt="Projects">
 
 <br>
 
