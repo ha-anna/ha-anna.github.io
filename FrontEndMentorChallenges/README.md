@@ -1,9 +1,8 @@
-# Frontend Mentor Challenges
-
 <br>
 
-![Frontend Mentor Challenges](./README_header_frontendmentor.png)
-
+<div align="center">
+<img src="./README_header_frontendmentor.png" alt ="Frontend mentor challenges">
+</div>
 <br>
 
 Hello! Here you can see all the projects I coded while completing [Frontend Mentor Challenges](https://www.frontendmentor.io/challenges).
