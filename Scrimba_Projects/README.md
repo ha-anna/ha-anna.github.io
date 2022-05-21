@@ -1,7 +1,7 @@
 <br>
 
 <div align="center">
-<img src="./README_header_scrimba.png">
+<img src="./README_header_scrimba.png" alt="Scrimba Projects">
 </div> 
 
 <br>
