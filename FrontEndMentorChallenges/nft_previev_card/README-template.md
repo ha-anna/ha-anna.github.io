@@ -27,12 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-![]()
+![NFT Page Gif](./gif_nftcomponent.gif)
 
 ### Links
 
-- Solution URL: [click here]()
-- Live Site URL: [click here]()
+- Solution URL: [click here](https://www.frontendmentor.io/solutions/nft-preview-card-component-X2tCsUFhc8)
+- Live Site URL: [click here](https://its-haanna.github.io/FrontEndMentorChallenges/nft_previev_card/)
 
 ## My process
 
