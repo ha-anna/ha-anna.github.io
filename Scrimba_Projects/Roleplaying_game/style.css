@@ -138,7 +138,12 @@ button a:hover {
 
 button:hover {
   transform: scale(1.1);
-  color: var(--white)!important;
+  color: var(--white);
+}
+
+button:active {
+  transform: scale(1.2);
+  background-color: var(--medium-gray);
 }
 
 .name {
