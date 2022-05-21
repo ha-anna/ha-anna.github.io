@@ -2,7 +2,9 @@
 
 <br>
 
-![Scrimba Projects](README_header_scrimba.png)
+<div align="center">
+<img src="./README_header_scrimba.png">
+</div> 
 
 <br>
 
