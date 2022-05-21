@@ -1,0 +1,165 @@
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+html,
+body {
+  margin: 0;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+}
+
+body {
+  background-color: var(--main-bg);
+  color: var(--soft-blue);
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  box-sizing: border-box;
+  width: 350px;
+  height: 595px;
+  background-color: var(--card-bg);
+  border-radius: 24px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 15px 1px 20px hsla(217, 55%, 11%, 0.9);
+}
+
+img {
+  max-width: 100%;
+}
+
+.title {
+  color: var(--white);
+  font-weight: 400;
+  font-size: 24px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+p {
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  transition: color 400ms ease-in-out;
+}
+
+a:hover {
+  color: var(--cyan);
+}
+
+.description-div {
+  padding: 0 17px;
+}
+
+
+.details-div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.art-div {
+  width: 300px;
+  height: 300px;
+  margin: 15px auto;
+  margin-bottom: 20px;
+  border-radius: 13px;
+  overflow: hidden;
+}
+
+.hover {
+  position: relative;
+  z-index: 1;
+  width: 300px;
+  height: 300px;
+  transform: translate(0px, -305px);
+  transition: all 400ms ease-in-out;
+  cursor: pointer;
+}
+
+.hover:hover {
+  background-color: hsla(178, 100%, 50%, 0.5);
+}
+
+.hover:hover * {
+  opacity: 1;
+}
+
+.view-img:hover {
+  opacity: 1;
+}
+
+.view-img {
+  position: relative;
+  z-index: 3;
+  opacity: 0;
+  transform: translate(125px, 125px);
+}
+
+.details-div * {
+  margin: 0;
+}
+
+.eth-div,
+.time-div {
+  display: flex;
+}
+
+.artist-div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--line);
+  margin-top: 20px;
+  padding: 15px 0;
+  font-size: 16px;
+}
+
+.icon-time {
+  height: 16px;
+  width: auto;
+  margin-right: 5px;
+  margin-top: 3px;
+}
+
+.icon-eth {
+  margin-top: 2px;
+  margin-right: 5px;
+  height: 16px;
+  width: auto;
+}
+
+.eth-txt {
+  color: var(--cyan);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.avatar-img {
+  height: 35px;
+  width: auto;
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.artist {
+  color: var(--white);
+}
