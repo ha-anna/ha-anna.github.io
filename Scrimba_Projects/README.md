@@ -1,6 +1,12 @@
 # Scrimba Projects
 
-Hello! Here you can see all of the projects I coded while completing [Scrimba's Frontend Developer Career Path](https://scrimba.com/learn/frontend).
+<br>
+
+![Scrimba Projects](README_header_scrimba.png)
+
+<br>
+
+Hello! Here you can see all the projects I coded while completing [Scrimba's Frontend Developer Career Path](https://scrimba.com/learn/frontend).
 
 ## Table of contents
 
