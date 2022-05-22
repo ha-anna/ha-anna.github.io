@@ -22,7 +22,7 @@ Hello! Here you can see all the projects I coded while completing [Frontend Ment
 
 ### Links
 
-1. [QR Code Page](https://www.its-haanna.github.io/FrontEndMentorChallenges/qrcode/)<br>
+1. [QR Code Page](https://its-haanna.github.io/FrontEndMentorChallenges/qrcode/)<br>
 1. [NFT Preview Card Component](https://its-haanna.github.io/FrontEndMentorChallenges/nft_previev_card/)<br>
 
 ## My process
