@@ -73,14 +73,12 @@ a:hover {
   justify-content: space-between;
 }
 
-
 .details-div {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 
 .art-div {
   width: 300px;
@@ -91,10 +89,8 @@ a:hover {
   overflow: hidden;
 }
 
+
 .hover {
-  position: relative;
-  z-index: 1;
-  width: 300px;
   height: 300px;
   transform: translate(0px, -305px);
   transition: all 400ms ease-in-out;
@@ -114,8 +110,6 @@ a:hover {
 }
 
 .view-img {
-  position: relative;
-  z-index: 3;
   opacity: 0;
   transform: translate(125px, 125px);
 }
@@ -173,4 +167,5 @@ a:hover {
 
 .artist {
   color: var(--white);
+  font-weight: 600;
 }
