@@ -1,0 +1,61 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Color Scheme Generator</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="col-span">
+      <label for="base-color" class="visually-hidden">Choose base color:</label>
+      <input type="color" id="base-color" name="base-color" value="#fff">
+
+      <label for="color-scheme" class="visually-hidden">Choose color scheme:</label>
+      <select id="color-scheme">
+        <option value="monochrome">Monochrome</option>
+        <option value="monochrome-dark">Monochrome-dark</option>
+        <option value="monochrome-light">Monochrome-light</option>
+        <option value="analogic">Analogic</option>
+        <option value="complement">Complement</option>
+        <option value="analogic-complement">Analogic-complement</option>
+        <option value="triad">Triad</option>
+        <option value="quad">Quad</option>
+      </select>
+
+      <button type="submit" class="glow-on-hover" id="submit-button">Get color scheme</button>
+
+    </div>
+
+    <div class="color-field c1"></div>
+    <div class="color-field"></div>
+    <div class="color-field"></div>
+    <div class="color-field"></div>
+    <div class="color-field"></div>
+
+    <div class="color-hex">
+      <input type="text" class="color-generated-input" value="">
+    </div>
+    <div class="color-hex">
+      <input type="text" class="color-generated-input" value="">
+    </div>
+    <div class="color-hex">
+      <input type="text" class="color-generated-input" value="">
+    </div>
+    <div class="color-hex">
+      <input type="text" class="color-generated-input" value="">
+    </div>
+    <div class="color-hex">
+      <input type="text" class="color-generated-input" value="">
+    </div>
+  </div>
+  <p id="message">Copied to clipboard.</p>
+  <!-- <script src="script.js"></script> -->
+</body>
+
+</html>
