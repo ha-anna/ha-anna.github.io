@@ -30,6 +30,7 @@
 - Semantic HTML5 markup
 - CSS
 - Vanilla JavaScript
+- API: [The Color API](https://www.thecolorapi.com/)
 
 ### What I learned
 

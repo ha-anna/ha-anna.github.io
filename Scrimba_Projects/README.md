@@ -2,7 +2,7 @@
 
 <div align="center">
 <img src="./README_header_scrimba.png" alt="Scrimba Projects">
-</div> 
+</div>
 
 <br>
 
@@ -36,6 +36,7 @@ Hello! Here you can see all the projects I coded while completing [Scrimba's Fro
 11. [Duplicate Emoji Filter](https://its-haanna.github.io/Scrimba_Projects/Duplicate_emoji_filter/) <br>
 12. [BBQ Webinar Signup](https://its-haanna.github.io/Scrimba_Projects/BBQ_Responsive_page/) <br>
 13. [The Game of Cats: Role-playing game](https://its-haanna.github.io/Scrimba_Projects/Roleplaying_game/)<br>
+14. [Color Scheme Generator](https://its-haanna.github.io/Scrimba_Projects/Color_scheme_generator/) <br>
 
 ## My process
 
