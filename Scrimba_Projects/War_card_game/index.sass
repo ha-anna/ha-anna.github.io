@@ -17,12 +17,12 @@ $card-border-radius: 0.7rem
   align-items: center
 
 %button
-  padding: 10px 20px
+  padding: 20px 20px
   color: $white
   border: none
   letter-spacing: 1px
   background: $dark-red
-  height: 70px
+  min-height: 70px
   transition: all 200ms ease-in
   cursor: pointer
   margin: 0
@@ -94,18 +94,8 @@ body
 
 #draw-cards
   @extend %button
+  height: 70px
   align-self: stretch
-
-.disclaimer
-  margin: 0
-  font-size: 0.8rem
-
-  a
-    color: $white
-    transition: color 300ms ease-in
-
-    &:hover
-      color: $dark-red
 
 @media screen and (min-width: 600px)
   .container

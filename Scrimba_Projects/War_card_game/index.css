@@ -10,14 +10,15 @@
 }
 
 #draw-cards, #game-interface button {
-  padding: 10px 20px;
+  padding: 20px 20px;
   color: #F2F4F3;
   border: none;
   letter-spacing: 1px;
   background: #49111C;
-  height: 70px;
+  min-height: 70px;
   transition: all 200ms ease-in;
   cursor: pointer;
+  margin: 0;
 }
 #draw-cards:hover:not([disabled]), #game-interface button:hover:not([disabled]) {
   background: #22402b;
@@ -86,19 +87,8 @@ body {
 }
 
 #draw-cards {
+  height: 70px;
   align-self: stretch;
-}
-
-.disclaimer {
-  margin: 0;
-  font-size: 0.8rem;
-}
-.disclaimer a {
-  color: #F2F4F3;
-  transition: color 300ms ease-in;
-}
-.disclaimer a:hover {
-  color: #49111C;
 }
 
 @media screen and (min-width: 600px) {
