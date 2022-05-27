@@ -1,0 +1,112 @@
+$green: #57A773
+$white: #F2F4F3
+$red: #B02E0C
+$dark-red: #49111C
+$dark-green: #22402b
+$black: #0a0908
+$border-radius: 0.2rem
+$card-border-radius: 0.7rem
+
+%flex-col
+  display: flex
+  align-items: center
+  flex-flow: column nowrap
+
+%flex
+  display: flex
+  align-items: center
+
+%button
+  padding: 10px 20px
+  color: $white
+  border: none
+  letter-spacing: 1px
+  background: $dark-red
+  height: 70px
+  transition: all 200ms ease-in
+  cursor: pointer
+  margin: 0
+
+  &:hover:not([disabled])
+    background: $dark-green
+    color: $white
+    outline-offset: -3.5px
+
+  &:active:not([disabled])
+    background: $black
+
+  &:disabled
+    background: gray
+
+html, body
+  margin: 0
+  padding: 0
+  height: 100%
+
+body
+  font-family: 'Crete Round', serif
+  background-color: $green
+  color: $black
+  background-image: url("./padded.png") /* Made by Chris Baldie */
+  @extend %flex-col
+  justify-content: space-between
+
+.container
+  background: $white
+  border-radius: $border-radius
+  margin: 20px
+  width: 85%
+  padding: 10px
+
+  @extend %flex-col
+  justify-content: center
+
+  h1
+    margin: 0 10px
+    margin-top: 20px
+    text-align: center
+
+  #computer,
+  #player
+    margin: 10px
+    border: 6px solid $black
+    border-radius: $card-border-radius
+    height: 250px
+    width: calc(250px * 5 / 7)
+
+    img
+      height: 101%
+      transform: translate(-1.5px, -1.5px)
+
+#game-interface
+  background: $white
+  width: 100%
+  align-self: flex-start
+  @extend %flex
+
+  button
+    display: inline-block
+    margin: 0 20px 0 0
+    @extend %button
+
+  p
+    margin: 0
+
+#draw-cards
+  @extend %button
+  align-self: stretch
+
+.disclaimer
+  margin: 0
+  font-size: 0.8rem
+
+  a
+    color: $white
+    transition: color 300ms ease-in
+
+    &:hover
+      color: $dark-red
+
+@media screen and (min-width: 600px)
+  .container
+    width: 550px
