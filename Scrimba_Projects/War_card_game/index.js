@@ -3,10 +3,10 @@ const $cardPlayer = document.getElementById('player')
 const $h1 = document.querySelector('h1')
 const $deck = document.getElementById('remaining-deck')
 const $alert = document.getElementById('alert')
-const $gameInterface = document.getElementById('game-interface')
 const $computerPoints = document.getElementById('computer-points')
 const $playerPoints = document.getElementById('player-points')
 const $drawCardsBtn = document.getElementById("draw-cards")
+$drawCardsBtn.disabled = true
 
 let deckId
 let computerCard
@@ -22,8 +22,6 @@ async function handleClick() {
   $alert.innerHTML = `Remaining cards: ${data.remaining}`
   computerPoints = 0
   playerPoints = 0
-  $gameInterface.style.background = ''
-  $gameInterface.style.color = ''
   $h1.innerHTML = `War!`
   $cardPlayer.innerHTML = ''
   $cardComputer.innerHTML = ''
@@ -39,13 +37,7 @@ $drawCardsBtn.addEventListener("click", async () => {
   const res = await fetch(`https://apis.scrimba.com/deckofcards/api/deck/${deckId}/draw/?count=2`)
   const data = await res.json()
   console.log(data)
-  if (!data.remaining && (!computerPoints && !playerPoints)) {
-    $gameInterface.style.background = '#B02E0C'
-    $gameInterface.style.color = '#F2F4F3'
-    $alert.textContent = `Shuffle Deck first!`
-  } else {
-    $alert.textContent = `Remaining cards: ${data.remaining}`
-  }
+  $alert.textContent = `Remaining cards: ${data.remaining}`
 
   computerCard = data.cards[0]
     $cardComputer.innerHTML = `
