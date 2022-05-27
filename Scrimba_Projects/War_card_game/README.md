@@ -23,7 +23,7 @@ This solo project is a part of Scrimba's Frontend Developer Career Path.
 
 ### Links
 
-- Live Site URL: [War - Card Game](https://its-haanna.github.io/Scrimba_Projects/Color_scheme_generator/)
+- Live Site URL: [War - Card Game](https://its-haanna.github.io/Scrimba_Projects/War_card_game/)
 
 ## My process
 
