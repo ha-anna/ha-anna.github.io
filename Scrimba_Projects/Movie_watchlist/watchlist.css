@@ -28,8 +28,6 @@ header {
   background-position: left 5% bottom 78%;
   background-size: contain;
   background-blend-mode: multiply;
-  -apple-background-blend-mode: multiply;
-  -webkit-background-blend-mode: multiply;
   max-width: 100%;
   height: 20vh;
   max-height: 100%;
