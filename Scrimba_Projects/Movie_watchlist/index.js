@@ -34,7 +34,7 @@ async function getDatabase(movie) {
 
   // @ts-ignore
   if (!$searchBar.value) {
-    $mainPageDiv.innerHTML = `< class="placeholder-text">Please provide an input for your search.</p>`
+    $mainPageDiv.innerHTML = `<class="placeholder-text">Please provide an input for your search.</p>`
   } else if (data.Response === 'False') {
     $mainPageDiv.innerHTML = `<p class="placeholder-text">Unable to find what you’re looking for. <br> Please try another search.</p>`
   } else {
