@@ -104,7 +104,8 @@ button:active {
   max-width: 100%;
   height: 50px;
   border: 1px solid #D1D5DB;
-  margin-left: -3px;
+  margin-left: -5px;
+  background: #F2F1EF;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
   color: #374151;
