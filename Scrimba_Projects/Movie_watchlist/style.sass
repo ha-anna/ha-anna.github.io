@@ -1,0 +1,214 @@
+$white: #fff
+$black: #111827
+$grey: #DFDDDD
+$grey-700: #374151
+$star: #FEC654
+$grey-button: #F9FAFB
+$grey-400: #9CA3AF
+$input-border: 1px solid #D1D5DB
+$border-radius: 6px
+$background: rgb(245,245,245)
+$footer: #F2F1EF
+$hr: #E5E7EB
+$description: #6B7280
+
+%flex
+  display: flex
+  align-items: center
+
+%flex-col
+  display: flex
+  flex-flow: column nowrap
+
+html,
+body
+  margin: 0
+  max-height: 100%
+
+body
+  font-family: 'Inter', sans-serif
+  background: $background
+  background-image: linear-gradient(0deg, rgba(245,245,245,1) 0%, rgba(242,241,239,1) 100%)
+  background-size: cover
+  background-repeat: no-repeat
+
+header
+  background: rgba(0,0,0,0.7)
+  background-image: url('./img/movieposters3.jpg')
+  background-position: left 5% bottom 78%
+  background-size: contain
+  background-blend-mode: multiply
+  max-width: 100%
+  height: 20vh
+  justify-content: space-around
+
+  @extend %flex
+
+  a
+    color: $white
+    text-decoration: none
+    font-size: 0.875rem
+
+    &:hover
+      text-decoration: 2px solid $white underline
+
+    &:active
+      text-decoration: 2px $white underline wavy
+
+  h1
+    color: $white
+    font-size: 2.5rem
+
+.search-bar
+  position: relative
+  transform: translatey(-50%)
+  height: 10vh
+
+  @extend %flex
+  justify-content: center
+  flex-grow: 1 1 100%
+
+  i
+    position: absolute
+    transform: translatex(-200px)
+    color: $grey-400
+
+  input
+    box-sizing: border-box
+    margin: 0
+    min-width: 340px
+    max-width: 600px
+    height: 50px
+    border: $input-border
+    line-height: 1.7
+    border-bottom-left-radius: $border-radius
+    border-top-left-radius: $border-radius
+    padding: 0 50px
+
+  button
+    box-sizing: border-box
+    margin: 0
+    width: 120px
+    height: 50px
+    border: $input-border
+    margin-left: -1px
+    border-top-right-radius: $border-radius
+    border-bottom-right-radius: $border-radius
+    color: $grey-700
+
+    &:hover
+      background: $grey
+
+    &:active
+      color: $grey-button
+
+main
+  transform: translatey(-50px)
+
+#movies
+  width: 100%
+  max-height: 100%
+  @extend %flex-col
+  align-items: center
+
+  .fa-film
+    font-size: 5rem
+    color: $grey
+    transform: translatey(200px)
+
+  .placeholder-text
+    text-align: center
+    color: $grey
+    font-weight: 700
+    font-size: 1.125
+    margin: 0.3rem
+    transform: translatey(200px)
+
+  hr
+    width: 80%
+    border: 2px solid $hr
+    border-radius: $border-radius
+
+  hr:last-child
+    display: none
+
+.movie-div
+  @extend %flex
+  align-items: flex-start
+  width: 80%
+  margin: 40px 0
+
+  img
+    max-height: 100%
+    width: 150px
+    border-radius: $border-radius
+    margin-right: 30px
+
+  .rating-title
+    @extend %flex
+    justify-content: flex-start
+    align-items: baseline
+
+  .rating
+    font-size: 0.8rem
+    margin-left: 30px
+    display: flex
+    flex-flow: row nowrap
+
+  .watchlist
+    display: flex
+    flex-flow: row nowrap
+
+    i
+      margin-right: 5px
+
+  h2
+    font-weight: 500
+    color: $black
+    margin: 0
+    justify-self: flex-start
+
+  p
+    line-height: 1.4
+    font-weight: 400
+
+  .description
+    color: $description
+    margin: 10px 0
+
+  .time-genre-fav
+    @extend %flex
+    justify-content: flex-start
+
+    p
+      font-size: 0.8rem
+      margin-right: 30px
+
+.fa-star
+  font-size: 1rem
+  color: $star
+
+.fa-plus-circle,
+.fa-minus-circle
+  font-size: 0.9rem
+  transform: translatey(1px)
+
+@media screen and (min-width: 1100px)
+  .search-bar
+    input
+      min-width: 500px
+
+    i
+      transform: translatex(-320px)
+
+    button
+      width: 200px
+
+  .movie-div
+    width: 70%
+    max-width: 900px
+
+  #movies
+    hr
+      width: 70%
+      max-width: 900px
