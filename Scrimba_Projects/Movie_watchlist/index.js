@@ -34,7 +34,7 @@ async function getDatabase(movie) {
 
   // @ts-ignore
   if (!$searchBar.value) {
-    $mainPageDiv.innerHTML = `<p class="placeholder-text">Please provide an input for your search.</p>`
+    $mainPageDiv.innerHTML = `< class="placeholder-text">Please provide an input for your search.</p>`
   } else if (data.Response === 'False') {
     $mainPageDiv.innerHTML = `<p class="placeholder-text">Unable to find what you’re looking for. <br> Please try another search.</p>`
   } else {
@@ -98,10 +98,11 @@ function displayMovies(movies, location) {
           <div class="time-genre-fav">
             <p>${movie.properties.runtime}</p>
             <p>${movie.properties.genre}</p>
-            <p class="watchlist" id="${movie.id}">
+            <button class="watchlist" id="${movie.id}">
             ${isAdded(movie.id) ?
-              `<i class="fa fa-plus-circle" aria-hidden="true"></i> Watchlist` :
-              `<i class="fa fa-minus-circle" aria-hidden="true"></i> Remove`}
+              `<i class="fa fa-plus-circle" aria-hidden="true"></i> Add to Watchlist` :
+              `<i class="fa fa-minus-circle" aria-hidden="true"></i> Remove from Watchlist`}
+              </button>
           </div>
 
           <p class="description">${movie.properties.plot}</p>
@@ -127,7 +128,7 @@ function displayMovies(movies, location) {
 
 function addToWatchlist() {
     localStorage.setItem(this.id, this.id)
-    this.innerHTML = `<i class="fa fa-minus-circle" aria-hidden="true"></i> Remove`
+    this.innerHTML = `<i class="fa fa-minus-circle" aria-hidden="true"></i> Remove from Watchlist`
     this.removeEventListener('click', addToWatchlist)
     this.addEventListener('click', removeFromWatchlist)
 }
@@ -136,7 +137,7 @@ function addToWatchlist() {
 
 function removeFromWatchlist() {
   localStorage.removeItem(this.id)
-  this.innerHTML = `<i class="fa fa-plus-circle" aria-hidden="true"></i> Watchlist`
+  this.innerHTML = `<i class="fa fa-plus-circle" aria-hidden="true"></i> Add to Watchlist`
   this.removeEventListener('click', removeFromWatchlist)
   this.addEventListener('click', addToWatchlist)
 }

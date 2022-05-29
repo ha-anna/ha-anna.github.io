@@ -76,8 +76,9 @@ function displayWatchlist(movies, location) {
           <div class="time-genre-fav">
             <p>${movie.properties.runtime}</p>
             <p>${movie.properties.genre}</p>
-            <p class="watchlist" id="${movie.id}">
-            <i class="fa fa-minus-circle" aria-hidden="true"></i> Remove
+            <button class="watchlist" id="${movie.id}">
+            <i class="fa fa-minus-circle" aria-hidden="true"></i> Remove from Watchlist
+            </button>
           </div>
 
           <p class="description">${movie.properties.plot}</p>
@@ -97,7 +98,7 @@ function displayWatchlist(movies, location) {
 
 function removeFromWatchlist() {
   localStorage.removeItem(this.id)
-  this.innerHTML = `<i class="fa fa-plus-circle" aria-hidden="true"></i> Watchlist`
+  this.innerHTML = `<i class="fa fa-plus-circle" aria-hidden="true"></i> Add to Watchlist`
   this.removeEventListener('click', removeFromWatchlist)
   location.reload();
 }

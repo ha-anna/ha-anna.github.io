@@ -1,9 +1,9 @@
-.movie-div .rating-title, .search-bar, header {
+.search-bar, header {
   display: flex;
   align-items: center;
 }
 
-.movie-div .time-genre-fav, .movie-div, #movies {
+.movie-div .time-genre-fav, .movie-div .rating-title, .movie-div, #movies {
   display: flex;
   flex-flow: column nowrap;
 }
@@ -128,7 +128,7 @@ button:active {
 }
 #movies .placeholder-text {
   text-align: center;
-  color: #DFDDDD;
+  color: #6B7280;
   font-weight: 700;
   font-size: 1.125;
   margin: 0.3rem;
@@ -156,20 +156,34 @@ button:active {
   border-radius: 6px;
 }
 .movie-div .rating-title {
-  justify-content: flex-start;
+  text-align: center;
+  justify-content: center;
   align-items: center;
   margin-top: 20px;
 }
 .movie-div .rating {
   font-size: 0.8rem;
-  margin-left: 30px;
+  margin: 15px 0 5px 0;
   display: flex;
   flex-flow: row nowrap;
 }
 .movie-div .watchlist {
+  border: 1px #111827 solid;
+  border-radius: 0.3rem;
+  background: transparent;
+  align-content: center;
   display: flex;
   justify-content: center;
   flex-flow: row nowrap;
+  margin-top: 5px;
+  padding: 5px;
+  color: #111827;
+}
+.movie-div .watchlist:hover {
+  background: #DFDDDD;
+}
+.movie-div .watchlist:active {
+  background: #fff;
 }
 .movie-div .watchlist i {
   margin-right: 5px;
@@ -220,14 +234,29 @@ button:active {
 
   .movie-div {
     flex-flow: row nowrap;
+    align-items: flex-start;
   }
   .movie-div img {
     margin-right: 20px;
   }
+  .movie-div .rating-title {
+    flex-flow: row nowrap;
+    align-items: baseline;
+    text-align: left;
+    justify-content: flex-start;
+    margin-top: 0;
+  }
+  .movie-div .rating-title .rating {
+    margin-left: 20px;
+  }
   .movie-div .time-genre-fav {
     flex-flow: row nowrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
+  }
+  .movie-div .time-genre-fav p {
+    margin: 10px 0px;
+    margin-right: 20px;
   }
 }
 @media screen and (min-width: 1100px) {

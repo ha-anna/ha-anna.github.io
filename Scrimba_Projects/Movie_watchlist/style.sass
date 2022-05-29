@@ -135,7 +135,7 @@ button
 
   .placeholder-text
     text-align: center
-    color: $grey
+    color: $description
     font-weight: 700
     font-size: 1.125
     margin: 0.3rem
@@ -163,21 +163,35 @@ button
     border-radius: $border-radius
 
   .rating-title
-    @extend %flex
-    justify-content: flex-start
+    @extend %flex-col
+    text-align: center
+    justify-content: center
     align-items: center
     margin-top: 20px
 
   .rating
     font-size: 0.8rem
-    margin-left: 30px
+    margin: 15px 0 5px 0
     display: flex
     flex-flow: row nowrap
 
   .watchlist
+    border: 1px $black solid
+    border-radius: 0.3rem
+    background: transparent
+    align-content: center
     display: flex
     justify-content: center
     flex-flow: row nowrap
+    margin-top: 5px
+    padding: 5px
+    color: $black
+
+    &:hover
+      background: $grey
+
+    &:active
+      background: $white
 
     i
       margin-right: 5px
@@ -217,6 +231,7 @@ button
   transform: translatey(1px)
 
 @media screen and (min-width: 600px), (orientation: landscape)
+
   .search-bar
     transform: translatey(-50%)
 
@@ -225,14 +240,29 @@ button
 
   .movie-div
     flex-flow: row nowrap
+    align-items: flex-start
 
     img
       margin-right: 20px
 
+    .rating-title
+      flex-flow: row nowrap
+      align-items: baseline
+      text-align: left
+      justify-content: flex-start
+      margin-top: 0
+
+      .rating
+        margin-left: 20px
+
     .time-genre-fav
       flex-flow: row nowrap
-      align-items: center
+      align-items: flex-start
       justify-content: flex-start
+
+      p
+        margin: 10px 0px
+        margin-right: 20px
 
 @media screen and (min-width: 1100px)
 
