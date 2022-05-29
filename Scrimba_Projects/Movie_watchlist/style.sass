@@ -40,9 +40,13 @@ header
   background-blend-mode: multiply
   max-width: 100%
   height: 20vh
+  max-height: 100%
   justify-content: space-around
 
   @extend %flex
+
+  & *
+    margin: 0 10px
 
   a
     color: $white
@@ -57,27 +61,29 @@ header
 
   h1
     color: $white
-    font-size: 2.5rem
+    text-align: left
+
+  h3
+    text-align: center
 
 .search-bar
+  min-width: 80%
   position: relative
-  transform: translatey(-50%)
-  height: 10vh
-
+  margin-top: 10px
+  z-index: 2
   @extend %flex
   justify-content: center
-  flex-grow: 1 1 100%
+  align-items: center
 
   i
-    position: absolute
-    transform: translatex(-200px)
+    position: relative
+    left: 40px
     color: $grey-400
 
   input
     box-sizing: border-box
     margin: 0
-    min-width: 340px
-    max-width: 600px
+    min-width: 60%
     height: 50px
     border: $input-border
     line-height: 1.7
@@ -88,13 +94,16 @@ header
   button
     box-sizing: border-box
     margin: 0
-    width: 120px
+    margin-right: 20px
+    min-width: fit-content
+    max-width: 100%
     height: 50px
     border: $input-border
     margin-left: -1px
     border-top-right-radius: $border-radius
     border-bottom-right-radius: $border-radius
     color: $grey-700
+    cursor: pointer
 
     &:hover
       background: $grey
@@ -102,11 +111,9 @@ header
     &:active
       color: $grey-button
 
-main
-  transform: translatey(-50px)
-
 #movies
   width: 100%
+  max-width: 100%
   max-height: 100%
   @extend %flex-col
   align-items: center
@@ -125,6 +132,7 @@ main
     transform: translatey(200px)
 
   hr
+    margin: 0
     width: 80%
     border: 2px solid $hr
     border-radius: $border-radius
@@ -133,8 +141,9 @@ main
     display: none
 
 .movie-div
-  @extend %flex
-  align-items: flex-start
+  @extend %flex-col
+  max-width: 100%
+  align-items: center
   width: 80%
   margin: 40px 0
 
@@ -142,12 +151,12 @@ main
     max-height: 100%
     width: 150px
     border-radius: $border-radius
-    margin-right: 30px
 
   .rating-title
     @extend %flex
     justify-content: flex-start
-    align-items: baseline
+    align-items: center
+    margin-top: 20px
 
   .rating
     font-size: 0.8rem
@@ -157,6 +166,7 @@ main
 
   .watchlist
     display: flex
+    justify-content: center
     flex-flow: row nowrap
 
     i
@@ -177,12 +187,15 @@ main
     margin: 10px 0
 
   .time-genre-fav
-    @extend %flex
-    justify-content: flex-start
+    @extend %flex-col
+    width: 100%
+    max-width: 100%
+    justify-content: space-between
+    text-align: center
 
     p
       font-size: 0.8rem
-      margin-right: 30px
+      margin: 15px
 
 .fa-star
   font-size: 1rem
@@ -193,16 +206,22 @@ main
   font-size: 0.9rem
   transform: translatey(1px)
 
-@media screen and (min-width: 1100px)
+@media screen and (min-width: 600px), (orientation: landscape)
   .search-bar
-    input
-      min-width: 500px
+    transform: translatey(-50%)
 
-    i
-      transform: translatex(-320px)
+  .movie-div
+    flex-flow: row nowrap
 
-    button
-      width: 200px
+    img
+      margin-right: 20px
+
+    .time-genre-fav
+      flex-flow: row nowrap
+      align-items: center
+      justify-content: flex-start
+
+@media screen and (min-width: 1100px)
 
   .movie-div
     width: 70%
