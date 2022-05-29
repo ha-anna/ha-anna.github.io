@@ -30,7 +30,7 @@ function getStorageKeys() {
 
 async function getMovieList(ids) {
   for (let id of ids) {
-    const res = await fetch(`http://www.omdbapi.com/?i=${id}&type=movie&apikey=${apiKey}`)
+    const res = await fetch(`https://www.omdbapi.com/?i=${id}&type=movie&apikey=${apiKey}`)
     const data = await res.json()
 
     try {

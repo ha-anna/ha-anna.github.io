@@ -29,7 +29,7 @@ function resetPageAfterSearch() {
 // 2. fetch movies' ID based on the search input + in case of issue display alert message
 
 async function getDatabase(movie) {
-  const res = await fetch(`http://www.omdbapi.com/?s=${movie}&page=${page}&apikey=${apiKey}`)
+  const res = await fetch(`https://www.omdbapi.com/?s=${movie}&page=${page}&apikey=${apiKey}`)
   const data = await res.json()
 
   // @ts-ignore
@@ -50,7 +50,7 @@ async function getDatabase(movie) {
 
 async function getMovies(ids) {
   for (let id of ids) {
-    const res = await fetch(`http://www.omdbapi.com/?i=${id}&type=movie&apikey=${apiKey}`)
+    const res = await fetch(`https://www.omdbapi.com/?i=${id}&type=movie&apikey=${apiKey}`)
     const data = await res.json()
 
     try {
