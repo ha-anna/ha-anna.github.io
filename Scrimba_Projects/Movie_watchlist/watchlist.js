@@ -13,7 +13,7 @@ if (localStorage.length > 0) {
   $watchlistDiv.classList.add('center')
   $watchlistDiv.innerHTML = `
     <p class="placeholder-text">Your watchlist is looking a little empty...</p>
-      <a class="explore-link" href="/index.html"><i class="fa fa-plus-circle" aria-hidden="true"></i> Let's add some
+      <a class="explore-link" href="./index.html"><i class="fa fa-plus-circle" aria-hidden="true"></i> Let's add some
         movies!</a>
   `
 }
