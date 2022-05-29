@@ -19,7 +19,7 @@ This solo project is a part of Scrimba's [Frontend Developer Career Path](https:
 
 ### Screenshot
 
-![alt text](/gif_moviewatchlist.gif)
+![alt text](./gif_moviewatchlist.gif)
 
 ### Links
 
