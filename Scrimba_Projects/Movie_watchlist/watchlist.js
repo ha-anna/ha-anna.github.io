@@ -98,7 +98,7 @@ function displayWatchlist(movies, location) {
 
 function removeFromWatchlist() {
   localStorage.removeItem(this.id)
-  this.innerHTML = `<i class="fa fa-plus-circle" aria-hidden="true"></i> Add to Watchlist`
+  this.innerHTML = `<i class="fa fa-plus-circle" aria-hidden="true"></i> Removing from Watchlist...`
   this.removeEventListener('click', removeFromWatchlist)
   location.reload();
 }
