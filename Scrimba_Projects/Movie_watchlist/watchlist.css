@@ -127,6 +127,7 @@ header h3 {
   background: transparent;
   align-content: center;
   display: flex;
+  color: #111827;
   justify-content: center;
   flex-flow: row nowrap;
   margin-top: 5px;

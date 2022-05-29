@@ -124,7 +124,7 @@ button:active {
 #movies .fa-film {
   font-size: 5rem;
   color: #DFDDDD;
-  transform: translatey(200px);
+  transform: translatey(150px);
 }
 #movies .placeholder-text {
   text-align: center;
@@ -132,7 +132,7 @@ button:active {
   font-weight: 700;
   font-size: 1.125;
   margin: 0.3rem;
-  transform: translatey(200px);
+  transform: translatey(150px);
 }
 #movies hr {
   margin: 0;
