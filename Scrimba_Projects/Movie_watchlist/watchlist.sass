@@ -97,6 +97,18 @@ header
   hr:last-child
     display: none
 
+  .explore-link
+    color: $black
+    text-decoration: none
+    font-weight: 700
+    transform: translatey(230px)
+
+    &:hover
+      text-decoration: 2px solid $black underline
+
+    &:active
+      text-decoration: 2px $black underline wavy
+
 .movie-div
   @extend %flex-col
   max-width: 100%

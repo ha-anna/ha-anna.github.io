@@ -87,6 +87,20 @@ header h3 {
 #movies-watchlist hr:last-child {
   display: none;
 }
+#movies-watchlist .explore-link {
+  color: #111827;
+  text-decoration: none;
+  font-weight: 700;
+  transform: translatey(230px);
+}
+#movies-watchlist .explore-link:hover {
+  -webkit-text-decoration: 2px solid #111827 underline;
+          text-decoration: 2px solid #111827 underline;
+}
+#movies-watchlist .explore-link:active {
+  -webkit-text-decoration: 2px #111827 underline wavy;
+          text-decoration: 2px #111827 underline wavy;
+}
 
 .movie-div {
   max-width: 100%;
