@@ -1,4 +1,5 @@
 const apiKey = 'fc0d64e0'
+const baseURL = 'https://www.omdbapi.com/'
 const $watchlistDiv = document.getElementById('movies-watchlist')
 const watchlist = []
 const watchlistFetched = []
@@ -30,7 +31,7 @@ function getStorageKeys() {
 
 async function getMovieList(ids) {
   for (let id of ids) {
-    const res = await fetch(`https://www.omdbapi.com/?i=${id}&type=movie&apikey=${apiKey}`)
+    const res = await fetch(`${baseURL}?i=${id}&type=movie&apikey=${apiKey}`)
     const data = await res.json()
 
     try {
@@ -64,7 +65,7 @@ function displayWatchlist(movies, location) {
   for (let movie of movies ) {
     html += `
       <div class="movie-div">
-        <img src="${!movie.properties.poster || movie.properties.poster === 'N/A' ? 'https://www.cronobierzo.es/wp-content/uploads/2020/01/no-image.jpg' : movie.properties.poster }" alt="Poster of ${movie.properties.title}">
+        <img src="${!movie.properties.poster || movie.properties.poster === 'N/A' ? './img/placeholder.jpeg' : movie.properties.poster }" alt="Poster of ${movie.properties.title}">
 
         <div class="movie-description">
           <div class="rating-title">

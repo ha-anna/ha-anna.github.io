@@ -1,12 +1,11 @@
 const apiKey = 'fc0d64e0'
+const baseURL = 'https://www.omdbapi.com/'
 let page = 1
 
 const $search = document.querySelector('form')
-// @ts-ignore
 const $searchButton = document.getElementById('search-button')
 const $searchBar = document.getElementById('search-input')
 const $mainPageDiv = document.getElementById('movies')
-// @ts-ignore
 const $watchlistPageDiv = document.getElementById('movies-watchlist')
 
 
@@ -29,7 +28,7 @@ function resetPageAfterSearch() {
 // 2. fetch movies' ID based on the search input + in case of issue display alert message
 
 async function getDatabase(movie) {
-  const res = await fetch(`https://www.omdbapi.com/?s=${movie}&page=${page}&apikey=${apiKey}`)
+  const res = await fetch(`${baseURL}?s=${movie}&page=${page}&apikey=${apiKey}`)
   const data = await res.json()
 
   // @ts-ignore
@@ -50,7 +49,7 @@ async function getDatabase(movie) {
 
 async function getMovies(ids) {
   for (let id of ids) {
-    const res = await fetch(`https://www.omdbapi.com/?i=${id}&type=movie&apikey=${apiKey}`)
+    const res = await fetch(`${baseURL}?i=${id}&type=movie&apikey=${apiKey}`)
     const data = await res.json()
 
     try {
@@ -85,7 +84,7 @@ function displayMovies(movies, location) {
     html += `
       <div class="movie-div">
         <img src="${!movie.properties.poster || movie.properties.poster === 'N/A' ?
-        'https://www.cronobierzo.es/wp-content/uploads/2020/01/no-image.jpg' :
+        './img/placeholder.jpeg' :
         movie.properties.poster}" alt="Poster of ${movie.properties.title}" alt="Poster of ${movie.properties.title}">
 
         <div class="movie-description">
