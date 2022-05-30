@@ -39,6 +39,7 @@ Hello! Here you can see all the projects I coded while completing [Scrimba's Fro
 14. [Color Scheme Generator](https://its-haanna.github.io/Scrimba_Projects/Color_scheme_generator/) <br>
 15. [War - Card Game](https://its-haanna.github.io/Scrimba_Projects/War_card_game/) <br>
 16. [Movie Watchlist](https://its-haanna.github.io/Scrimba_Projects/Movie_watchlist/)<br>
+17. [Personal Dashboard](https://its-haanna.github.io/Scrimba_Projects/Personal_dashboard/)<br>
 
 
 ## My process
