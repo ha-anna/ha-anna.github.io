@@ -19,11 +19,11 @@ This project is a part of Scrimba's Frontend Developer Career Path.
 
 ### Screenshot
 
-![alt text]()
+![alt text](./gif_personaldashboard.gif)
 
 ### Links
 
-- Live Site URL: []()
+- Live Site URL: [Personal Dashboard](https://its-haanna.github.io/Scrimba_Projects/Personal_dashboard/)
 
 ## My process
 
