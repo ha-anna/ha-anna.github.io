@@ -1,4 +1,4 @@
-# Role-playing Game - The Game of Cats
+# Role-playing Game - The Game of Cats [21 May 2022]
 
 This is a role-playing game in which you, Wizard of Cats, are up against great villains: Captain Cat, Wild West Catboy, and Cleopawtra. Each roll of the dice equals the damage received and given. Try your best to be victorious.
 
