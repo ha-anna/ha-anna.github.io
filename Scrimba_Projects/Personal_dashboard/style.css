@@ -1,0 +1,108 @@
+main #crypto,
+main #author,
+main #weather {
+  text-shadow: 0px 0px 20px #242424;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html,
+body,
+main {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  background: no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+}
+
+main {
+  padding: 15px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main h1 {
+  font-size: 5rem;
+}
+main #time {
+  text-align: center;
+  text-shadow: 0 0 20px #9c9c9c;
+}
+main #weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main #weather .weather-top {
+  display: flex;
+  justify-content: center;
+}
+main #weather .weather-top .weather-icon {
+  max-height: 100%;
+  width: 40px;
+  margin-top: -1px;
+}
+main #author {
+  align-self: flex-start;
+}
+main a {
+  color: #fff;
+}
+main a:hover {
+  -webkit-text-decoration: 2px #fff underline wavy;
+          text-decoration: 2px #fff underline wavy;
+}
+main .top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+main .top #crypto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+main .top #crypto-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 5px;
+}
+main .top #crypto-top .crypto-icon {
+  width: 25px;
+  max-height: 100%;
+  margin-right: 10px;
+}
+main .top #crypto-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .top #crypto-data p {
+  margin: 2px 0;
+}
+
+@media screen and (min-width: 500px) {
+  main .top {
+    flex-direction: row;
+    text-align: left;
+  }
+  main #weather .weather-top {
+    justify-content: flex-start;
+  }
+}/*# sourceMappingURL=style.css.map */

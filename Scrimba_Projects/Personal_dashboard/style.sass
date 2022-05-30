@@ -1,0 +1,117 @@
+$white: #fff
+$shadow: #f8f8f8
+$shadow-dark: #9c9c9c
+
+%box
+  text-shadow: 0px 0px 20px #242424
+
+%blur
+  filter: blur(8px)
+  -webkit-filter: blur(8px)
+
+*
+  box-sizing: border-box
+  margin: 0
+
+html,
+body,
+main
+  padding: 0
+  margin: 0
+  max-width: 100%
+  max-height: 100%
+
+body
+  box-sizing: border-box
+  background: no-repeat center center fixed
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+  color: $white
+  font-family: 'Raleway', sans-serif
+
+main
+  padding: 15px
+  height: 100vh
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+  h1
+    font-size: 5rem
+
+  #crypto,
+  #author,
+  #weather
+    @extend %box
+
+  #time
+    text-align: center
+    text-shadow: 0 0 20px $shadow-dark
+
+  #weather
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+    .weather-top
+      display: flex
+      justify-content: center
+
+      .weather-icon
+        max-height: 100%
+        width: 40px
+        margin-top: -1px
+
+  #author
+    align-self: flex-start
+
+  a
+    color: $white
+
+    &:hover
+      text-decoration: 2px $white underline wavy
+
+  .top
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    text-align: center
+
+    #crypto
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      margin-bottom: 20px
+
+    #crypto-top
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      margin-bottom: 5px
+
+      .crypto-icon
+        width: 25px
+        max-height: 100%
+        margin-right: 10px
+
+    #crypto-data
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+
+      p
+        margin: 2px 0
+
+@media screen and (min-width: 500px)
+
+  main
+    .top
+      flex-direction: row
+      text-align: left
+
+    #weather
+      .weather-top
+        justify-content: flex-start
