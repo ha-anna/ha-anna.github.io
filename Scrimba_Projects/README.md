@@ -48,9 +48,10 @@ Hello! Here you can see all the projects I coded while completing [Scrimba's Fro
 
 - Semantic HTML5 markup
 - CSS
+- SASS
 - Vanilla JavaScript
 - Google Fonts
-- [Shape Divider App](https://www.shapedivider.app/)
+- API
 
 ### What I learned
 
