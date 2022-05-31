@@ -1,6 +1,6 @@
 const cryptoName = 'bitcoin'
 const photoGenre = 'cat'
-const timeStyle = 'medium'
+const timeStyle = 'short'
 const fallbackImg = 'https://images.unsplash.com/photo-1491036775913-3fbc5c455842?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDI0NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTM4NDAyNTk&ixlib=rb-1.2.1&q=80&w=1080'
 const units = 'metric'
 
@@ -69,8 +69,10 @@ const options = {
 
 navigator.geolocation.getCurrentPosition(position => {
   console.log(position)
-  const lat = position.coords.latitude
-  const lon = position.coords.longitude
+  // const lat = position.coords.latitude
+  // const lon = position.coords.longitude
+  const lat = 37.5665  // hard-coded because of inaccuracy
+   const lon = 126.9780
 
   fetch(`https://apis.scrimba.com/openweathermap/data/2.5/weather?lat=${lat}&lon=${lon}&units=${units}`)
     .then(res => {
@@ -89,12 +91,14 @@ navigator.geolocation.getCurrentPosition(position => {
         <img src="${iconUrl}" alt="" class="weather-icon">
       </div>
       <p><b>Location:</b> ${data.name}</p>
-      <p><b>Temp:</b> ${data.main.temp}°C</p>
-      <p><b>Feels like:</b> ${data.main.feels_like}°C</p>
+      <p><b>Temp:</b> ${data.main.temp.toFixed()}°C</p>
+      <p><b>Feels like:</b> ${data.main.feels_like.toFixed()}°C</p>
       <p><b>Sky:</b> ${data.weather[0].main}</p>
       `
     })
     .catch(err => console.error(err))
 
 });
+
+
 
