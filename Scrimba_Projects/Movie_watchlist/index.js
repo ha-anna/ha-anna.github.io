@@ -54,24 +54,24 @@ async function getMovies(ids) {
 
     try {
       moviesFetched.push(
-      {
-        id: `${data.imdbID}`,
-        properties: {
-          title: `${data.Title}`,
-          rating: `${data.Ratings[0].Value}`,
-          runtime: `${data.Runtime}`,
-          genre: `${data.Genre}`,
-          plot: `${data.Plot}`,
-          poster: `${data.Poster}`
+        {
+          id: `${data.imdbID}`,
+          properties: {
+            title: `${data.Title}`,
+            rating: `${data.Ratings[0].Value}`,
+            runtime: `${data.Runtime}`,
+            genre: `${data.Genre}`,
+            plot: `${data.Plot}`,
+            poster: `${data.Poster}`
           }
-      }
-    )
+        }
+      )
       displayMovies(moviesFetched, $mainPageDiv)
-      
+
     } catch (err) {
       console.error(err)
       $mainPageDiv.innerHTML = `<p class="placeholder-text">Unable to find what you’re looking for. <br> Please try another search.</p>`
-    } 
+    }
   }
 }
 
@@ -80,12 +80,12 @@ async function getMovies(ids) {
 function displayMovies(movies, location) {
   let html = ""
 
-  for (let movie of movies ) {
+  for (let movie of movies) {
     html += `
       <div class="movie-div">
-        <img src="${!movie.properties.poster || movie.properties.poster === 'N/A' ?
+        <img src="${movie.properties.poster === 'N/A' ?
         './img/placeholder.jpeg' :
-        movie.properties.poster}" alt="Poster of ${movie.properties.title}" alt="Poster of ${movie.properties.title}">
+        movie.properties.poster}" alt="Poster of ${movie.properties.title}">
 
         <div class="movie-description">
           <div class="rating-title">
@@ -99,8 +99,8 @@ function displayMovies(movies, location) {
             <p>${movie.properties.genre}</p>
             <button class="watchlist" id="${movie.id}">
             ${isAdded(movie.id) ?
-              `<i class="fa fa-plus-circle" aria-hidden="true"></i> Add to Watchlist` :
-              `<i class="fa fa-minus-circle" aria-hidden="true"></i> Remove from Watchlist`}
+        `<i class="fa fa-plus-circle" aria-hidden="true"></i> Add to Watchlist` :
+        `<i class="fa fa-minus-circle" aria-hidden="true"></i> Remove from Watchlist`}
               </button>
           </div>
 
@@ -112,12 +112,12 @@ function displayMovies(movies, location) {
   }
   location.innerHTML = html
   const watchlistBtn = document.querySelectorAll(".watchlist")
-    watchlistBtn.forEach(button => {
-      if (isAdded(button.id)) {
-        button.addEventListener("click", addToWatchlist)
-      } else {
-        button.addEventListener("click", removeFromWatchlist)
-      }
+  watchlistBtn.forEach(button => {
+    if (isAdded(button.id)) {
+      button.addEventListener("click", addToWatchlist)
+    } else {
+      button.addEventListener("click", removeFromWatchlist)
+    }
   })
 
 }
@@ -126,10 +126,10 @@ function displayMovies(movies, location) {
 
 
 function addToWatchlist() {
-    localStorage.setItem(this.id, this.id)
-    this.innerHTML = `<i class="fa fa-minus-circle" aria-hidden="true"></i> Remove from Watchlist`
-    this.removeEventListener('click', addToWatchlist)
-    this.addEventListener('click', removeFromWatchlist)
+  localStorage.setItem(this.id, this.id)
+  this.innerHTML = `<i class="fa fa-minus-circle" aria-hidden="true"></i> Remove from Watchlist`
+  this.removeEventListener('click', addToWatchlist)
+  this.addEventListener('click', removeFromWatchlist)
 }
 
 // 6. upon clicking -Remove removes movie from the local storage + changes the button

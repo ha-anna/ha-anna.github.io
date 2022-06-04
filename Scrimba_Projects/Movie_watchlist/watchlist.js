@@ -65,7 +65,7 @@ function displayWatchlist(movies, location) {
   for (let movie of movies ) {
     html += `
       <div class="movie-div">
-        <img src="${!movie.properties.poster || movie.properties.poster === 'N/A' ? './img/placeholder.jpeg' : movie.properties.poster }" alt="Poster of ${movie.properties.title}">
+        <img src="${movie.properties.poster === 'N/A' ? './img/placeholder.jpeg' : movie.properties.poster }">
 
         <div class="movie-description">
           <div class="rating-title">
