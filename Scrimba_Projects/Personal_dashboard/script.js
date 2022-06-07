@@ -7,19 +7,19 @@ const units = 'metric'
 // 1. getting wallpaper from unsplash
 
 fetch(`https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=${photoGenre}`)
-    .then(res => {
+  .then(res => {
     if (!res.ok) {
       throw Error("An issue with API occurred.")
     }
-    console.log(res.status)
+    console.log("Photo: " + res.status)
     return res.json()
   })
-    .then(data => {
-        document.body.style.backgroundImage = `url(${data.urls.full})`
-		    document.getElementById("author").innerHTML = `<p>By: <a href="${data.user.links.html}" target="_blank">${data.user.name}</a></p>`
-    }).catch(err => {
-      document.body.style.backgroundImage = `url(${fallbackImg})`
-    })
+  .then(data => {
+    document.body.style.backgroundImage = `url(${data.urls.full})`
+    document.getElementById("author").innerHTML = `<p>By: <a href="${data.user.links.html}" target="_blank">${data.user.name}</a></p>`
+  }).catch(err => {
+    document.body.style.backgroundImage = `url(${fallbackImg})`
+  })
 
 // 2. getting dogecoin info
 
@@ -28,7 +28,7 @@ fetch(`https://api.coingecko.com/api/v3/coins/${cryptoName}`)
     if (!res.ok) {
       throw Error("An issue with API occured.")
     }
-    console.log(res.status)
+    console.log("Dogecoin: " + res.status)
     return res.json()
   })
   .then(data => {
@@ -37,34 +37,28 @@ fetch(`https://api.coingecko.com/api/v3/coins/${cryptoName}`)
           <h2>
             ${data.name}
           </h2>`
-    
+
     document.getElementById('crypto-data').innerHTML = `
       <p><b>Current:</b> $${data.market_data.current_price.usd}</p>
       <p><b>High:</b> $${data.market_data.high_24h.usd}</p>
       <p><b>Low:</b> $${data.market_data.low_24h.usd}</p>
     `
     console.log(data)
-    
+
   })
   .catch(err => console.error(err))
 
 // 3. getting current time
 
 function getCurrentTime() {
-const date = new Date()
-const formattedDate = date.toLocaleTimeString("en-us", {timeStyle: `${timeStyle}`})
-document.getElementById('time').innerHTML = `<h1>${formattedDate} </h1>`
+  const date = new Date()
+  const formattedDate = date.toLocaleTimeString("en-us", { timeStyle: `${timeStyle}` })
+  document.getElementById('time').innerHTML = `<h1>${formattedDate} </h1>`
 }
 
 setInterval(getCurrentTime, 1000)
 
 // 4. getting geolocation
-
-const options = {
-  enableHighAccuracy: true,
-  timeout: 5000,
-  maximumAge: 0
-};
 
 
 navigator.geolocation.getCurrentPosition(position => {
@@ -72,13 +66,14 @@ navigator.geolocation.getCurrentPosition(position => {
   // const lat = position.coords.latitude
   // const lon = position.coords.longitude
   const lat = 37.5665  // hard-coded because of inaccuracy
-   const lon = 126.9780
+  const lon = 126.9780
 
   fetch(`https://apis.scrimba.com/openweathermap/data/2.5/weather?lat=${lat}&lon=${lon}&units=${units}`)
     .then(res => {
       if (!res.ok) {
         throw Error("Weather data not available")
       }
+      console.log("Weather: " + res.status)
       return res.json()
     })
     .then(data => {
