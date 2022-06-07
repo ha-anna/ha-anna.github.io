@@ -40,6 +40,8 @@ Hello! Here you can see all the projects I coded while completing [Scrimba's Fro
 15. [War - Card Game](https://its-haanna.github.io/Scrimba_Projects/War_card_game/) <br>
 16. [Movie Watchlist](https://its-haanna.github.io/Scrimba_Projects/Movie_watchlist/)<br>
 17. [Personal Dashboard](https://its-haanna.github.io/Scrimba_Projects/Personal_dashboard/)<br>
+18. [Business Card](https://react-business-card-pi.vercel.app/)<br>
+
 
 
 ## My process
@@ -52,6 +54,7 @@ Hello! Here you can see all the projects I coded while completing [Scrimba's Fro
 - Vanilla JavaScript
 - Google Fonts
 - API
+- React
 
 ### What I learned
 
