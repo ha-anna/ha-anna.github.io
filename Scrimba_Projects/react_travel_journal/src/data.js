@@ -20,8 +20,8 @@ export default [
     description: "Bieszczady Mountains is a mountain range that runs from the extreme south-east of Poland and north-east of Slovakia through to western Ukraine. It forms the western part of the Eastern Beskids, and is more generally part of the Outer Eastern Carpathians.",
     image: "bieszczady.jpg",
     dates: {
-      start: "1 July 2019",
-      end: "14 July 2019"
+      start: "1 Jul 2019",
+      end: "14 Jul 2019"
     },
     links: {
       googleMaps: "https://goo.gl/maps/YyXuxqYRsEHN4Qn78"
@@ -34,7 +34,7 @@ export default [
     description: "Seoul, the capital of South Korea, is a huge metropolis where modern skyscrapers, high-tech subways and pop culture meet Buddhist temples, palaces and street markets. Notable attractions include futuristic Dongdaemun Design Plaza, a convention hall with curving architecture and a rooftop park; Gyeongbokgung Palace, which once had more than 7,000 rooms; and Jogyesa Temple, site of ancient locust and pine trees.",
     image: "seoul.jpg",
     dates: {
-      start: "17 July 2019",
+      start: "17 Jul 2019",
       end: "23 Sept 2019"
     },
     links: {
