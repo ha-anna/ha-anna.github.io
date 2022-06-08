@@ -1,6 +1,6 @@
 :root {
   --white: #fff;
-  --red: #F55A5A;
+  --accent: #3DCCC7;
   --bg: #F5F7FB;
   --gray: #918E9B;
   --black: #2B283A;
@@ -16,6 +16,7 @@
 
 
 body {
+  background: var(--white);
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   max-width: 100%;
@@ -25,7 +26,7 @@ body {
 /* navbar  */
 
 nav {
-  background: var(--red);
+  background: var(--accent);
   color: var(--white);
   width: 100%;
   height: 65px;
@@ -64,8 +65,10 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  padding: 30px 0;
+  padding: 30px;
+  background: var(--bg);
+  border-radius: 6px;
+  margin: 20px 0px;
 }
 
 .card--img {
@@ -80,22 +83,20 @@ h1 {
 }
 
 .card--data {
-  padding: 0 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
 }
 
 .card--data__location {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 0.875rem
+  font-size: 0.875rem;
 }
 
 .bi-geo-alt-fill {
-  color: var(--red);
+  color: var(--accent);
   margin-right: 5px;
   transform: translatey(1px);
 }
@@ -104,13 +105,15 @@ h1 {
   border: 1px solid var(--hr-color)
 }
 
+
+
 /* typography */
 
 h2 {
   font-size: 2.2rem;
   margin-top: 15px;
   margin-bottom: 20px;
-
+  text-align: center;
 }
 
 button {
@@ -124,7 +127,7 @@ button {
 }
 
 button:hover {
-  color: var(--red);
+  color: var(--accent);
 }
 
 button:active {
@@ -174,6 +177,10 @@ p {
 
 
 @media screen and (min-width: 650px) {
+  h2 {
+    text-align: left;
+  }
+
   .card--img{
     width: 190px;
     height: 250px;
@@ -188,6 +195,7 @@ p {
   .card--data {
     text-align: left;
     align-items: flex-start;
+    margin-left: 30px;
   }
 
   .card--data__location {
