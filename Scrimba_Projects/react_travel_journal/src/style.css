@@ -84,6 +84,7 @@ h1 {
 .bi-geo-alt-fill {
   color: var(--red);
   margin-right: 5px;
+  transform: translatey(1px);
 }
 
 .card--separator {
@@ -102,6 +103,18 @@ a {
   color: var(--gray);
   text-decoration: none;
   border-bottom: 1px solid var(--gray);
+  transition: color 400ms ease-in-out;
+  padding: 3px;
+}
+
+a:hover {
+  color: var(--red);
+}
+
+a:active {
+  color: var(--white);
+  background: var(--black);
+  border-radius: 6px;
 }
 
 .bold {
@@ -122,6 +135,10 @@ a {
 
 .small {
   font-size: 0.75rem;
+}
+
+.padding {
+  padding: 3px 0px;
 }
 
 p {
