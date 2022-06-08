@@ -23,7 +23,7 @@ Hello! Here you can see all the projects I coded while completing [Scrimba's Fro
 
 ### Links
 
-1. [Unit Converter](https://its-haanna.github.io/Scrimba_Projects/Unit_converter/)<br>
+1. [Unit Converter](https://its-haanna.github.io/Scrimba_Projects/Unit_converter/) <br>
 2. [Blackjack](https://its-haanna.github.io/Scrimba_Projects/Blackjack/) <br>
 3. [Password Generator](https://its-haanna.github.io/Scrimba_Projects/Password_generator/) <br>
 4. [Gift Selector](https://its-haanna.github.io/Scrimba_Projects/Gift_Selector/) <br>
@@ -40,9 +40,9 @@ Hello! Here you can see all the projects I coded while completing [Scrimba's Fro
 15. [War - Card Game](https://its-haanna.github.io/Scrimba_Projects/War_card_game/) <br>
 16. [Movie Watchlist](https://its-haanna.github.io/Scrimba_Projects/Movie_watchlist/)<br>
 17. [Personal Dashboard](https://its-haanna.github.io/Scrimba_Projects/Personal_dashboard/)<br>
-18. [Business Card](https://react-business-card-pi.vercel.app/)<br>
-
-
+18. [Business Card](https://business-card-react-six.vercel.app/)<br>
+19. [Airbnb Experiences Clone](https://react-airbnb-clone-mocha.vercel.app/)<br>
+20. [My Travel Journal](https://react-travel-journal-one.vercel.app/)<br>
 
 ## My process
 
