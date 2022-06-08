@@ -17,6 +17,8 @@ This project is a part of Scrimba's Frontend Developer Career Path.
 
 ## Overview
 
+This was my first solo React project after starting to learn React. The goal was to create a static site based on the figma design that was provided.
+
 ### Screenshot
 
 ![alt text](./gif_react_businesscard.gif)
@@ -27,6 +29,8 @@ This project is a part of Scrimba's Frontend Developer Career Path.
 
 ## My process
 
+I started from setting up my files with Create React App and moved on to plan out components and files. Then I rendered all the HTML with `ReactDOM.render()` and styled it.
+
 ### Built with
 
 - Semantic HTML5 markup
@@ -36,7 +40,11 @@ This project is a part of Scrimba's Frontend Developer Career Path.
 
 ### What I learned
 
+I learned the basics of React: what JSX is, how to create and organise components, import and export things between files (although I already knew how to do that in JS), how to style my HTML with className, and how to set up my projects locally!
+
 ### Continued development
+
+I will keep learning React to create reusable, interactive apps.
 
 ### Useful resources
 

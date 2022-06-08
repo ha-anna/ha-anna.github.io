@@ -37,7 +37,11 @@ This project is a part of Scrimba's Frontend Developer Career Path.
 
 ### What I learned
 
+I learned how to create and deploy a Chrome extension, use various APIs, create a working clock, and get current location from the user.
+
 ### Continued development
+
+I plan to personalize this extension in a near future. I want to add a function to add todos and exchange bitcoin part of the extension with something more my style, such as geek jokes or interesting facts.
 
 ### Useful resources
 
