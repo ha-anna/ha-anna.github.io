@@ -105,8 +105,6 @@ h1 {
   border: 1px solid var(--hr-color)
 }
 
-
-
 /* typography */
 
 h2 {
@@ -140,25 +138,18 @@ button:active {
   font-weight: 700;
 }
 
-.letter-spacing {
+.location {
   letter-spacing: 0.17em;
-}
-
-.uppercase {
   text-transform: uppercase;
-}
-
-.margin-right {
+  min-width: fit-content;
   margin-right: 15px;
+  padding: 3px 0px;
 }
 
 .small {
   font-size: 0.75rem;
 }
 
-.padding {
-  padding: 3px 0px;
-}
 
 p {
   line-height: 1.4;
@@ -171,14 +162,18 @@ p {
   white-space: nowrap;
 }
 
-.nowrap {
-  min-width: fit-content;
-}
-
 
 @media screen and (min-width: 650px) {
   h2 {
     text-align: left;
+  }
+
+  .card--data__location {
+    align-items: flex-start;
+  }
+
+  .location {
+    margin-bottom: 5px;
   }
 
   .card--img{
@@ -197,14 +192,16 @@ p {
     align-items: flex-start;
     margin-left: 30px;
   }
-
-  .card--data__location {
-      flex-direction: row;
-    }
   
-    .link {
+  .link {
       margin: 0;
-    }
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .card--data__location {
+    flex-direction: row;
+  }
 }
 
 @media screen and (min-width: 1200px) {
