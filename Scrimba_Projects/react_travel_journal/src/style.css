@@ -2,7 +2,7 @@
   --white: #fff;
   --accent: #3DCCC7;
   --bg: #F5F7FB;
-  --gray: #918E9B;
+  --gray: #525154;
   --black: #2B283A;
   --hr-color: #F5F5F5;
 }
@@ -24,10 +24,9 @@ body {
   max-width: 100%;
 }
 
-
 /* navbar  */
 
-nav {
+header {
   background: var(--accent);
   color: var(--white);
   width: 100%;
@@ -47,7 +46,7 @@ h1 {
   letter-spacing: -0.03em;
 }
 
-.nav--logo {
+.icon {
   height: 24px;
   max-width: 100%;
   margin: 7px;
@@ -62,7 +61,7 @@ h1 {
 
 /* card */
 
-.card--body {
+.card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -73,7 +72,7 @@ h1 {
   margin: 20px 0px;
 }
 
-.card--img {
+.card-img {
   min-width: 200px;
   max-width: 500px;
   width: 100%;
@@ -84,13 +83,13 @@ h1 {
   margin-bottom: 10px;
 }
 
-.card--data {
+.card-body {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.card--data__location {
+.location-link {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -103,10 +102,6 @@ h1 {
   transform: translatey(1px);
 }
 
-.card--separator {
-  border: 1px solid var(--hr-color)
-}
-
 /* typography */
 
 h2 {
@@ -116,9 +111,7 @@ h2 {
   text-align: center;
 }
 
-button {
-  background: none;
-  border: none;
+a {
   color: var(--gray);
   text-decoration: none;
   border-bottom: 1px solid var(--gray);
@@ -126,11 +119,11 @@ button {
   padding: 3px;
 }
 
-button:hover {
+a:hover {
   color: var(--accent);
 }
 
-button:active {
+a:active {
   color: var(--white);
   background: var(--black);
   border-radius: 6px;
@@ -170,7 +163,7 @@ p {
     text-align: left;
   }
 
-  .card--data__location {
+  .location-link {
     align-items: flex-start;
   }
 
@@ -178,18 +171,18 @@ p {
     margin-bottom: 5px;
   }
 
-  .card--img{
+  .card-img{
     width: 190px;
     height: 250px;
   }
 
-  .card--body {
+  .card {
     flex-direction: row;
     align-items: flex-start;
   }
 
 
-  .card--data {
+  .card-body {
     text-align: left;
     align-items: flex-start;
     margin-left: 30px;
@@ -201,7 +194,7 @@ p {
 }
 
 @media screen and (min-width: 750px) {
-  .card--data__location {
+  .location-link {
     flex-direction: row;
   }
 }
@@ -212,7 +205,7 @@ p {
     justify-content: center;
   }
 
-  .card--body {
+  .card {
     max-width: 1100px;
   }
 }
