@@ -99,7 +99,9 @@ h2 {
   margin-bottom: 20px;
 }
 
-a {
+button {
+  background: none;
+  border: none;
   color: var(--gray);
   text-decoration: none;
   border-bottom: 1px solid var(--gray);
@@ -107,11 +109,11 @@ a {
   padding: 3px;
 }
 
-a:hover {
+button:hover {
   color: var(--red);
 }
 
-a:active {
+button:active {
   color: var(--white);
   background: var(--black);
   border-radius: 6px;
