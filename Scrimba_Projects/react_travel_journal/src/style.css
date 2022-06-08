@@ -48,7 +48,7 @@ h1 {
 
 .icon {
   height: 24px;
-  max-width: 100%;
+  width: auto;
   margin: 7px;
 }
 
