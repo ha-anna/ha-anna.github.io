@@ -50,6 +50,8 @@ main {
     margin: 0;
     padding: 10px 20px;
     border-radius: 5px;
+    margin: 0 auto;
+    width: 220px;
 }
 
 h1 {
@@ -57,6 +59,14 @@ h1 {
     color: var(--white);
     font-size: 3rem;
     letter-spacing: 1px;
+}
+
+#alert {
+    display: none;
+    color: var(--red);
+    background: var(--black);
+    padding: 15px;
+    border-radius: 5px;
 }
 
 #home-name,
@@ -93,6 +103,10 @@ button:focus {
     outline: 3px solid var(--white);
     background: var(--light-blue);
     color: var(--dark-blue);
+}
+
+button:disabled {
+    display: none;
 }
 
 #reset-btn {
