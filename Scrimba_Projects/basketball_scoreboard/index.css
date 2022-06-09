@@ -71,6 +71,7 @@ h1 {
     background: var(--black);
     padding: 15px;
     border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #home-name,
