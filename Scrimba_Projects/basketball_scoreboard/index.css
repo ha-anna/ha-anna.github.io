@@ -10,6 +10,7 @@ font-family: "Cursed Timer";
     --light-blue: #9AABD8;
     --white: #EEEEEE;
     --dark-blue: #1B244A;
+    --light-blue-10: rgba(154, 171, 216, 0.1);
 }
 
 * {
@@ -34,6 +35,9 @@ main {
 .scoreboard {
     display: flex;
     width: 100%;
+    background: var(--light-blue-10);
+    border: 3px solid var(--light-blue);
+    border-radius: 5px;
 }
 
 .home,
