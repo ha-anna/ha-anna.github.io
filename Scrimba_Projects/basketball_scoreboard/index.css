@@ -1,0 +1,100 @@
+@font-face {
+font-family: "Cursed Timer";
+  src: url(./CursedTimerULiL.woff);
+}
+
+
+:root {
+    --black: #080001;
+    --red: #F94F6D;
+    --light-blue: #9AABD8;
+    --white: #EEEEEE;
+    --dark-blue: #1B244A;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--dark-blue);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content:flex-start;
+}
+
+.scoreboard {
+    display: flex;
+    width: 100%;
+}
+
+.home,
+.guest {
+    text-align: center; 
+    padding: 20px;
+}
+
+.score {
+    background: var(--black);
+    color: var(--red);
+    font-family: 'Cursed Timer', monospace;
+    font-size: 5rem;
+    margin: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+h1 {
+    font-family: 'Cursed Timer', monospace;
+    color: var(--white);
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+
+#home-name,
+#guest-name {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--white);
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    font-family: 'Cursed Timer', monospace;
+    border: 3px solid var(--light-blue);
+    border-radius: 5px;
+    background: var(--dark-blue);
+    color: var(--light-blue);
+    font-size: 1.5rem;
+    padding: 10px;
+    margin: 3px;
+}
+
+button:hover {
+    background: var(--light-blue);
+    color: var(--dark-blue);
+}
+
+button:active {
+    color: var(--white);
+}
+
+button:focus {
+    outline: 3px solid var(--white);
+    background: var(--light-blue);
+    color: var(--dark-blue);
+}
+
+#reset-btn {
+    display: none;
+}
