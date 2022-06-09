@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --accent: #5D5CAD;
+  --secondary-accent: #7A78FA;
+  --dark: #010326;
+  --grey: #f2f2f2;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  max-width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: var(--dark);
+  background: var(--grey)
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+header {
+  background: var(--accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  margin-top: 150px;
+  height: 80vh;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.meme-generator {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+input[type="text"] {
+  border: 3px solid var(--accent);
+  border-radius: 5px;
+  line-height: 1.5;
+  height: 50px;
+  font-size: 1.2rem;
+  padding: 10px;
+  width: 100%;
+}
+
+input[type="text"]:focus {
+  outline: 5px solid var(--secondary-accent)
+}
+
+button {
+  background: var(--accent);
+  border: none;
+  border-radius: 5px;
+  color: var(--white);
+  font-size: 1.3rem;
+  padding: 15px 0;
+  transition: background 400ms ease-in;
+  width: 100%;
+}
+
+button:hover {
+  background: var(--secondary-accent);
+}
+
+button:active {
+  color: var(--dark);
+}
+
+button:focus {
+  outline: 5px solid var(--secondary-accent)
+}
+
+@media screen and (min-width: 550px) {
+
+  input[type="text"] {
+    width: calc(50% - 8px);
+  }
+
+}
