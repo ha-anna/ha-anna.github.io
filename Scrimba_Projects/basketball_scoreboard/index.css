@@ -115,5 +115,11 @@ button:disabled {
 }
 
 #reset-btn {
-    display: none;
+  margin-top: 20px;
+  display: none;
+}
+
+.size {
+  width: 65px;
+  height: 65px;
 }
