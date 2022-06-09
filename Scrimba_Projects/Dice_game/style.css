@@ -78,6 +78,7 @@ button {
   border-radius: 5px;
   cursor: pointer;
   min-width: 200px;
+  font-weight: 800;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.2) 0px 2px 4px -1px;
 }

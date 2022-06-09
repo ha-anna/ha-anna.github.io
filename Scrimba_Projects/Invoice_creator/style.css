@@ -3,7 +3,7 @@
   --header-bg: #2980b9;
   --option-btn-bg: #d7eaf6;
   --option-btn-color: #4a4e74;
-  --invoice-btn-bg: #2980b9;
+  --invoice-btn-bg: #1D5C86;
 }
 html,
 body {
@@ -102,7 +102,7 @@ main {
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
   color: #ffffff;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 800;
   height: 50px;
   line-height: 24px;
   margin: 50px;
@@ -117,7 +117,7 @@ h1 {
   margin: 0px;
   padding-top: 15px;
 }
-h2 {
+.comment {
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;

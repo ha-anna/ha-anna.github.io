@@ -15,6 +15,21 @@ body {
   );
   font-family: "Noto Sans Mono", "Noto Emoji", monospace;
 }
+
+/* hiding ARIA label */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .container {
   background-color: #264143;
   min-width: 490px;
@@ -72,12 +87,13 @@ button {
   max-width: 200px;
   min-height: 60px;
   background-color: #e99f4c;
-  color: #f2ebe9;
+  color: #152628;
   text-transform: uppercase;
   transition: background-color 300ms ease-in-out;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.1) 0px 2px 4px -1px;
   flex-grow: 1;
+  font-weight: 700;
 }
 button:hover {
   background-color: #de5499;

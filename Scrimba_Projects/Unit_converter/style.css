@@ -12,6 +12,20 @@ body {
   text-align: center;
 }
 
+/* hiding ARIA label */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 input {
   color: #ffffff;
   background: transparent;
@@ -32,14 +46,14 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-h2 {
+h1 {
   color: #ffffff;
   font-size: 22px;
   font-weight: 800;
   line-height: 38px;
 }
 
-h3 {
+h2 {
   color: #1a1921;
   font-size: 14px;
   font-weight: 600;
@@ -93,11 +107,11 @@ h3 {
     font-size: 10px;
   }
 
-  h2 {
+  h1 {
     font-size: 14px;
   }
 
-  h3 {
+  h2 {
   font-size: 12px;
   }
 

@@ -44,7 +44,7 @@ function endGame() {
     document.body.innerHTML = `
     <div class="end-game">
       <h2>Game Over</h2>
-      <h3 class="end-message">${endMessage}</h3>
+      <p class="end-message">${endMessage}</p>
       <p class="end-emoji">${endEmoji}</p>
       <button id="restart-button" typ="button" onclick="javascript:window.location.href=window.location.href">Play again</button>
     </div>

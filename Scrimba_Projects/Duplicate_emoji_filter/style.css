@@ -1,6 +1,6 @@
 :root {
   --light-pink: #fbc2eb;
-  --lavender: #a18cd1;
+  --lavender: #8874b6;
   --deep-pink: #f04c86;
   --raisin: #2b283a;
   --white: #f8f8ff;
@@ -26,6 +26,20 @@ body {
   background-repeat: repeat-x;
   color: var(--raisin);
   font-family: "Karla", "Noto Emoji", sans-serif;
+}
+
+/* hiding ARIA label */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .flex {
@@ -102,6 +116,7 @@ p {
   color: var(--white);
   font-weight: 700;
   margin: 2rem 0.5rem;
+  font-weight: 700;
 }
 
 .btn:hover {

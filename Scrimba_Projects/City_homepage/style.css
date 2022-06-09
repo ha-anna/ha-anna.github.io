@@ -20,13 +20,13 @@ body {
 }
 
 h1,
-h2 {
+.description {
   background-color: var(--card-bg-90);
   padding: 10px;
   border-radius: 15px;
 }
 
-h2 {
+.description {
   max-width: 50ch;
   text-align: center;
   font-weight: 400;
@@ -34,7 +34,12 @@ h2 {
   font-size: 25px;
 }
 
-.header {
+span {
+  font-weight: 800;
+
+}
+
+header {
   background-image: url("https://images.unsplash.com/photo-1517154421773-0529f29ea451?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
   background-size: cover;
   background-position: center;
@@ -107,6 +112,7 @@ h2 {
 .guide {
   min-height: 60vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }

@@ -14,9 +14,9 @@ function Character(data) {
     return `
         <div class="character-card">
           <div class="name-div">
-            <h4 class="name"> ${name} </h4>
+            <h2 class="name"> ${name} </h2>
           </div>
-          <img class="avatar" src="${avatar}"/>
+          <img class="avatar" alt="${name}" src="${avatar}"/>
           <div class="stats">
             <div class="health">Health: <b> ${health}</b></div>
             ${healthBar}

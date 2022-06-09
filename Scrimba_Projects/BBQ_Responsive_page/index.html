@@ -1,54 +1,67 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>BBQ Webinar</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
-    </head>
-    <body>
-        <header>
-            <div class="order-2 center">
-                <h1>Learn how to make 
-                    <span class="bold block">
-                        the best BBQ ribs
-                    </span>
-                    in town
-                </h1>
-                <h2 class="tagline display-big-visible">Join us for this live webinar</h2>
-            </div>
-                <h2 class="tagline display-big-invisible order-2">Join us for this live webinar</h2>
-            <div class="border-top-decoration order-1">
-                <p class="tagline small">Mouthwateringly delicious</p>
-            </div>
-        </header>
-        <main>
-            <div class="container" id="main-content">
-                <h2>Become a BBQ master!</h2>
-                <p class="tagline">Register today</p>
-                <p class="info-text">BBQ isn't just standing in front of your grill with it on full blast and hoping for the best. It's an art! One way to speed up the process is to learn from the best. You can do just that by signing up for this free webinar!</p>
-                
-                <form id="email-collector" action="#" method="POST">
-                    <label for="first-name" aria-label="First Name">
-                        <i class="bi bi-person-fill icon-1"></i>
-                        <input name="firstName" id="inputName" type="text" placeholder="First Name">
-                    </label>
-                    <label for="email" aria-label="E-mail">
-                        <i class="bi bi-at icon-2"></i>
-                        <input name="emailAddress" id="inputEmail" type="email" placeholder="E-mail">
-                    </label>
-                    <button type="button" class="button button-gradient" type="submit" id="submit-button"><i class="bi bi-envelope-fill"></i> Register</button>
-                    <p class="small disclaimer">We will never share your information without your permission.</p>           
-                </form>
-            </div>
-        </main>
-        
-        <script src="index.js"></script>
-    </body>
+<html lang="en">
+
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>BBQ Webinar</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <header>
+    <div class="order-2 center">
+      <h1>Learn how to make
+        <span class="bold block">
+          the best BBQ ribs
+        </span>
+        in town
+      </h1>
+      <h2 class="tagline display-big-visible">Join us for this live webinar</h2>
+    </div>
+    <h2 class="tagline display-big-invisible order-2">Join us for this live webinar</h2>
+    <div class="border-top-decoration order-1">
+      <p class="tagline small">Mouthwateringly delicious</p>
+    </div>
+  </header>
+  <main>
+    <div class="container" id="main-content">
+      <h2>Become a BBQ master!</h2>
+      <p class="tagline">Register today</p>
+      <p class="info-text">BBQ isn't just standing in front of your grill with it on full blast and hoping for the best.
+        It's an art! One way to speed up the process is to learn from the best. You can do just that by signing up for
+        this free webinar!</p>
+
+      <form id="email-collector" action="#" method="POST">
+
+        <label for="first-name" aria-label="First Name">
+          <i class="bi bi-person-fill icon-1" aria-hidden="true"></i>
+          <input name="firstName" id="inputName" type="text" placeholder="First Name">
+        </label>
+
+        <label for="email" aria-label="E-mail">
+          <i class="bi bi-at icon-2" aria-hidden="true"></i>
+          <input name="emailAddress" id="inputEmail" type="email" placeholder="E-mail">
+        </label>
+
+        <button type="button" class="button button-gradient" type="submit" id="submit-button"><i
+            class="bi bi-envelope-fill" aria-hidden="true"></i> Register</button>
+
+        <p class="small disclaimer">We will never share your information without your permission.</p>
+      </form>
+    </div>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+
 </html>

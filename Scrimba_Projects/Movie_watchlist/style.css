@@ -22,6 +22,19 @@ body {
   background-repeat: no-repeat;
 }
 
+/* hiding ARIA label */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 header {
   background-image: url("./img/movieposters3.webp");
   background-position: left 5% bottom 78%;
@@ -38,6 +51,7 @@ header a {
   color: #fff;
   text-decoration: none;
   font-size: 0.875rem;
+  text-align: center;
 }
 header a:hover {
   -webkit-text-decoration: 2px solid #fff underline;
@@ -50,9 +64,6 @@ header a:active {
 header h1 {
   color: #fff;
   text-align: left;
-}
-header h3 {
-  text-align: center;
 }
 
 button {

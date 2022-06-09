@@ -16,18 +16,20 @@
 <body>
   <header>
     <h1>Find your film</h1>
-    <h3><a href="./watchlist.html" id="watchlist-link">My Watchlist</a></h3>
+    <a href="./watchlist.html" id="watchlist-link">My Watchlist</a>
   </header>
 
-  <form class="search-bar">
+  <form class="search-bar" role="search">
     <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+    <label for="search-input" class="visually-hidden">Search</label>
     <input id="search-input" placeholder="Search for a movie" name="search">
     <button type="submit" id="search-button">Search</button>
   </form>
 
   <main>
     <div id="movies">
-      <i class="fa-solid fa-film"></i>
+      <h2 class="visually-hidden">Movies:</h2>
+      <i class="fa-solid fa-film" aria-hidden="true"></i>
       <p class="placeholder-text">Start exploring</p>
     </div>
   </main>

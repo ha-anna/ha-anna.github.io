@@ -7,11 +7,13 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-  <div class="container">
+  <h1 class="visually-hidden">Color Scheme Generator</h1>
+  <main class="container">
     <div class="col-span">
       <label for="base-color" class="visually-hidden">Choose base color:</label>
       <input type="color" id="base-color" name="base-color" value="#fff">
@@ -39,23 +41,28 @@
     <div class="color-field"></div>
 
     <div class="color-hex">
-      <input type="text" class="color-generated-input" value="">
+      <label for="1-color" class="visually-hidden">First color:</label>
+      <input type="text" id="1-color" class="color-generated-input" value="">
     </div>
     <div class="color-hex">
-      <input type="text" class="color-generated-input" value="">
+      <label for="2-color" class="visually-hidden">Second color:</label>
+      <input type="text" id="2-color" class="color-generated-input" value="">
     </div>
     <div class="color-hex">
-      <input type="text" class="color-generated-input" value="">
+      <label for="3-color" class="visually-hidden">Third color:</label>
+      <input type="text" id="3-color" class="color-generated-input" value="">
     </div>
     <div class="color-hex">
-      <input type="text" class="color-generated-input" value="">
+      <label for="4-color" class="visually-hidden">Fourth color:</label>
+      <input type="text" id="4-color" class="color-generated-input" value="">
     </div>
     <div class="color-hex">
-      <input type="text" class="color-generated-input" value="">
+      <label for="5-color" class="visually-hidden">FIfth color:</label>
+      <input type="text" id="5-color" class="color-generated-input" value="">
     </div>
-  </div>
+  </main>
   <p id="message">Copied to clipboard.</p>
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>

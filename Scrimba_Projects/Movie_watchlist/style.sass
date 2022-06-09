@@ -32,6 +32,19 @@ body
   background-size: cover
   background-repeat: no-repeat
 
+/* hiding ARIA label */
+
+.visually-hidden
+  position: absolute
+  width: 1px
+  height: 1px
+  padding: 0
+  margin: -1px
+  overflow: hidden
+  clip: rect(0, 0, 0, 0)
+  white-space: nowrap
+  border: 0
+
 header
   background-image: url('./img/movieposters3.webp')
   background-position: left 5% bottom 78%
@@ -50,6 +63,7 @@ header
     color: $white
     text-decoration: none
     font-size: 0.875rem
+    text-align: center
 
     &:hover
       text-decoration: 2px solid $white underline
@@ -60,9 +74,6 @@ header
   h1
     color: $white
     text-align: left
-
-  h3
-    text-align: center
 
 button
   border-top-right-radius: $border-radius
