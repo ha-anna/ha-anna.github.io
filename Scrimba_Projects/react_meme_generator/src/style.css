@@ -55,11 +55,11 @@ header {
 
 main {
   margin-top: 150px;
-  height: 80vh;
+  height: 100%;
   display: flex;
-  flex-flow: row wrap;
-  align-items: flex-start;
-  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .meme-generator {
@@ -106,6 +106,14 @@ button:active {
 button:focus {
   outline: 5px solid var(--secondary-accent)
 }
+
+.meme-img {
+  max-width: 500px;
+  height: 100%;
+  object-fit: contain;
+  margin: 50px;
+}
+
 
 @media screen and (min-width: 550px) {
 
