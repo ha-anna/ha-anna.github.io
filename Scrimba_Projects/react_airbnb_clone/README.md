@@ -21,7 +21,7 @@ Through this project I was getting used to React and learning more about props a
 
 ### Screenshot
 
-<img src="./gif_%20airbnb-clone.gif" max-width="100%" height="400">
+![alt text](./gif_airbnb-clone.gif)
 
 ### Links
 
@@ -44,7 +44,9 @@ I learned about props and creating reusable components.
 
 ### Continued development
 
-I will be adding more experiences and fixing some minor CSS issues soon.
+[7 June 2022] I will be adding more experiences and fixing some minor CSS issues soon.
+
+[13 June 2022] I added custom animations and transitions so that all cards can be seen without the need to do anything.
 
 ### Useful resources
 
