@@ -74,6 +74,33 @@ h2{
   gap: 20px;
   overflow-x: auto;
   padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.card {
+  animation: linear infinite alternate;
+  animation-name: run;
+  animation-duration: 15s;
+}
+
+@keyframes run {
+  0% {
+    transform: translateX(-50vw);
+  }
+
+  100% {
+    transform: translateX(0vw)
+  }
+}
+
+.cards:hover > .card {
+  animation-play-state: paused;
+}
+
+ .card--image:hover {
+  transform: scale(1.3);
 }
 
 .card {
@@ -96,6 +123,7 @@ h2{
 .card--image {
   max-width: 100%;
   object-fit: cover;
+  transition: transform 400ms ease-in-out;
 }
 
 .card--state {
