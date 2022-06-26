@@ -16,40 +16,43 @@
 <body>
   <main>
     <div id="container">
+
       <div id="head">
         <h1>Invoice creator</h1>
-        <p class="comment">Thanks for choosing GoodCorp, LLC!</p>
+        <p class="desc">Thanks for choosing GoodCorp, LLC!</p>
       </div>
+
       <div id="buttons">
-        <button type="button" id="wash-btn">Wash Car: $10</button>
-        <button type="button" id="mow-btn">Mow Lawn: $20</button>
-        <button type="button" id="weed-btn">Pull Weeds: $30</button>
+        <button type="button" id="wash-btn" value="0" class="task-button">Wash Car: $10</button>
+        <button type="button" id="mow-btn" value="1" class="task-button">Mow Lawn: $20</button>
+        <button type="button" id="weed-btn" value="2" class="task-button">Pull Weeds: $30</button>
       </div>
-      <div id="content">
-        <div id="list">
-          <div class="col-left">
-            <p>Task</p>
-            <div id="task-el"></div>
-          </div>
-          <div class="col-right" id="total-el">
-            <p>Total</p>
-          </div>
+
+      <div id="list">
+        <div class="space-between">
+          <p>Task</p>
+          <p>Total</p>
         </div>
-        <hr>
-        <div id="summary">
-          <div class="col-left" id="notes-el">
-            <p>Notes</p>
-            <span id="notes-txt">
-              We accept cash, credit card, or Paypal
-            </span>
-          </div>
-          <div class="col-right" id="total-amount-el">
-            <p>Total amount</p>
-            <span id="amount-text">$0</span>
-          </div>
+
+        <div id="invoice-tasks">
+
         </div>
       </div>
-      <button type="button" id="send-btn"><i class="bi bi-envelope-fill" aria-hidden="true"></i> Send Invoice</button>
+      <div id="summary">
+        <div class="space-between line">
+          <p>Notes</p>
+          <p>Total amount</p>
+        </div>
+
+        <div class="space-between">
+          <span id="notes-txt">
+            We accept cash, credit card, or Paypal
+          </span>
+          <span id="total-el">$0</span>
+        </div>
+
+        <button type="button" id="send-btn"><i class="bi bi-envelope-fill"></i> Send Invoice</button>
+      </div>
     </div>
   </main>
   <script src="./script.js"></script>
