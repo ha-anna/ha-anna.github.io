@@ -1,0 +1,42 @@
+:root {
+  --blue: #86bfd7;
+  --navy: #172a3a;
+}
+
+html,
+body {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: monospace;
+  background: var(--navy);
+  color: var(--navy);
+}
+
+.container {
+  background: var(--blue);
+  max-width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+a {
+  color: var(--navy);
+  text-decoration: none;
+  background: white;
+}
+
+a:hover {
+  font-weight: 800;
+}
