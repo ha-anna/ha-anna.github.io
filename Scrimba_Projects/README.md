@@ -44,8 +44,11 @@ Hello! Here you can see all the projects I coded while completing [Scrimba's Fro
 19. [Airbnb Experiences Clone](https://react-airbnb-clone-mocha.vercel.app/)<br>
 20. [My Travel Journal](https://react-travel-journal-one.vercel.app/)<br>
 21. [Meme Generator](https://react-meme-generator-liart.vercel.app/)<br>
+22. [Tenzies Game](https://react-tenzies-game.vercel.app/)<br>
 
 ## My process
+
+More information about every project can be found in its folder's README.
 
 ### Built with
 
