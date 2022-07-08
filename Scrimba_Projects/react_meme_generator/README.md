@@ -7,6 +7,7 @@ This project is a part of Scrimba's Frontend Developer Career Path.
 - [Overview](#overview)
   - [Screenshot](#screenshot)
   - [Links](#links)
+  - [Features](#features)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -17,18 +18,22 @@ This project is a part of Scrimba's Frontend Developer Career Path.
 
 ## Overview
 
-
-
 ### Screenshot
 
-![alt text](./)
+![alt text](./gif_meme-generator.gif)
 
 ### Links
 
-- Live Site URL: [Meme Generator]()
+- Live Site URL: [Meme Generator](https://react-meme-generator-liart.vercel.app/)
+
+### Features
+
+- shuffle through various meme images
+- add top and bottom text of your choice
 
 ## My process
 
+I started from setting the project, creating he logo and writing CSS. AFter that, I worked on adding functionality and making sure everything works and is responsive and accessible.
 
 ### Built with
 
@@ -37,9 +42,11 @@ This project is a part of Scrimba's Frontend Developer Career Path.
 
 ### What I learned
 
+How to organize my code, fetch data from API and take care of side effects. I've also learned about how to create basic forms and manage their state.
 
 ### Continued development
 
+This project is in its final form and for now there are no plans for adding any other functionality.
 
 ### Useful resources
 
