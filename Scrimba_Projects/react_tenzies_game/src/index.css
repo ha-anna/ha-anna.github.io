@@ -6,7 +6,7 @@
   --font: #2B283A;
   --secondary: #4A4E74;
   --white: #fff;
-  --die-match: #B1F2F2;
+  --die-match: #330867;
   --btn-bg: #330867;
   --link: #8E76AB;
   --shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
@@ -86,6 +86,13 @@ a:hover {
   max-width: 700px;
 }
 
+.stats,
+.stopwatch {
+  font-size: 1rem;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
 .dices {
   width: 100%;
   display: grid;
@@ -96,48 +103,58 @@ a:hover {
 }
 
 .die {
-  background: var(--white);
-  color: var(--font);
-  width: 80%;
-  aspect-ratio: 1/1;
-  border-radius: 6px;
-  box-shadow: var(--shadow);
-  font-size: 1.9rem;
   margin: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Karla', sans-serif;
-  font-weight: 700;
-  transition: all 100ms ease-in;
-  cursor: pointer;
+  border-radius: 6px;
+  clip-path: inset(5px 0px 5px 0px);
+  border-radius: 25px;
+  transition: all 200ms ease-in;
 }
 
-
-.die:hover {
-  box-shadow: var(--shadow-strong);
+.die:active {
+  background: var(--link);
+  transform: scale(0.98);
 }
 
-button {
+.roll-btn {
+  font-size: 2rem;
+  padding: 10px 40px;
+  margin: 10px;
+  margin-bottom: 30px;
+}
+
+.stopwatch-btn {
+  margin: 10px 5px;
+  padding: 3px 6px;
+}
+
+.roll-btn,
+.stopwatch-btn {
   font-family: 'Karla', sans-serif;
   color: var(--white);
   box-shadow: var(--shadow);
   background: var(--btn-bg);
   border-radius: 6px;
   border: none;
-  font-size: 2rem;
-  padding: 10px 40px;
-  margin: 10px;
-  margin-bottom: 30px;
-  cursor: pointer;
   transition: all 200ms ease-in;
+  cursor: pointer;
 }
 
-button:hover {
+.roll-btn:hover,
+.stopwatch-btn:hover {
   background: var(--link);
 }
 
-button:active {
-  box-shadow: var(--shadow-strong-x2);
+.stopwatch-btn:active {
   transform: scale(0.98);
+}
+
+i {
+  font-size: 5rem;
+
+}
+
+i:hover {
+  color: var(--bg);
+  cursor: pointer;
+  transition: all 200ms ease-in;
 }

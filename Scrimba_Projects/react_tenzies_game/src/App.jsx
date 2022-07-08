@@ -2,10 +2,12 @@ import React from 'react'
 import { nanoid } from 'nanoid'
 import Confetti from 'react-confetti'
 import Die from './Die'
+import Stopwatch from './Stopwatch'
 
 export default function App() {
   const [dice, setDice] = React.useState(allNewDice())
   const [tenzies, setTenzies] = React.useState(false)
+  const [rollNum, setRollNum] = React.useState(0)
 
   React.useEffect(function () {
     const allHeld = dice.every(die => die.isHeld)
@@ -48,6 +50,7 @@ export default function App() {
         die :
         generateNewDie()
     }))
+    setRollNum(oldRollNum => oldRollNum + 1)
   }
 
   function holdDice(id) {
@@ -61,6 +64,7 @@ export default function App() {
   function newGame() {
     setDice(allNewDice())
     setTenzies(false)
+    setRollNum(0)
   }
 
   return (
@@ -72,16 +76,13 @@ export default function App() {
         <div className="dices">
           {diceElements}
         </div>
-        <button type="button" onClick={tenzies ? () => newGame() : () => rollDice()}>{tenzies ? "New Game" : "Roll"}</button>
+        <button className="roll-btn" type="button" onClick={tenzies ? () => newGame() : () => rollDice()}>{tenzies ? "New Game" : "Roll"}</button>
+        <p className="stats">Rolled: {rollNum} times</p>
+        <div>
+          <p className="stopwatch">Time: {<Stopwatch />}</p>
+        </div>
       </div>
       <p className="credit">Made with 💜 by <a href="https://www.haanna.com" target="_blank">Ha Anna</a></p>
     </>
   )
 }
-
-
-// extra credit
-// 1. CSS put real dots on the dice
-// 2. track number of rolls
-// 3. track the tme it took to win
-// 4. save your best time to localStorage
