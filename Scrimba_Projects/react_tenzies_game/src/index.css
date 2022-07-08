@@ -1,17 +1,25 @@
+@import-normalize;
+
 :root {
   --bg: #330867;
   --card-bg: #F5F5F5;
   --font: #2B283A;
   --secondary: #4A4E74;
   --white: #fff;
-  --die-match: #30cfd0;
+  --die-match: #B1F2F2;
   --btn-bg: #330867;
+  --link: #8E76AB;
   --shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
   --shadow-strong: 0px 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-strong-x2: 0px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 * {
   box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
 }
 
 body {
@@ -19,10 +27,9 @@ body {
   height: 100vh;
   max-width: 100%;
   background-color: var(--bg);
-  background-image: linear-gradient(to top, #330867 0%, #30cfd0 100%);
-  background-size: cover;
+  background-image: url('./img/patternpad.jpeg');
+  background-size: 700px;
   background-position: center;
-  background-repeat: no-repeat;
   color: var(--white);
   display: flex;
   justify-content: center;
@@ -35,7 +42,7 @@ body {
   color: var(--secondary);
   font-size: 1.5rem;
   max-width: 700px;
-  padding: 20px;
+  padding: 20px 50px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -48,7 +55,7 @@ body {
 h1 {
   font-family: 'Karla', sans-serif;
   color: var(--font);
-  font-size: 3.5em;
+  font-size: 3.5rem;
   margin-top: 20px;
   margin-bottom: 0px;
 }
@@ -56,35 +63,42 @@ h1 {
 .description {
   max-width: 450px;
   margin: 10px;
+  font-size: 1.2rem;
 }
 
 a {
-  color: var(--die-match);
+  color: var(--btn-bg);
 }
 
 a:hover {
-  color: var(--white);
+  color: var(--link);
   transition: all 300ms ease-in;
 }
 
 .credit {
   text-align: center;
+  margin: 20px;
   margin-bottom: 50px;
+  color: var(--font);
+  background: var(--card-bg);
+  border-radius: 6px;
+  padding: 20px;
+  max-width: 700px;
 }
 
 .dices {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  margin: 20px 0px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  margin: 20px auto;
 }
 
 .die {
   background: var(--white);
-  width: 10%;
-  min-width: 50px;
+  color: var(--font);
+  width: 80%;
   aspect-ratio: 1/1;
   border-radius: 6px;
   box-shadow: var(--shadow);
@@ -95,13 +109,10 @@ a:hover {
   justify-content: center;
   font-family: 'Karla', sans-serif;
   font-weight: 700;
-  transition: all 300ms ease-in;
+  transition: all 100ms ease-in;
   cursor: pointer;
 }
 
-.die:nth-child(5n) {
-  break-after: always;
-}
 
 .die:hover {
   box-shadow: var(--shadow-strong);
@@ -119,13 +130,14 @@ button {
   margin: 10px;
   margin-bottom: 30px;
   cursor: pointer;
-  transition: background 200ms ease-in;
+  transition: all 200ms ease-in;
 }
 
 button:hover {
-  background: var(--secondary);
+  background: var(--link);
 }
 
 button:active {
-  color: var(--die-match);
+  box-shadow: var(--shadow-strong-x2);
+  transform: scale(0.98);
 }
