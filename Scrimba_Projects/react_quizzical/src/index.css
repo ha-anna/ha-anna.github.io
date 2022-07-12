@@ -131,6 +131,7 @@ select {
 button:disabled {
   border: 2px solid var(--answer-disabled);
   color: var(--answer-disabled);
+  cursor: none;
 }
 
 /* typography */
