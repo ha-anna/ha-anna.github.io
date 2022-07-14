@@ -55,10 +55,16 @@ export default function Questions({ game, setGame, questions }) {
         question.isCorrect = false
       }
     })
+
   }
 
-  function refresh() {
-    window.location.reload();
+  function clearState() {
+    setGame(prevState => prevState = {
+      pageView: 'index',
+      isStarted: false,
+      isOver: false,
+      points: 0,
+    })
   }
 
   return (
@@ -68,7 +74,7 @@ export default function Questions({ game, setGame, questions }) {
         <p className="quiz-description">Out of 10 questions, how many will you get right? Let's find out!</p>
         {questionsHtml}
         {game.isOver ? <p className="points">Correct answers: {game.points} / 10</p> : ""}
-        <button className="check-btn" onClick={game.isOver ? refresh : checkAnswers}>{game.isOver ? "New Game" : "Check answers"}</button>
+        <button className="check-btn" onClick={game.isOver ? clearState : checkAnswers}>{game.isOver ? "New Game" : "Check answers"}</button>
       </div>
     </>
   )
