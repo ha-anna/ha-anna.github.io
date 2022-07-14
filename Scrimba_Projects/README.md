@@ -45,6 +45,7 @@ Hello! Here you can see all the projects I coded while completing [Scrimba's Fro
 20. [My Travel Journal](https://react-travel-journal-one.vercel.app/)<br>
 21. [Meme Generator](https://react-meme-generator-liart.vercel.app/)<br>
 22. [Tenzies Game](https://react-tenzies-game.vercel.app/)<br>
+23. [Quizzical](https://react-quizzical.vercel.app/)<br>
 
 ## My process
 
