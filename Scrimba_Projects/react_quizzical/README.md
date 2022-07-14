@@ -57,7 +57,7 @@ The code will need additional refactoring to make it cleaner and more DRY.
 ### Useful resources
 
 - [Scrimba](https://www.scrimba.com)
-- [Patternpad](https://patternpad.com/)
+- [Open Trivia DB API](https://opentdb.com/api_config.php)
 
 ## Author
 
