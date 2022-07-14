@@ -1,17 +1,17 @@
 :root {
-  --bg: #F5F7FB;
+  --bg: #f2f4f7;
   --font: #293264;
   --btn-bg: #4D5B9E;
   --btn-bg-hover: #293264;
   --btn-font: #F5F7FB;
-  --answer-picked: #D6DBF5;
+  --answer-picked: #e2e5f7;
   --answer-border: #4D5B9E;
-  --answer-correct: #94D7A2;
-  --answer-disabled: rgba(41, 50, 65, 0.5);
-  --answer-wrong: #F8BCBC;
+  --answer-correct: #b3debc;
+  --answer-disabled: #434954;
+  --answer-disabled-border: #b4b8c2;
+  --answer-wrong: #fddbdb;
   --answer-div-border: #DBDEF0;
 }
-
 
 * {
   box-sizing: border-box;
@@ -64,7 +64,8 @@ label {
   font-size: 1.2rem;
 }
 
-select {
+select,
+input {
   background: var(--answer-picked);
   border: 2px solid var(--answer-border);
   border-radius: 15px;
@@ -76,8 +77,7 @@ select {
 
 /* questions */
 
-
-.container-quizz {
+.container-quiz {
   width: 90%;
   max-width: 900px;
   max-height: 100%;
@@ -88,6 +88,12 @@ select {
   padding: 30px;
   border: 2px solid var(--answer-div-border);
   border-radius: 8px;
+}
+
+.quiz-description {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .container-question {
@@ -125,13 +131,14 @@ select {
   cursor: pointer;
 }
 
-.answer-btn:hover:not(:disabled){
+.answer-btn:hover:not(:disabled),
+.answer-btn:focus:not(:disabled){
   background: var(--answer-picked);
 }
 
+
 button:disabled {
-  border: 2px solid var(--answer-disabled);
-  color: var(--answer-disabled);
+  border: 2px solid var(--answer-disabled-border);
   cursor: none;
 }
 

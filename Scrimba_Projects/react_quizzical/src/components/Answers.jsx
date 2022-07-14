@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import he from 'he'
 import { nanoid } from "nanoid";
 
-export default function Answers(props) {
-  const { all_answers, questionId, setQuestionState, gameOver, isCorrect, correct_answer } = props
+export default function Answers({ all_answers, questionId, setQuestionState, isGameOver, isCorrect, correct_answer }) {
 
   const answers = all_answers.map(answer => {
     return {
@@ -13,8 +12,7 @@ export default function Answers(props) {
     }
   })
 
-  const [answerState, setAnswerState] = React.useState(answers)
-
+  const [answerState, setAnswerState] = useState(answers)
 
   function toggle(idAnswer, idQuestion, answer) {
     setAnswerState(answers => {
@@ -38,36 +36,33 @@ export default function Answers(props) {
             ...question,
             playerAnswer: answer,
           } :
-          {
-            ...question,
-          }
+          question
       })
     })
   }
 
-
   function stylize(item) {
-    if (gameOver && item.isPicked && isCorrect) {
+    if (isGameOver && item.isPicked && isCorrect) {
       return {
         background: "var(--answer-correct)",
         border: "2px solid var(--answer-correct)"
       }
-    } else if (gameOver && item.isPicked && !isCorrect) {
+    } else if (isGameOver && item.isPicked && !isCorrect) {
       return {
         background: "var(--answer-wrong)",
         border: "2px solid var(--answer-wrong)"
       }
-    } else if (item.isPicked && !gameOver) {
+    } else if (item.isPicked && !isGameOver) {
       return {
         background: "var(--answer-picked)",
         border: "2px solid var(--answer-picked)"
       }
-    } else if (gameOver && item.answer === correct_answer) {
+    } else if (isGameOver && item.answer === correct_answer) {
       return {
         background: "var(--answer-picked)",
         border: "2px solid var(--answer-picked)"
       }
-    } else if (!item.isPicked && !gameOver) {
+    } else if (!item.isPicked && !isGameOver) {
       return {
         background: "",
         border: ""
@@ -75,9 +70,7 @@ export default function Answers(props) {
     }
   }
 
-
   const answersHtml = answerState.map(item => {
-
     return (
       <button
         id={item.id}
@@ -85,13 +78,12 @@ export default function Answers(props) {
         style={stylize(item)}
         className="answer-btn"
         onClick={() => toggle(item.id, questionId, item.answer)}
-        disabled={gameOver ? true : false}
+        disabled={isGameOver ? true : false}
       >
         {he.decode(item.answer)}
       </button>
     )
   })
-
 
   return (
     <>

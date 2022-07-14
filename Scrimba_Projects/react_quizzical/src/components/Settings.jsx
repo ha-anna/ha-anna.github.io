@@ -1,14 +1,17 @@
 import React from "react";
 
-export default function Settings(props) {
-  const { formData, handleChange, setState } = props
+export default function Settings({ formData, handleChange, setGame }) {
 
   function displayQuestions() {
-    setState(prevState => !prevState)
+    setGame(prevState => {
+      return {
+        ...prevState,
+        pageView: 'questions',
+      }
+    })
   }
 
   return (
-
     <div className="container-settings">
       <h2>Choose your settings:</h2>
       <form className="form-settings">
@@ -45,7 +48,6 @@ export default function Settings(props) {
           <option value="31">Entertainment: Japanese Anime & Manga</option>
           <option value="32">Entertainment: Cartoon & Animation</option>
         </select>
-
         <label htmlFor="difficulty">Difficulty:</label>
         <select
           id="difficulty"
@@ -58,8 +60,7 @@ export default function Settings(props) {
           <option value="medium">Medium</option>
           <option value="hard">Hard</option>
         </select>
-
-        <button type="button" className="start-btn" onClick={displayQuestions}>Start Quizz</button>
+        <button type="button" className="start-btn" onClick={displayQuestions}>Start Quiz</button>
       </form>
     </div>
   )

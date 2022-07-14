@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { nanoid } from 'nanoid'
 import SVG_Blue from './components/SVG-blue'
 import SVG_Yellow from './components/SVG-yellow'
@@ -7,25 +7,26 @@ import Settings from './components/Settings'
 import Questions from './components/Questions'
 
 export default function App() {
-  const [displaySettings, setDisplaySettings] = React.useState(false)
-  const [displayQuestions, setDisplayQuestions] = React.useState(false)
-  const [gameStart, setGameStart] = React.useState(false)
-  const [questionData, setQuestionData] = React.useState([]);
-  const [gamePoints, setGamePoints] = React.useState(0)
-  const [gameOver, setGameOver] = React.useState(false)
-  const [formData, setFormData] = React.useState(
+  const [questionData, setQuestionData] = useState([]);
+  const initialGameState = {
+    pageView: 'index',
+    isStarted: false,
+    isOver: false,
+    points: 0,
+  }
+  const [game, setGame] = useState(initialGameState)
+  const [formData, setFormData] = useState(
     {
       category: "",
       difficulty: "",
     }
   )
 
-  React.useEffect(() => {
+  useEffect(() => {
     fetch(`https://opentdb.com/api.php?amount=10&category=${formData.category}&difficulty=${formData.difficulty}&type=multiple`)
       .then(res => res.json())
       .then(data => setQuestionData(data.results.map(item => {
         const { question, correct_answer, incorrect_answers } = item
-
         return {
           id: nanoid(),
           question: question,
@@ -33,9 +34,7 @@ export default function App() {
           answers: [...incorrect_answers, correct_answer],
         }
       })))
-  }, [gameStart])
-
-
+  }, [game.isStarted])
 
   function handleChange(event) {
     const { name, value } = event.target
@@ -45,38 +44,33 @@ export default function App() {
         [name]: value
       }
     })
-    setGameStart(true)
+    setGame(prevState => {
+      return {
+        ...prevState,
+        isStarted: !prevState.isStarted,
+      }
+    })
   }
-
 
   return (
     <>
       <SVG_Yellow />
-
-      {!displaySettings &&
+      {game.pageView === 'index' &&
         <Intro
-          state={displaySettings}
-          setState={setDisplaySettings}
+          setGame={setGame}
         />}
-
-      {displaySettings &&
-        !displayQuestions &&
+      {game.pageView === 'settings' &&
         <Settings
           formData={formData}
           handleChange={handleChange}
-          setState={setDisplayQuestions}
+          setGame={setGame}
         />}
-
-      {displaySettings &&
-        displayQuestions &&
+      {game.pageView === 'questions' &&
         <Questions
           questions={questionData}
-          gamePoints={gamePoints}
-          setGamePoints={setGamePoints}
-          gameOver={gameOver}
-          setGameOver={setGameOver}
+          game={game}
+          setGame={setGame}
         />}
-
       <SVG_Blue />
     </>
   )
