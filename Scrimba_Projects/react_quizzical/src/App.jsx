@@ -68,8 +68,10 @@ export default function App() {
       {game.pageView === 'questions' &&
         <Questions
           questions={questionData}
+          setQuestionData={setQuestionData}
           game={game}
           setGame={setGame}
+          setFormData={setFormData}
         />}
       <SVG_Blue />
     </>

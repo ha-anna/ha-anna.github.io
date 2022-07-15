@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
 import he from 'he'
-import { nanoid } from "nanoid";
+import { nanoid } from 'nanoid'
 
 export default function Answers({ all_answers, questionId, setQuestionState, isGameOver, isCorrect, correct_answer }) {
 

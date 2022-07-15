@@ -1,9 +1,9 @@
-import React, { useState } from "react"
-import shuffleArray from "shuffle-array"
+import React, { useState } from 'react'
+import shuffleArray from 'shuffle-array'
 import he from 'he'
-import Answers from "./Answers"
+import Answers from './Answers'
 
-export default function Questions({ game, setGame, questions }) {
+export default function Questions({ game, setGame, questions, setQuestionData, setFormData }) {
   const data = questions.map(question => {
     return {
       number: questions.indexOf(question) + 1,
@@ -65,6 +65,11 @@ export default function Questions({ game, setGame, questions }) {
       isOver: false,
       points: 0,
     })
+    setFormData(prevState => prevState = {
+      category: "",
+      difficulty: "",
+    })
+    setQuestionData([])
   }
 
   return (
