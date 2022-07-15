@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import he from 'he'
+import { decode } from 'html-entities'
 import { nanoid } from 'nanoid'
 
 export default function Answers({ all_answers, questionId, setQuestionState, isGameOver, isCorrect, correct_answer }) {
@@ -80,7 +80,7 @@ export default function Answers({ all_answers, questionId, setQuestionState, isG
         onClick={() => toggle(item.id, questionId, item.answer)}
         disabled={isGameOver ? true : false}
       >
-        {he.decode(item.answer)}
+        {decode(item.answer)}
       </button>
     )
   })

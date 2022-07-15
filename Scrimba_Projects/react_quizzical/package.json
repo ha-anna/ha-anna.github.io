@@ -10,6 +10,7 @@
   "dependencies": {
     "decode-html": "^2.0.0",
     "he": "^1.2.0",
+    "html-entities": "^2.3.3",
     "nanoid": "^4.0.0",
     "normalize.css": "^8.0.1",
     "react": "^18.0.0",

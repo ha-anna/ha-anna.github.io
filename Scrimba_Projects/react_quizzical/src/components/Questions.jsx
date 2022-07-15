@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import shuffleArray from 'shuffle-array'
-import he from 'he'
+import { decode } from 'html-entities'
 import Answers from './Answers'
 
 export default function Questions({ game, setGame, questions, setQuestionData, setFormData }) {
@@ -21,7 +21,7 @@ export default function Questions({ game, setGame, questions, setQuestionData, s
   const questionsHtml = questionState.map(item => {
     return (
       <div key={item.id} id={item.id} className="container-question">
-        <h2 className="question-title">{item.number}. {he.decode(item.question)}</h2>
+        <h2 className="question-title">{item.number}. {decode(item.question)}</h2>
         <Answers
           isGameOver={game.isOver}
           questionId={item.id}
