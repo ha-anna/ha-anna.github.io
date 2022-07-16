@@ -1,15 +1,6 @@
 import React from 'react'
 
-export default function Settings({ formData, handleChange, setGame }) {
-
-  function displayQuestions() {
-    setGame(prevState => {
-      return {
-        ...prevState,
-        pageView: 'questions',
-      }
-    })
-  }
+export default function Settings({ formData, handleChange, displayQuestions }) {
 
   return (
     <div className="container-settings">
@@ -60,7 +51,7 @@ export default function Settings({ formData, handleChange, setGame }) {
           <option value="medium">Medium</option>
           <option value="hard">Hard</option>
         </select>
-        <button type="button" className="start-btn" onClick={displayQuestions}>Start Quiz</button>
+        <button type="button" className="start-btn" onClick={() => displayQuestions()}>Start Quiz</button>
       </form>
     </div>
   )

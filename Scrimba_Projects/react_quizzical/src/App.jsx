@@ -8,18 +8,15 @@ import Questions from './components/Questions'
 
 export default function App() {
   const [questionData, setQuestionData] = useState([]);
-  const initialGameState = {
+  const [game, setGame] = useState({
     pageView: 'index',
-    isStarted: false,
     isOver: false,
     points: 0,
+  })
+  const [formData, setFormData] = useState({
+    category: "",
+    difficulty: "",
   }
-  const [game, setGame] = useState(initialGameState)
-  const [formData, setFormData] = useState(
-    {
-      category: "",
-      difficulty: "",
-    }
   )
 
   useEffect(() => {
@@ -34,7 +31,7 @@ export default function App() {
           answers: [...incorrect_answers, correct_answer],
         }
       })))
-  }, [game.isStarted])
+  }, [formData])
 
   function handleChange(event) {
     const { name, value } = event.target
@@ -44,26 +41,40 @@ export default function App() {
         [name]: value
       }
     })
+  }
+
+  function displaySettings() {
     setGame(prevState => {
       return {
         ...prevState,
-        isStarted: !prevState.isStarted,
+        pageView: 'settings',
       }
     })
   }
+
+  function displayQuestions() {
+    setGame(prevState => {
+      return {
+        ...prevState,
+        pageView: 'questions',
+      }
+    })
+  }
+
+
 
   return (
     <>
       <SVG_Yellow />
       {game.pageView === 'index' &&
         <Intro
-          setGame={setGame}
+          displaySettings={displaySettings}
         />}
       {game.pageView === 'settings' &&
         <Settings
           formData={formData}
           handleChange={handleChange}
-          setGame={setGame}
+          displayQuestions={displayQuestions}
         />}
       {game.pageView === 'questions' &&
         <Questions

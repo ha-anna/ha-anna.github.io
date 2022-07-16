@@ -4,7 +4,7 @@ import { decode } from 'html-entities'
 import Answers from './Answers'
 
 export default function Questions({ game, setGame, questions, setQuestionData, setFormData }) {
-  const data = questions.map(question => {
+  const data = questions.map((question) => {
     return {
       number: questions.indexOf(question) + 1,
       id: question.id,
@@ -61,7 +61,6 @@ export default function Questions({ game, setGame, questions, setQuestionData, s
   function clearState() {
     setGame(prevState => prevState = {
       pageView: 'index',
-      isStarted: false,
       isOver: false,
       points: 0,
     })
