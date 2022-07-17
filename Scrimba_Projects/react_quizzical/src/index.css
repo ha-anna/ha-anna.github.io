@@ -132,6 +132,7 @@ input {
 }
 
 .answer-btn:hover:not(:disabled),
+.answer-btn:active:not(:disabled),
 .answer-btn:focus:not(:disabled){
   background: var(--answer-picked);
 }
@@ -139,7 +140,7 @@ input {
 
 button:disabled {
   border: 2px solid var(--answer-disabled-border);
-  cursor: none;
+  cursor: not-allowed;
 }
 
 /* typography */

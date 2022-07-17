@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { decode } from 'html-entities'
 import { nanoid } from 'nanoid'
 
-export default function Answers({ all_answers, questionId, setQuestionState, isGameOver, isCorrect, correct_answer }) {
+export default function Answers({ all_answers, questionId, savePickedAnswers, isGameOver, isCorrect, correct_answer }) {
 
   const answers = all_answers.map(answer => {
     return {
@@ -29,16 +29,7 @@ export default function Answers({ all_answers, questionId, setQuestionState, isG
       })
     })
 
-    setQuestionState(questions => {
-      return questions.map(question => {
-        return question.id === idQuestion ?
-          {
-            ...question,
-            playerAnswer: answer,
-          } :
-          question
-      })
-    })
+    savePickedAnswers(idQuestion, answer)
   }
 
   function stylize(item) {

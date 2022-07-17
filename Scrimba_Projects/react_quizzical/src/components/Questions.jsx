@@ -3,7 +3,8 @@ import shuffleArray from 'shuffle-array'
 import { decode } from 'html-entities'
 import Answers from './Answers'
 
-export default function Questions({ game, setGame, questions, setQuestionData, setFormData }) {
+export default function Questions({ game, questions, endGame, countPoints, clearState }) {
+
   const data = questions.map((question) => {
     return {
       number: questions.indexOf(question) + 1,
@@ -27,48 +28,36 @@ export default function Questions({ game, setGame, questions, setQuestionData, s
           questionId={item.id}
           all_answers={item.answers}
           correct_answer={item.correct_answer}
-          setQuestionState={setQuestionState}
+          savePickedAnswers={savePickedAnswers}
           isCorrect={item.isCorrect}
         />
       </div>
     )
   })
 
-  function checkAnswers() {
-    setGame(prevState => {
-      return {
-        ...prevState,
-        isOver: true,
-      }
+  function savePickedAnswers(idQuestion, answer) {
+    setQuestionState(questions => {
+      return questions.map(question => {
+        return question.id === idQuestion ?
+          {
+            ...question,
+            playerAnswer: answer,
+          } :
+          question
+      })
     })
+  }
 
+  function checkAnswers() {
+    endGame()
     questionState.map(question => {
       if (question.correct_answer === question.playerAnswer) {
-        setGame(prevState => {
-          return {
-            ...prevState,
-            points: prevState.points + 1,
-          }
-        })
+        countPoints()
         question.isCorrect = true
       } else {
         question.isCorrect = false
       }
     })
-
-  }
-
-  function clearState() {
-    setGame(prevState => prevState = {
-      pageView: 'index',
-      isOver: false,
-      points: 0,
-    })
-    setFormData(prevState => prevState = {
-      category: "",
-      difficulty: "",
-    })
-    setQuestionData([])
   }
 
   return (

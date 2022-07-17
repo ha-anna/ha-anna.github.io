@@ -7,17 +7,19 @@ import Settings from './components/Settings'
 import Questions from './components/Questions'
 
 export default function App() {
-  const [questionData, setQuestionData] = useState([]);
+
+  const [questionData, setQuestionData] = useState([])
+
   const [game, setGame] = useState({
     pageView: 'index',
     isOver: false,
     points: 0,
   })
+
   const [formData, setFormData] = useState({
     category: "",
     difficulty: "",
-  }
-  )
+  })
 
   useEffect(() => {
     fetch(`https://opentdb.com/api.php?amount=10&category=${formData.category}&difficulty=${formData.difficulty}&type=multiple`)
@@ -61,7 +63,36 @@ export default function App() {
     })
   }
 
+  function endGame() {
+    setGame(prevState => {
+      return {
+        ...prevState,
+        isOver: true,
+      }
+    })
+  }
 
+  function countPoints() {
+    setGame(prevState => {
+      return {
+        ...prevState,
+        points: prevState.points + 1,
+      }
+    })
+  }
+
+  function clearState() {
+    setGame(prevState => prevState = {
+      pageView: 'index',
+      isOver: false,
+      points: 0,
+    })
+    setFormData(prevState => prevState = {
+      category: "",
+      difficulty: "",
+    })
+    setQuestionData([])
+  }
 
   return (
     <>
@@ -78,11 +109,11 @@ export default function App() {
         />}
       {game.pageView === 'questions' &&
         <Questions
-          questions={questionData}
-          setQuestionData={setQuestionData}
           game={game}
-          setGame={setGame}
-          setFormData={setFormData}
+          questions={questionData}
+          endGame={endGame}
+          countPoints={countPoints}
+          clearState={clearState}
         />}
       <SVG_Blue />
     </>
