@@ -1,3 +1,4 @@
+// @ts-nocheck
 const apiKey = 'fc0d64e0'
 const baseURL = 'https://www.omdbapi.com/'
 const $watchlistDiv = document.getElementById('movies-watchlist')
@@ -14,7 +15,7 @@ if (localStorage.length > 0) {
   $watchlistDiv.classList.add('center')
   $watchlistDiv.innerHTML = `
     <p class="placeholder-text">Your watchlist is looking a little empty...</p>
-      <a class="explore-link" href="./index.html"><i class="fa fa-plus-circle" aria-hidden="true"></i> Let's add some
+      <a class="explore-link" href="./index.html"><i class="fa fa-plus-circle circle-explore" aria-hidden="true"></i> Let's add some
         movies!</a>
   `
 }
@@ -23,7 +24,7 @@ if (localStorage.length > 0) {
 
 function getStorageKeys() {
   for (let i = 0; i < localStorage.length; i++) {
-    watchlist.push(localStorage.getItem( localStorage.key( i ) ) );
+    watchlist.push(localStorage.getItem(localStorage.key(i)));
   }
 }
 
@@ -49,7 +50,7 @@ async function getMovieList(ids) {
         }
       )
       displayWatchlist(watchlistFetched, $watchlistDiv)
-      
+
     } catch (err) {
       console.error(err)
       $watchlistDiv.innerHTML = `<p class="placeholder-text">Whoops! A glitch in the Matrix has occurred. <br> Please try again.</p>`
@@ -62,10 +63,10 @@ async function getMovieList(ids) {
 function displayWatchlist(movies, location) {
   let html = ""
 
-  for (let movie of movies ) {
+  for (let movie of movies) {
     html += `
       <div class="movie-div">
-        <img src="${movie.properties.poster === 'N/A' ? './img/placeholder.jpeg' : movie.properties.poster }">
+        <img src="${movie.properties.poster === 'N/A' ? './img/placeholder.jpeg' : movie.properties.poster}">
 
         <div class="movie-description">
           <div class="rating-title">
@@ -90,8 +91,8 @@ function displayWatchlist(movies, location) {
   }
   location.innerHTML = html
   const watchlistBtn = document.querySelectorAll(".watchlist")
-    watchlistBtn.forEach(button => {
-        button.addEventListener("click", removeFromWatchlist)
+  watchlistBtn.forEach(button => {
+    button.addEventListener("click", removeFromWatchlist)
   })
 }
 

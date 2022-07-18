@@ -1,16 +1,19 @@
 $white: #fff
-$black: #111827
+$black: #0f0e17
 $grey: #DFDDDD
+$shadow: #505050
 $grey-700: #374151
 $star: #FEC654
 $grey-button: #F9FAFB
 $grey-400: #9CA3AF
 $input-border: 1px solid #D1D5DB
 $border-radius: 6px
-$background: rgb(245,245,245)
+$background: #f5f5f5
 $footer: #F2F1EF
 $hr: #E5E7EB
 $description: #6B7280
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap')
 
 %flex
   display: flex
@@ -24,13 +27,11 @@ html,
 body
   margin: 0
   max-height: 100%
+  overflow-x: hidden
 
 body
   font-family: 'Inter', sans-serif
-  background: $background
-  background-image: linear-gradient(0deg, rgba(245,245,245,1) 0%, rgba(242,241,239,1) 100%)
-  background-size: cover
-  background-repeat: no-repeat
+  background: $black
 
 /* hiding ARIA label */
 
@@ -46,13 +47,12 @@ body
   border: 0
 
 header
-  background-image: url('./img/movieposters3.webp')
-  background-position: left 5% bottom 78%
-  background-size: contain
-  max-width: 100%
-  height: 20vh
-  max-height: 100%
+  background-image: url('img/header.jpg')
+  background-position: center
+  background-size: cover
+  height: 30vh
   justify-content: space-around
+  padding-right: 15px
 
   @extend %flex
 
@@ -60,26 +60,47 @@ header
     margin: 0 10px
 
   a
-    color: $white
     text-decoration: none
-    font-size: 0.875rem
+    font-family: 'Playfair Display', serif
+    text-shadow: 0 0 10px $shadow
+    font-size: 1.5em
     text-align: center
+    box-shadow: inset 0 0 0 0 $black
+    color: $white
+    padding: 0 .25rem
+    margin: 0 -.25rem
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out
 
     &:hover
-      text-decoration: 2px solid $white underline
-
-    &:active
-      text-decoration: 2px $white underline wavy
+      box-shadow: inset 200px 0 0 0 $white
+      color: $black
+      text-shadow: none
+      text-decoration: none
 
   h1
     color: $white
     text-align: left
+    font-size: 3em
+    text-shadow: 0 0 10px $shadow
+    font-family: 'Playfair Display', serif
+
+.index-svg
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+  min-width: 100%
+  max-width: 100%
+  object-fit: cover
+  z-index: -1
+  transform: translateY(50%)
 
 button
   border-top-right-radius: $border-radius
   border-bottom-right-radius: $border-radius
   color: $grey-700
   cursor: pointer
+  padding: 0 20px
 
   &:hover
     background: $grey
@@ -89,12 +110,15 @@ button
 
 .search-bar
   min-width: 80%
+  max-width: 100%
   position: relative
   margin-top: 10px
   z-index: 2
   @extend %flex
   justify-content: center
   align-items: center
+  transform: translatey(-80%)
+  position: relative
 
   i
     position: relative
@@ -138,6 +162,10 @@ button
   max-height: 100%
   @extend %flex-col
   align-items: center
+  background: $background
+  min-height: 64vh
+  position: relative
+  z-index: 3
 
   .fa-film
     font-size: 5rem
@@ -189,7 +217,6 @@ button
   .watchlist
     border: 1px $black solid
     border-radius: 0.3rem
-    background: transparent
     align-content: center
     display: flex
     justify-content: center
@@ -208,10 +235,10 @@ button
       margin-right: 5px
 
   h2
-    font-weight: 500
     color: $black
     margin: 0
     justify-self: flex-start
+    font-family: 'Playfair Display', serif
 
   p
     line-height: 1.4
@@ -235,16 +262,57 @@ button
 .fa-star
   font-size: 1rem
   color: $star
+  transform: translatex(-3px)
 
 .fa-plus-circle,
 .fa-minus-circle
   font-size: 0.9rem
   transform: translatey(1px)
 
+#movies-watchlist
+  width: 100%
+  max-width: 100%
+  max-height: 100%
+  @extend %flex-col
+  align-items: center
+
+  .fa-film
+    font-size: 5rem
+    color: $grey
+    transform: translatey(200px)
+
+  .placeholder-text
+    text-align: center
+    color: $description
+    font-weight: 700
+    font-size: 1.125
+    margin: 0.3rem
+    transform: translatey(200px)
+
+  hr
+    margin: 0
+    width: 80%
+    border: 2px solid $hr
+    border-radius: $border-radius
+
+  hr:last-child
+    display: none
+
+  .explore-link
+    color: $black
+    text-decoration: none
+    font-weight: 700
+    transform: translatey(230px)
+
+    &:hover
+      text-decoration: 2px solid $black underline
+
+    &:active
+      text-decoration: 2px $black underline wavy
+
 @media screen and (min-width: 600px), (orientation: landscape)
 
   .search-bar
-    transform: translatey(-50%)
 
     button
       min-width: 150px
@@ -277,11 +345,5 @@ button
 
 @media screen and (min-width: 1100px)
 
-  .movie-div
-    width: 70%
-    max-width: 900px
-
-  #movies
-    hr
-      width: 70%
-      max-width: 900px
+  body
+    padding: 0 10%

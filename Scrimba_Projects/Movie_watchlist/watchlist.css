@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 header {
   display: flex;
   align-items: center;
@@ -12,54 +13,96 @@ html,
 body {
   margin: 0;
   max-height: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Inter", sans-serif;
-  background: rgb(245, 245, 245);
-  background-image: linear-gradient(0deg, rgb(245, 245, 245) 0%, rgb(242, 241, 239) 100%);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: #0f0e17;
+}
+
+/* hiding ARIA label */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 header {
-  background-image: url("./img/movieposters3.webp");
-  background-position: left 5% bottom 78%;
-  background-size: contain;
-  max-width: 100%;
-  height: 20vh;
-  max-height: 100%;
+  background-image: url("img/header.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 30vh;
   justify-content: space-around;
 }
 header * {
   margin: 0 10px;
 }
 header a {
-  color: #fff;
   text-decoration: none;
-  font-size: 0.875rem;
+  font-family: "Playfair Display", serif;
+  text-shadow: 0 0 10px #505050;
+  font-size: 1.5em;
+  box-shadow: inset 0 0 0 0 #0f0e17;
+  color: #fff;
+  padding: 0 0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 header a:hover {
-  -webkit-text-decoration: 2px solid #fff underline;
-          text-decoration: 2px solid #fff underline;
-}
-header a:active {
-  -webkit-text-decoration: 2px #fff underline wavy;
-          text-decoration: 2px #fff underline wavy;
+  box-shadow: inset 250px 0 0 0 #fff;
+  color: #0f0e17;
+  text-shadow: none;
+  text-decoration: none;
 }
 header h1 {
   color: #fff;
   text-align: left;
+  font-size: 3em;
+  text-shadow: 0 0 10px #505050;
+  font-family: "Playfair Display", serif;
 }
-header h3 {
-  text-align: center;
+
+.container-svg {
+  min-width: 80%;
+  max-width: 100%;
+  position: relative;
+  margin-top: 10px;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+  transform: translatey(-80%);
+  position: relative;
+}
+
+.watchlist-svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-width: 100%;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+  transform: translateY(50%);
 }
 
 #movies-watchlist {
+  background: #f5f5f5;
   width: 100%;
   max-width: 100%;
   max-height: 100%;
+  min-height: 69vh;
   align-items: center;
+  position: relative;
+  z-index: 5;
 }
 #movies-watchlist .fa-film {
   font-size: 5rem;
@@ -84,18 +127,22 @@ header h3 {
   display: none;
 }
 #movies-watchlist .explore-link {
-  color: #111827;
-  text-decoration: none;
-  font-weight: 700;
   transform: translatey(230px);
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  font-size: 1.5em;
+  box-shadow: inset 0 0 0 0 #fff;
+  color: #0f0e17;
+  padding: 0 0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 #movies-watchlist .explore-link:hover {
-  -webkit-text-decoration: 2px solid #111827 underline;
-          text-decoration: 2px solid #111827 underline;
+  box-shadow: inset 300px 0 0 0 #0f0e17;
+  color: #fff;
+  text-decoration: none;
 }
-#movies-watchlist .explore-link:active {
-  -webkit-text-decoration: 2px #111827 underline wavy;
-          text-decoration: 2px #111827 underline wavy;
+#movies-watchlist .explore-link .circle-explore {
+  transform: translatey(-3px);
 }
 
 .movie-div {
@@ -122,12 +169,12 @@ header h3 {
   flex-flow: row nowrap;
 }
 .movie-div .watchlist {
-  border: 1px #111827 solid;
+  border: 1px #0f0e17 solid;
   border-radius: 0.3rem;
   background: transparent;
   align-content: center;
   display: flex;
-  color: #111827;
+  color: #0f0e17;
   justify-content: center;
   flex-flow: row nowrap;
   margin-top: 5px;
@@ -144,7 +191,7 @@ header h3 {
 }
 .movie-div h2 {
   font-weight: 500;
-  color: #111827;
+  color: #0f0e17;
   margin: 0;
   justify-self: flex-start;
 }
@@ -208,6 +255,9 @@ header h3 {
   }
 }
 @media screen and (min-width: 1100px) {
+  body {
+    padding: 0 10%;
+  }
   .movie-div {
     width: 70%;
     max-width: 900px;
@@ -215,7 +265,6 @@ header h3 {
   .movie-div .rating-title {
     flex-direction: row;
   }
-
   #movies-watchlist hr {
     width: 70%;
     max-width: 900px;
