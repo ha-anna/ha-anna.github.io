@@ -86,7 +86,7 @@ p {
 
 .post {
   background: var(--white);
-  max-width: 700px;
+  max-width: 500px;
   margin: 0 auto;
   margin-bottom: 30px;
 }
