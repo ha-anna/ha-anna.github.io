@@ -1,0 +1,707 @@
+@import-normalize;
+
+@font-face {
+  font-family: 'Adder';
+  src: url("../public/res/font/Adder.woff") format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Adder Extended';
+  src: url("../public/res/font/Adder\ Extended.woff") format('woff');
+  font-weight: 400;
+  font-style: normal;
+  unicode-range: U+0048, U+004F, U+006F, U+0061, U+0041, U+006D, U+0065, U+006E, U+0049;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Adder Super Extended';
+  src: url("../public/res/font/Adder\ SuperExtended.woff") format('woff');
+  font-weight: 400;
+  font-style: normal;
+  unicode-range: U+0048, U+004F, U+0061;
+  font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+  --black: #232323;
+  --black-trans25: #23232325;
+  --white: #f2f2f2;
+  --blue: #55a4a7;
+  --blue-trans50: rgba(85, 164, 167, 0.5);
+  --pink: #fea29f;
+  --pink-trans50: rgba(254, 162, 159, 0.5);
+  --green: #9ca840;
+  --yellow: rgb(255, 196, 56);
+  --yellow-trans50: rgba(255, 196, 56, 0.5);
+  --gray: #696969;
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  cursor: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  background: var(--white);
+  margin: 0;
+}
+
+header {
+  min-height: calc(100vh - 70px);
+  max-width: 100%;
+  margin-top: 70px;
+  padding: 30px;
+}
+
+nav {
+  background: rgba(255, 255, 255, 0.50);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 102;
+  transform: translatey(-70%);
+  transition: transform 250ms cubic-bezier(.5, 0, .5, 1), background 300ms ease-in-out;
+  max-width: 100%;
+}
+
+nav:hover {
+  background: var(--white);
+}
+
+footer {
+  background-color: var(--blue-trans50);
+  border-top: 3px solid var(--black);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.animation {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.animation h1 {
+  visibility: hidden;
+}
+
+/* typography */
+
+h1,
+h2{
+  color: var(--black);
+  font-family: 'Adder Super Extended','Adder Extended', 'Adder', 'IBM Plex Mono', monospace;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 4rem;
+  letter-spacing: 5px;
+  color: var(--white);
+}
+
+h2 {
+  font-size: 3rem;
+  margin: 50px auto;
+  text-align: center;
+}
+
+h3:not(.name) {
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+h3.name {
+  font-weight: 400;
+}
+
+.small {
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+}
+
+.btn {
+  display: block;
+  font-family:'IBM Plex Mono', monospace;
+  background: var(--blue-trans50);
+  color: var(--black);
+  padding: 15px 25px;
+  border: 3px solid var(--black);
+  box-shadow: 1px 1px 0px 1px var(--black);
+  border-radius: 1px;
+  font-size: 1rem;
+  transition: background 300ms ease-in-out;
+  max-width: fit-content;
+  text-decoration: none;
+}
+
+.card-body:nth-child(2n) .btn {
+  background: var(--pink-trans50);
+}
+
+.card-body:nth-child(2n) .btn:hover {
+  background: var(--pink);
+}
+
+.contact:nth-child(1n) .btn {
+  background: var(--yellow-trans50);
+}
+
+.contact:nth-child(1n) .btn:hover {
+  background: var(--yellow);
+}
+
+.btn:hover {
+  box-shadow: 1px 1px 0px 1px var(--black);
+  outline: solid 3px var(--black);
+  border-radius: 0;
+  background: var(--blue);
+  color: white;
+}
+
+
+/* navigation */
+
+.logo {
+  width: 50px;
+  height: 46px;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 103;
+}
+
+.logo-link {
+  align-self: flex-start;
+}
+
+.nav-links {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  margin-top: 70px;
+  transform: translateY(-150%);
+  transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+}
+
+.nav-item {
+  list-style-type: none;
+  margin: 10px 30px;
+}
+
+.nav-link {
+  display: inline-block;
+  position: relative;
+  color: var(--black);
+  text-decoration: none;
+  font-family: 'Adder Extended', 'Adder', 'IBM Plex Mono';
+}
+
+.nav-link:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  transform: scaleX(0);
+  height: 10px;
+  bottom: -3px;
+  left: 0;
+  background: var(--yellow);
+  transform-origin: bottom;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-item:nth-of-type(1n) .nav-link:after {
+  background: var(--blue);
+}
+
+.nav-item:nth-of-type(2n) .nav-link:after {
+  background: var(--pink);
+}
+
+.nav-item:nth-of-type(3n) .nav-link:after {
+  background: var(--yellow);
+}
+
+.nav-item:nth-of-type(4n) .nav-link:after {
+  background: var(--green);
+}
+
+
+.nav-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom;
+}
+
+.nav-toggle {
+  background: transparent;
+  border: 2px solid var(--black);
+  cursor: pointer;
+  position: fixed;
+  right: 0.6rem;
+  top: 0.6em;
+  z-index: 111;
+  border-radius: 0.25rem;
+  width: min-content;
+  height: 3em;
+  padding: 20px 10px;
+}
+
+.hamburger {
+  display: block;
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  background: var(--black);
+  width: 2.5em;
+  height: 3px;
+  border-radius: 1em;
+  transition: transform 250ms ease-in-out;
+}
+
+.nav-height nav {
+  transform: translatey(0);
+}
+
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.hamburger::before {
+  top: 10px;
+}
+
+.hamburger::after {
+  bottom: 10px;
+}
+
+.nav-open .nav-links {
+  transform: translateY(0);
+}
+
+.nav-open .nav-toggle {
+  position: fixed;
+}
+
+.nav-open .hamburger {
+  transform: rotate(.625turn);
+}
+
+.nav-open .hamburger::before {
+  transform: rotate(90deg) translateX(-10px);
+}
+
+.nav-open .hamburger::after {
+  opacity: 0;
+}
+
+/* header */
+
+header {
+  background: var(--black);
+  display: flex;
+  flex-flow: column nowrap;
+  background-image: url('../public/res/header-mobile.gif');
+  background-size: 550px;
+  background-repeat: no-repeat;
+  background-position: left 50px ;
+}
+
+.title-desc {
+  margin-top: 20px;
+  color: var(--white);
+  position: relative;
+  text-align: right;
+  line-height: 2.5;
+  margin-top: auto;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+h1 {
+  color: var(--white);
+}
+
+.block {
+  display: block;
+  margin: 30px 0;
+}
+
+.role {
+  border: 3px solid var(--white);
+  padding: 3px 5px;
+}
+
+.role:nth-of-type(1) {
+  box-shadow: 2px 2px 0 2px var(--pink);
+}
+
+.role:nth-of-type(2) {
+  box-shadow: 2px 2px 0 2px var(--blue);
+}
+
+/* about */
+
+.about {
+  line-height: 1.4;
+  padding: 10px;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.about-body {
+  background: white;
+  border: solid 3px var(--black);
+  box-shadow: 1px 1px 0px 1px var(--black);
+  border-radius: 1px;
+  padding: 30px;
+}
+
+.about-img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+}
+
+.about-basic {
+  text-align: center;
+}
+
+.about-basic *,
+.about-more * {
+  margin: 10px 0;
+}
+
+.about-desc {
+  margin-bottom: 30px;
+}
+
+.about-basic > .btn {
+  margin: 40px auto;
+  margin-bottom: 20px;
+}
+
+
+.hashtag-group {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.about-more {
+  padding: 10px;
+}
+
+.about-more > h3 {
+  margin-bottom: -5px;
+}
+
+.hashtag {
+  border: 3px solid var(--black);
+  cursor: inherit;
+  font-family: "Adder", monospace;
+  text-transform: uppercase;
+  padding: 12px 15px 8px 15px;
+  margin: 5px;
+  font-size: 0.7rem;
+  box-shadow: 1px 1px 0px 1px var(--black);
+  border-radius: 1px;
+}
+
+/* projects */
+
+.cards {
+  max-width: 100%;
+  width: 85%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.card:nth-child(1n) {
+  box-shadow: 1px 1px 0px 1px var(--black), 3px 3px 0px 3px var(--blue);
+  border-radius: 0;
+}
+
+.card:nth-child(2n) {
+    box-shadow: 1px 1px 0px 1px var(--black), 3px 3px 0px 3px var(--pink);
+    border-radius: 0;
+}
+
+.card:nth-child(3n) {
+  box-shadow: 1px 1px 0px 1px var(--black), 3px 3px 0px 3px var(--yellow);
+  border-radius: 0;
+}
+
+.card:nth-child(4n) {
+  box-shadow: 1px 1px 0px 1px var(--black), 3px 3px 0px 3px var(--green);
+  border-radius: 0;
+}
+
+.card {
+  background-color: #fff;
+  transition: transform 300ms ease-in-out;
+  max-width: 500px;
+  width: 100%;
+  border: 3px solid var(--black);
+  border-radius: 1px;
+  margin-bottom: 50px;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+.card-img {
+  max-width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  border-bottom: 3px solid var(--black);
+}
+
+.card-body {
+  padding: 20px 30px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.card-body > h3 {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.card-body .btn {
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+.card-body > form {
+  align-self: flex-end;
+}
+
+.card-text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto
+}
+
+.tech-stack {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.tech {
+  margin: 3px;
+  font-size: 0.8rem;
+  border: 2px solid var(--black);
+  box-shadow: 1px 1px 0px 1px var(--black);
+  padding: 3px 6px;
+  border-radius: 1px;
+  background: var(--yellow-trans50);
+}
+
+/* contact */
+
+.contact {
+  height: 50vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.contact-body {
+  border: 3px solid var(--black);
+  box-shadow: 1px 1px 0px 1px var(--black);
+  border-radius: 1px;
+  background: white;
+  max-height: 250px;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  padding: 40px 40px 20px 40px;
+}
+
+.contact-body > .btn {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* footer */
+
+.footer-nav {
+  padding: 20px;
+  display: flex;
+}
+
+.footer-nav > .nav-item {
+  margin: 5px 10px;
+}
+
+.sns-img {
+  max-width: 100%;
+  width: auto;
+  height: 35px;
+  border-radius: 50%;
+  transition: all 300ms ease-in-out;
+}
+
+.sns-img:hover {
+  transform: scale(1.3);
+  background: var(--white);
+}
+
+.small {
+  margin-bottom: 30px;
+}
+
+@media (prefers-reduced-motion) {
+  header {
+    background-image: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  nav,
+  .nav-links {
+    transform: translatey(0);
+  }
+
+  .nav-links {
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    transform: translatey(-55px);
+  }
+
+  nav {
+    height: 75px;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    background-image: url('../public/res/header-bg.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: -260px;
+  }
+
+  .block {
+      display: inline;
+      margin: unset;
+    }
+
+  .block-web {
+    display: block;
+    margin: 30px 0;
+  }
+
+  .about-body {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .about-basic {
+    padding: 40px;
+    min-width: 400px;
+  }
+
+  .hashtag {
+    font-size: 0.9rem;
+  }
+
+  .about-more {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .cards {
+    width: 95%;
+    max-width: 2000px;
+    flex-flow: row wrap;
+    align-items: stretch
+  }
+
+  .card {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 30px;
+  }
+
+  .card-img {
+    height: 300px;
+    flex: 0 1 auto;
+  }
+
+  .card-body {
+    flex: 1;
+  }
+
+  .card-body form {
+    margin-top: auto;
+  }
+
+
+}
