@@ -21,7 +21,7 @@ This solo project is a part of Scrimba's [Frontend Developer Career Path](https:
 
 ### Screenshot
 
-![alt text]()
+![alt text](https://media-exp1.licdn.com/dms/image/C4E22AQEs7Teo11xi3g/feedshare-shrink_2048_1536/0/1654792985957?e=1661990400&v=beta&t=3ksMtn1zqWEUlnzbQNeKBDFQfYa-cUy3DC9okr4duaQ)
 
 ### Links
 
