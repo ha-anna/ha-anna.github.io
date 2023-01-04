@@ -21,7 +21,7 @@ export default function About() {
             for various causes and events, and even writing my master
             thesis about emoji. Because I enjoy solving problems and
             being creative, becoming a front-end designer was an easy
-            choice to make. Currently, I am learning React.
+            choice to make. Currently, I am learning TypeScript and working as a freelancer.
           </p>
 
           <div className="hashtag-group">
@@ -37,17 +37,21 @@ export default function About() {
             <span className="hashtag">#css</span>
             <span className="hashtag">#javascript</span>
             <span className="hashtag">#react</span>
+            <span className="hashtag">#typescript</span>
+            <span className="hashtag">#node.js</span>
           </div>
           <h3>Tools</h3>
           <div className="hashtag-group">
             <span className="hashtag">#illustrator</span>
             <span className="hashtag">#photoshop</span>
             <span className="hashtag">#figma</span>
-            <span className="hashtag">#vs_code</span>
-            <span className="hashtag">#github</span>
+            <span className="hashtag">#react_router</span>
             <span className="hashtag">#tailwind_css</span>
             <span className="hashtag">#bootstrap</span>
+            <span className="hashtag">#npm</span>
             <span className="hashtag">#git</span>
+            <span className="hashtag">#express.js</span>
+            <span className="hashtag">#postman</span>
           </div>
         </div>
       </div>

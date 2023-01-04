@@ -1,5 +1,13 @@
 const projectData = [
     {
+    "title": "Ha Youjun's Portfolio",
+    "techStack": ["React", "CSS", "React Router"],
+    "img": "/res/projects/project_hyj_portfolio.webp",
+    "description": "Commission. The goal was to create a webpage that allows to view the images comfortably and get to know the artist. Build with React + JS and mobile-first approach, routing created with React Router. All images were encoded with either mozjpeg or turned into webp for a faster load, npms were used for image carousel and masonry layout.",
+    "link": "https://portfolio-hyj.vercel.app/",
+    "repo": "https://github.com/its-haanna/portfolio_HYJ"
+  },
+    {
     "title": "Quizzical",
     "techStack": ["React", "CSS"],
     "img": "/res/projects/project_quizzical.webp",
@@ -14,14 +22,6 @@ const projectData = [
     "description": "CV page is a personal project made to practice using React and because I needed a space where I can display my CV to possible clients and recruiters. It displays two versions of the CV in English and Korean and allows the user to download it whenever necessary.",
     "link": "https://ha-anna-cv.vercel.app/",
     "repo": "https://github.com/its-haanna/ha_anna_cv"
-  },
-  {
-    "title": "Travel Journal",
-    "techStack": ["React", "CSS"],
-    "img": "/res/projects/project_traveljournal.webp",
-    "description": "Travel Journal is an app that displays information about the places that I have visited in the past. It can store countless memories and displays information about locations, links to Google Maps, dates and photos. It is fully responsive and accessible so it can be viewed by anyone, anywhere, and on any device.",
-    "link": "https://react-travel-journal-one.vercel.app/",
-    "repo": "https://github.com/its-haanna/its-haanna.github.io/tree/main/Scrimba_Projects/react_travel_journal"
   },
   {
     "title": "Movie Watchlist",
