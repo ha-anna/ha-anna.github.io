@@ -530,8 +530,14 @@ h1 {
 
 .card-buttons {
   display: flex;
-  justify-content: space-between;
-  margin-top: auto
+  flex-flow: column nowrap;
+  margin-top: auto;
+}
+
+.card-buttons .repo-btn,
+.card-buttons .live-btn{
+  min-width: 100%;
+  text-align: center;
 }
 
 .tech-stack {
@@ -702,6 +708,16 @@ h1 {
   .card-body form {
     margin-top: auto;
   }
+
+.card-buttons {
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.card-buttons .repo-btn,
+.card-buttons .live-btn{
+  min-width: unset;
+}
 
 
 }
