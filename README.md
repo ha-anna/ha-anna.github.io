@@ -1,4 +1,4 @@
-# its-haanna.github.io
+# ha-anna.github.io
 
 <br>
 <div align="center">
@@ -17,8 +17,8 @@ This is my Github Pages folder where I store of the completed projects.
 
 ## Folders:
 
-1. [Scrimba Projects](https://github.com/its-haanna/its-haanna.github.io/tree/main/Scrimba_Projects)
-2. [Frontend Mentor Challenges](https://github.com/its-haanna/its-haanna.github.io/tree/main/FrontEndMentorChallenges)
+1. [Scrimba Projects](https://github.com/ha-anna/ha-anna.github.io/tree/main/Scrimba_Projects)
+2. [Frontend Mentor Challenges](https://github.com/ha-anna/ha-anna.github.io/tree/main/FrontEndMentorChallenges)
 
 ## Author
 
