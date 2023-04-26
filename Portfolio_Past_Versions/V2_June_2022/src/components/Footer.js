@@ -5,12 +5,12 @@ export default function Footer() {
     <footer id="footer" aria-label="Footer">
       <ul className="footer-nav">
         <li className="nav-item">
-          <a href="https://www.linkedin.com/in/itshaanna/" target="_blank" rel="noreferrer" className="sns-link">
+          <a href="https://www.linkedin.com/in/ha-anna/" target="_blank" rel="noreferrer" className="sns-link">
             <img src="/res/iconlinkedin.webp" alt="Linkedin" className="sns-img" />
           </a>
         </li>
         <li className="nav-item">
-          <a href="https://github.com/its-haanna" target="_blank" rel="noreferrer" className="sns-link">
+          <a href="https://github.com/ha-anna" target="_blank" rel="noreferrer" className="sns-link">
             <img src="/res/icongithub.webp" alt="Github" className="sns-img" />
           </a>
         </li>
