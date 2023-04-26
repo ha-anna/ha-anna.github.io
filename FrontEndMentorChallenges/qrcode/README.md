@@ -20,12 +20,12 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![alt text](https://github.com/its-haanna/its-haanna.github.io/blob/main/FrontEndMentorChallenges/qrcode/qr%20code%20screenshot.png)
+![alt text](https://github.com/ha-anna/ha-anna.github.io/blob/main/FrontEndMentorChallenges/qrcode/qr%20code%20screenshot.png)
 
 ### Links
 
-- Solution URL: [https://github.com/its-haanna/its-haanna.github.io/tree/main/FrontEndMentorChallenges/qrcode](Github)
-- Live Site URL: [https://its-haanna.github.io/FrontEndMentorChallenges/qrcode/index.html](Github Pages)
+- Solution URL: [https://github.com/ha-anna/ha-anna.github.io/tree/main/FrontEndMentorChallenges/qrcode](Github)
+- Live Site URL: [https://ha-anna.github.io/FrontEndMentorChallenges/qrcode/index.html](Github Pages)
 
 ## My process
 
