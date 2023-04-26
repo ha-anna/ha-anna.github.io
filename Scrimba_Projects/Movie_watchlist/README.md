@@ -30,7 +30,7 @@ Movie Watchlist is fully responsive and can be used on mobile and laptop.
 
 ### Links
 
-- Live Site URL: [Movie Watchlist](https://its-haanna.github.io/Scrimba_Projects/Movie_watchlist)
+- Live Site URL: [Movie Watchlist](https://ha-anna.github.io/Scrimba_Projects/Movie_watchlist)
 
 ## My process
 

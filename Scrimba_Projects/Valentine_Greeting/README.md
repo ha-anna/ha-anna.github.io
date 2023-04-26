@@ -25,7 +25,7 @@ In this challenge, the goal was to create an app that will allow you to put the 
 
 ### Links
 
-- Live Site URL: [Valentine's Greeting](https://its-haanna.github.io/Scrimba_Projects/Valentine_Greeting/)
+- Live Site URL: [Valentine's Greeting](https://ha-anna.github.io/Scrimba_Projects/Valentine_Greeting/)
 
 ## My process
 

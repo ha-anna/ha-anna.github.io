@@ -25,7 +25,7 @@ In this project, you can calculate the price of the gift together with the deliv
 
 ### Links
 
-- Live Site URL: [Valentine's Gift Selector](https://its-haanna.github.io/Scrimba_Projects/Gift_Selector/)
+- Live Site URL: [Valentine's Gift Selector](https://ha-anna.github.io/Scrimba_Projects/Gift_Selector/)
 
 ## My process
 

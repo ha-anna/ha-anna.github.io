@@ -31,7 +31,7 @@ Other functions:
 
 ### Links
 
-- Live Site URL: [Password Generator](https://its-haanna.github.io/Scrimba_Projects/Password_generator/)
+- Live Site URL: [Password Generator](https://ha-anna.github.io/Scrimba_Projects/Password_generator/)
 
 ## My process
 

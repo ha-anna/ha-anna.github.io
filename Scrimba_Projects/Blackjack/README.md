@@ -23,7 +23,7 @@ This is the first JavaScript game that I made. The rules are: you have to get 21
 
 ### Links
 
-- Live Site URL: [Blackjack](https://its-haanna.github.io/Scrimba_Projects/Blackjack)
+- Live Site URL: [Blackjack](https://ha-anna.github.io/Scrimba_Projects/Blackjack)
 
 ## My process
 

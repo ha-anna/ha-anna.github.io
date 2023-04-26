@@ -23,7 +23,7 @@ This project is a part of Scrimba's Responsive Design Module. I made the entire 
 
 ### Links
 
-- Live Site URL: [BBQ Webinar](https://its-haanna.github.io/Scrimba_Projects/BBQ_Responsive_page/)
+- Live Site URL: [BBQ Webinar](https://ha-anna.github.io/Scrimba_Projects/BBQ_Responsive_page/)
 
 ## My process
 

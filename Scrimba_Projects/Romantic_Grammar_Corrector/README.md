@@ -25,7 +25,7 @@ In this challenge, the goal was to take the strangely spelled text and turn it i
 
 ### Links
 
-- Live Site URL: [Romantic Grammar Corrector](https://its-haanna.github.io/Scrimba_Projects/Romantic_Grammar_Corrector/)
+- Live Site URL: [Romantic Grammar Corrector](https://ha-anna.github.io/Scrimba_Projects/Romantic_Grammar_Corrector/)
 
 ## My process
 

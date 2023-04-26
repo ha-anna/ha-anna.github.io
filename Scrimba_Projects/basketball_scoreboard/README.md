@@ -25,7 +25,7 @@ This solo project is a part of Scrimba's [Frontend Developer Career Path](https:
 
 ### Links
 
-- Live Site URL: [Basketball Scoreboard](https://its-haanna.github.io/Scrimba_Projects/basketball_scoreboard/)
+- Live Site URL: [Basketball Scoreboard](https://ha-anna.github.io/Scrimba_Projects/basketball_scoreboard/)
 
 ## My process
 

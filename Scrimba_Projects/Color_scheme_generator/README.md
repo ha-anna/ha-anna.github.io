@@ -25,7 +25,7 @@ This is my fourth Solo Project made with JavaScript. The goal was to create a co
 
 ### Links
 
-- Live Site URL: [Color Scheme Generator](https://its-haanna.github.io/Scrimba_Projects/Color_scheme_generator/)
+- Live Site URL: [Color Scheme Generator](https://ha-anna.github.io/Scrimba_Projects/Color_scheme_generator/)
 
 ## My process
 

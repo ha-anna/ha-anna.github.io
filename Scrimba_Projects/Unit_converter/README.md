@@ -25,7 +25,7 @@ This is the first Solo Project in which I was using JavaScript. The goal was to 
 
 ### Links
 
-- Live Site URL: [Unit Converter](https://its-haanna.github.io/Scrimba_Projects/Unit_converter/)
+- Live Site URL: [Unit Converter](https://ha-anna.github.io/Scrimba_Projects/Unit_converter/)
 
 ## My process
 

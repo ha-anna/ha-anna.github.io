@@ -25,7 +25,7 @@ This is my third Solo Project made with JavaScript. The goal was to create an in
 
 ### Links
 
-- Live Site URL: [Invoice Creator](https://its-haanna.github.io/Scrimba_Projects/Invoice_creator/)
+- Live Site URL: [Invoice Creator](https://ha-anna.github.io/Scrimba_Projects/Invoice_creator/)
 
 ## My process
 

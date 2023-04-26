@@ -23,7 +23,7 @@ This is a role-playing game in which you, Wizard of Cats, are up against great v
 
 ### Links
 
-- Live Site URL: [The Game of Cats](https://its-haanna.github.io/Scrimba_Projects/Roleplaying_game/)
+- Live Site URL: [The Game of Cats](https://ha-anna.github.io/Scrimba_Projects/Roleplaying_game/)
 
 ## My process
 

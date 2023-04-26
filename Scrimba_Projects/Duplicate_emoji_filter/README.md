@@ -25,7 +25,7 @@ The goal was to filter out all duplicate emoji, leaving only one of each emoji a
 
 ### Links
 
-- Live Site URL: [Duplicate Emoji Filter](https://its-haanna.github.io/Scrimba_Projects/Duplicate_emoji_filter/)
+- Live Site URL: [Duplicate Emoji Filter](https://ha-anna.github.io/Scrimba_Projects/Duplicate_emoji_filter/)
 
 ## My process
 

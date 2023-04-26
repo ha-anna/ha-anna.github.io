@@ -23,7 +23,7 @@ This project is a part of [Scrimba's Frontend Developer Career Path](https://scr
 
 ### Links
 
-- Live Site URL: [Emoji Tool](https://its-haanna.github.io/Scrimba_Projects/Emoji_tool/)
+- Live Site URL: [Emoji Tool](https://ha-anna.github.io/Scrimba_Projects/Emoji_tool/)
 
 ## My process
 

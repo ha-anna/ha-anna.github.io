@@ -25,7 +25,7 @@ As a solo project, I created a responsive page about the city I currently live i
 
 ### Links
 
-- Live Site URL: [City Homepage: Seoul](https://its-haanna.github.io/Scrimba_Projects/City_homepage/)
+- Live Site URL: [City Homepage: Seoul](https://ha-anna.github.io/Scrimba_Projects/City_homepage/)
 
 ## My process
 

@@ -23,7 +23,7 @@ This project is a part of Scrimba's Frontend Developer Career Path. It was added
 
 ### Links
 
-- Live Site URL: [Oldagram](https://its-haanna.github.io/Scrimba_Projects/Oldagram/)
+- Live Site URL: [Oldagram](https://ha-anna.github.io/Scrimba_Projects/Oldagram/)
 
 ## My process
 

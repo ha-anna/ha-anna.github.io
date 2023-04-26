@@ -23,7 +23,7 @@ This is a game in which the player who first gets 21 points or more, wins. This 
 
 ### Links
 
-- Live Site URL: [Dice Game](https://its-haanna.github.io/Scrimba_Projects/Dice_game/)
+- Live Site URL: [Dice Game](https://ha-anna.github.io/Scrimba_Projects/Dice_game/)
 
 ## My process
 
