@@ -41,6 +41,10 @@ export default function Header() {
             <a href="#projects" className="nav-link" onClick={close}>Projects</a>
           </li>
 
+          {/* <li className="nav-item">
+            <a href="#blog" className="nav-link" onClick={close}>Blog</a>
+          </li> */}
+
           <li className="nav-item">
             <a href="#contact" className="nav-link" onClick={close}>Let's talk</a>
           </li>

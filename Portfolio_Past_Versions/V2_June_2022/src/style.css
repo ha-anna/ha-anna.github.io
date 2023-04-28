@@ -535,7 +535,8 @@ h1 {
 }
 
 .card-buttons .repo-btn,
-.card-buttons .live-btn{
+.card-buttons .live-btn,
+.card-buttons .read-btn {
   min-width: 100%;
   text-align: center;
 }
@@ -553,6 +554,12 @@ h1 {
   padding: 3px 6px;
   border-radius: 1px;
   background: var(--yellow-trans50);
+}
+
+/* blog */
+
+.read-btn {
+  margin-left: auto;
 }
 
 /* contact */
@@ -715,8 +722,17 @@ h1 {
 }
 
 .card-buttons .repo-btn,
-.card-buttons .live-btn{
+.card-buttons .live-btn,
+.card-buttons .read-btn {
   min-width: unset;
+}
+
+.repo-btn {
+  margin-right: 10px;
+}
+
+.live-btn {
+  margin-left: 10px;
 }
 
 
